@@ -1,0 +1,10 @@
+@media only screen and (max-width: 767px) { /* line 2, ../sass/responsive.scss */
+  #nav-wrapper .navbar-default .navbar-nav > li > a { text-align: center; width: 100%; }
+  /* line 7, ../sass/responsive.scss */
+  ul.secondary { float: none; margin: 0; text-align: center; width: 100%; }
+  /* line 13, ../sass/responsive.scss */
+  #block-dkan-sitewide-dkan-sitewide-search-bar { width: 100%; }
+  /* line 15, ../sass/responsive.scss */
+  #block-dkan-sitewide-dkan-sitewide-search-bar input.form-control { width: 100%; }
+  /* line 19, ../sass/responsive.scss */
+  .container > .navbar-header { margin: 0 15px; } }

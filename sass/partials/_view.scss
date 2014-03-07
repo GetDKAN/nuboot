@@ -1,0 +1,19 @@
+.view-popular-tags {
+	.tag-list li {
+		display:inline-block;
+		margin-right:2em;
+		a {
+			color:$white;
+		}
+	}
+}
+
+.view-groups-search {
+	h2 {
+		font-weight:bold;
+		margin:1em 0;
+	}
+	.views-row {
+		border-bottom:1px dotted $smoke;
+	}
+}

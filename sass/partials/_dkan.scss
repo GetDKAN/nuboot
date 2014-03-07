@@ -1,0 +1,16 @@
+#dkan-stages {
+	@include border-top-left-radius(3px);
+	@include border-top-right-radius(3px);
+	.stages {
+		margin:-16px -15px 20px;
+	}
+}
+.fa-google-plus-square {
+	color:#BF2D1C;
+}
+.fa-twitter-square {
+	color:#41B0D3;
+}
+.fa-facebook-square {
+	color:#617AAD;
+}

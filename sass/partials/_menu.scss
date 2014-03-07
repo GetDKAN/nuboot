@@ -1,0 +1,50 @@
+#nav-wrapper {
+	border-bottom:1px solid $smoke;
+	.navbar.container {
+		margin:0 auto;
+		padding:0;
+	}
+	.navbar-default {
+		background:transparent;
+		border:none;
+		nav {
+			margin-top: 14px;
+		}
+		.navbar-nav {
+			li > a {
+			    color: $brand-primary;
+			    font-size:12px;
+			    padding:15px 6px;
+			    &:hover,
+			    &:focus {
+			    	text-decoration:underline;
+			    }
+			}
+			.active a {
+				background:transparent;
+			}
+		}
+		.navbar-nav.secondary li {
+			float:none;
+			a {
+				font-size:.7em;
+				line-height:1.5em;
+				padding:4px;
+			}
+		}
+	}
+}
+
+.tabs--primary {
+	margin: 10px 0;
+	li {
+		margin:1px;
+	}
+	li a {
+		border:1px solid $smoke;
+		padding:5px 15px;
+		&.active {
+			border:1px solid #357EBD;
+		}
+	}
+}

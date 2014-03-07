@@ -1,0 +1,51 @@
+body {
+	font-family:$font-family-sans-serif;
+	font-size:.8em;
+	line-height:1.35em;
+}
+.navbar .logo {
+	margin:0;
+	padding:10px 15px 10px 0;
+	img {
+		height:50px;
+	}
+}
+#page-wrapper {
+	padding:20px 0;
+}
+.page-header {
+    border-bottom: none;
+}
+#jumbotron {
+	background: url("../images/hero.png") no-repeat 50% 30% tint($brand-primary, 0.72) !important;
+	background-size:cover !important;
+	border-bottom:1px solid darken($brand-primary,50%);
+	height:200px;
+	padding:50px 0;
+	h2.block-title {
+		display:none;
+	}
+}
+#top-content {
+	margin:20px;
+	.block {
+		padding:10px;
+		text-align:center;
+		h2.block-title {
+			border:none;
+			color:$gray-dark;
+			font-size:1.6em;
+		}
+	}
+	[class*="col-"]{
+		background-color: hero;
+		border-left:4px solid $body-bg;
+		border-right:4px solid $body-bg;
+	    margin-bottom: -99999px;
+	    padding-bottom: 99999px;
+	}
+
+	.row {
+	    overflow: hidden; 
+	}
+}

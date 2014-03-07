@@ -1,0 +1,22 @@
+@media only screen and (max-width: 767px) {
+  #nav-wrapper 
+  	.navbar-default .navbar-nav > li > a {
+		text-align:center;
+		width:100%;
+	}
+	ul.secondary {
+	    float: none;
+	    margin:0;
+	    text-align:center;
+	    width:100%;
+	}
+	#block-dkan-sitewide-dkan-sitewide-search-bar {
+		width:100%;
+		input.form-control {
+			width:100%;
+		}
+	}
+	.container > .navbar-header {
+		margin:0 15px;
+	}
+}
