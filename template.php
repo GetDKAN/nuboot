@@ -1,8 +1,15 @@
 <?php
+/**
+ * @file
+ * Theme specific functions.
+ */
 
+/**
+ * Implements template_preprocess_html.
+ */
 function nuboot_preprocess_html(&$variables) {
-	drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
-	drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
+  drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
+  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
 }
 
 /**
@@ -29,23 +36,17 @@ function nuboot_breadcrumb($variables) {
   $contexts = array();
 
   if (!empty($breadcrumb)) {
-    // foreach ($breadcrumb as $num => $item) {
-    //   if ($item == '<a href="/">Home</a>') {
-    //     $breadcrumb[$num] = '<a href="/"><i class="fa fa fa-home"></i><span> Home</span></a>';
-    //   }
-    // }
-
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
 
     $crumbs = '<ul class="breadcrumb">';
-    if(!drupal_is_front_page()) {
-    	$crumbs .= '<li class="home-link"><a href="/"><i class="fa fa fa-home"></i><span> Home</span></a></li>';
+    if (!drupal_is_front_page()) {
+      $crumbs .= '<li class="home-link"><a href="/"><i class="fa fa fa-home"></i><span> Home</span></a></li>';
     }
 
     // Remove null values.
     $breadcrumb = array_filter($breadcrumb);
     $i = 1;
-    foreach($breadcrumb as $value) {
+    foreach ($breadcrumb as $value) {
       if ($i == count($breadcrumb)) {
         $crumbs .= '<li class="active-trail">' . $value . '</li>';
       }
@@ -85,121 +86,127 @@ function nuboot_menu_local_tasks(&$variables) {
 /**
  * Overrides theme_menu_local_task().
  */
-
 function nuboot_menu_local_task($variables) {
-	$link = $variables['element']['#link'];
-	$link_text = $link['title'];
-	$icon_type = '';
+  $link = $variables['element']['#link'];
+  $link_text = $link['title'];
+  $icon_type = '';
 
-	switch ($link['path']) {
-  		case 'node/%/edit':
-  			$icon_type = 'edit';
-  			break;
-  		case 'node/%/view':
-  			$icon_type = 'eye';
-  			break;
-  		case 'node/%/resource':
-  			$icon_type = 'plus';
-  			break;
-  		case 'node/%/datastore':
-  			$icon_type = 'cogs';
-  			break;
-  		case 'node/%/datastore/import':
-  			$icon_type = 'refresh';
-  			break;
-  		case 'node/%/datastore/drop':
-  			$icon_type = 'trash-o';
-  			break;
-  		case 'node/%/datastore/unlock':
-  			$icon_type = 'unlock';
-  			break;
-  		case 'node/%/download':
-  			$icon_type = 'download';
-  			break;
-  		case 'node/%/dataset':
-  			$icon_type = 'caret-left';
-  			break;
-  		case 'node/%/api':
-  			$icon_type = 'flask';
-  			break;
-  		case 'node/%/group':
-  			$icon_type ='users';
-  			break;
-  		case 'node/%/members':
-  			$icon_type = 'user';
-  			break;
-  		default:
-  			$icon_type = '';
-  			break;
-  	}
-  	$icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
-	$link_text = $icon . $link_text;
-	$link['localized_options']['html'] = TRUE;
+  switch ($link['path']) {
+    case 'node/%/edit':
+      $icon_type = 'edit';
+      break;
 
-	if (!empty($variables['element']['#active'])) {
-		// Add text to indicate active tab for non-visual users.
-		$active = '<span class="element-invisible">' . t('(active tab)') . '</span>';
+    case 'node/%/view':
+      $icon_type = 'eye';
+      break;
 
-		// If the link does not contain HTML already, check_plain() it now.
-		// After we set 'html'=TRUE the link will not be sanitized by l().
-		if (empty($link['localized_options']['html'])) {
-		  $link['title'] = check_plain($link['title']);
-		}
-		$link['localized_options']['html'] = TRUE;
-		$link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
+    case 'node/%/resource':
+      $icon_type = 'plus';
+      break;
 
-		$icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
-	    $link_text = $icon . $link_text;
-	    // Ensure the HTML in $link_text is not escaped.
-	    $link['localized_options']['html'] = TRUE;
-	}
-	return '<li' . (!empty($variables['element']['#active']) ? ' class="active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
+    case 'node/%/datastore':
+      $icon_type = 'cogs';
+      break;
+
+    case 'node/%/datastore/import':
+      $icon_type = 'refresh';
+      break;
+
+    case 'node/%/datastore/drop':
+      $icon_type = 'trash-o';
+      break;
+
+    case 'node/%/datastore/unlock':
+      $icon_type = 'unlock';
+      break;
+
+    case 'node/%/download':
+      $icon_type = 'download';
+      break;
+
+    case 'node/%/dataset':
+      $icon_type = 'caret-left';
+      break;
+
+    case 'node/%/api':
+      $icon_type = 'flask';
+      break;
+
+    case 'node/%/group':
+      $icon_type = 'users';
+      break;
+
+    case 'node/%/members':
+      $icon_type = 'user';
+      break;
+
+    default:
+      $icon_type = '';
+      break;
+
+  }
+  $icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
+  $link_text = $icon . $link_text;
+  $link['localized_options']['html'] = TRUE;
+
+  if (!empty($variables['element']['#active'])) {
+    // Add text to indicate active tab for non-visual users.
+    $active = '<span class="element-invisible">' . t('(active tab)') . '</span>';
+
+    // If the link does not contain HTML already, check_plain() it now.
+    // After we set 'html'=TRUE the link will not be sanitized by l().
+    if (empty($link['localized_options']['html'])) {
+      $link['title'] = check_plain($link['title']);
+    }
+    $link['localized_options']['html'] = TRUE;
+    $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
+
+    $icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
+    $link_text = $icon . $link_text;
+    // Ensure the HTML in $link_text is not escaped.
+    $link['localized_options']['html'] = TRUE;
+  }
+  return '<li' . (!empty($variables['element']['#active']) ? ' class="active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
 }
-
 
 /**
  * Returns HTML for an inactive facet item.
  *
- * @param $variables
  *   An associative array containing the keys 'text', 'path', 'options', and
  *   'count'. See the l() and theme_facetapi_count() functions for information
  *   about these variables.
  *
  * @ingroup themeable
  */
-
 function nuboot_facetapi_link_inactive($variables) {
-	// Builds accessible markup.
-	// @see http://drupal.org/node/1316580
-	$accessible_vars = array(
-		'text' => $variables['text'],
-		'active' => FALSE,
-	);
+  // Builds accessible markup.
+  // @see http://drupal.org/node/1316580
+  $accessible_vars = array(
+    'text' => $variables['text'],
+    'active' => FALSE,
+  );
 
-	$accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
+  $accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
 
-	// Sanitizes the link text if necessary.
-	$sanitize = empty($variables['options']['html']);
-	$variables['text'] = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  // Sanitizes the link text if necessary.
+  $sanitize = empty($variables['options']['html']);
+  $variables['text'] = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
 
- 	// Adds count to link if one was passed.
-	if (isset($variables['count'])) {
-		$variables['text'] .= ' ' . theme('facetapi_count', $variables);
-	}
+  // Adds count to link if one was passed.
+  if (isset($variables['count'])) {
+    $variables['text'] .= ' ' . theme('facetapi_count', $variables);
+  }
 
-	// Resets link text, sets to options to HTML since we already sanitized the
-	// link text and are providing additional markup for accessibility.
-	$variables['text'] .= $accessible_markup;
-	$variables['options']['html'] = TRUE;
-	return theme_link($variables);
+  // Resets link text, sets to options to HTML since we already sanitized the
+  // link text and are providing additional markup for accessibility.
+  $variables['text'] .= $accessible_markup;
+  $variables['options']['html'] = TRUE;
+  return theme_link($variables);
 }
-
-
 
 /**
  * Returns HTML for an inactive facet item.
  *
- * @param $variables
  *   An associative array containing the keys 'text', 'path', and 'options'. See
  *   the l() function for information about these variables.
  *
@@ -207,25 +214,27 @@ function nuboot_facetapi_link_inactive($variables) {
  *
  * @ingroup themeable
  */
-
 function nuboot_facetapi_link_active($variables) {
-	// Sanitizes the link text if necessary.
-	$sanitize = empty($variables['options']['html']);
-	$link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  // Sanitizes the link text if necessary.
+  $sanitize = empty($variables['options']['html']);
+  $link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
 
-	// Theme function variables fro accessible markup.
-	// @see http://drupal.org/node/1316580
-	$accessible_vars = array(
-		'text' => $variables['text'],
-		'active' => TRUE,
-	);
+  // Theme function variables fro accessible markup.
+  // @see http://drupal.org/node/1316580
+  $accessible_vars = array(
+    'text' => $variables['text'],
+    'active' => TRUE,
+  );
 
-	$accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
-	$variables['text'] .= $accessible_markup;
-	$variables['options']['html'] = TRUE;
-	return theme_link($variables);
+  $accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
+  $variables['text'] .= $accessible_markup;
+  $variables['options']['html'] = TRUE;
+  return theme_link($variables);
 }
 
+/**
+ * Theme social icons.
+ */
 function nuboot_sitewide_social_block() {
   $path = isset($_GET['q']) ? $_GET['q'] : '<front>';
   $link = url($path, array('absolute' => TRUE));
@@ -235,10 +244,10 @@ function nuboot_sitewide_social_block() {
     '#items' => array(
       'googleplus' => array(
         'data' => l('<i class="fa fa-lg fa-google-plus-square"></i> ' . t('Google+'),
-          'https://plus.google.com/share', array(
+        'https://plus.google.com/share', array(
           'query' => array(
-            'url' => $link
-           ),
+            'url' => $link,
+          ),
           'attributes' => array(
             'target' => '_blank',
           ),
@@ -248,9 +257,9 @@ function nuboot_sitewide_social_block() {
       ),
       'twitter' => array(
         'data' => l('<i class="fa fa-lg fa-twitter-square"></i> ' . t('Twitter'),
-          'https://twitter.com/share', array(
+        'https://twitter.com/share', array(
           'query' => array(
-            'url' => $link
+            'url' => $link,
           ),
           'attributes' => array(
             'target' => '_blank',
@@ -261,9 +270,9 @@ function nuboot_sitewide_social_block() {
       ),
       'facebook' => array(
         'data' => l('<i class="fa fa-lg fa-facebook-square"></i> ' . t('Facebook'),
-          'https://www.facebook.com/sharer.php', array(
+        'https://www.facebook.com/sharer.php', array(
           'query' => array(
-            'u' => $link
+            'u' => $link,
           ),
           'attributes' => array(
             'target' => '_blank',
@@ -280,22 +289,3 @@ function nuboot_sitewide_social_block() {
 
   return $output;
 }
-
-// function nuboot_image_button($variables) {
-//   $element = $variables['element'];
-//   $element['#attributes']['type'] = 'image';
-//   element_set_attributes($element, array('id', 'name', 'value'));
-
-//   $element['#attributes']['src'] = file_create_url($element['#src']);
-//   if (!empty($element['#title'])) {
-//     $element['#attributes']['alt'] = $element['#title'];
-//     $element['#attributes']['title'] = $element['#title'];
-//   }
-
-//   $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
-//   if (!empty($element['#attributes']['disabled'])) {
-//     $element['#attributes']['class'][] = 'form-button-disabled';
-//   }
-
-//   return '<input' . drupal_attributes($element['#attributes']) . ' />';
-// }

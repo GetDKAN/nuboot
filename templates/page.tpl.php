@@ -1,3 +1,9 @@
+<?php
+/**
+ * @file
+ * Nuboot's theme implementation to display a single Drupal page.
+ */
+?>
 <div id="nav-wrapper">
   <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
     <div class="container">
@@ -54,7 +60,7 @@
 <!-- #jumbotron -->
 <div id="jumbotron" class="clearfix">
     <div class="container">
-        
+
         <!-- #jumbotron-inside -->
         <div id="jumbotron-inside" class="clearfix">
             <div class="row">
@@ -63,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <!-- EOF: #jumbotron-inside -->        
+        <!-- EOF: #jumbotron-inside -->
 
     </div>
 </div>
@@ -188,7 +194,7 @@
                 </div>
                 <?php endif; ?>
             </div>
-            
+
             <div class="col-md-3">
                 <?php if ($page['footer_second']):?>
                 <div class="footer-area">
@@ -214,7 +220,6 @@
             </div>
         </div>
         <?php print render($page['footer']); ?>
-        <img src="<?php print file_create_url(theme_get_setting('sublogo_path')); ?>" />
     </div>
     <!-- EOF: #footer-inside -->
   </div><!--/container -->
