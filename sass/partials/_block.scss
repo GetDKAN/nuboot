@@ -25,6 +25,14 @@ h2.block-title {
 }
 
 // SEARCH
+.block-dkan-sitewide-dkan-sitewide-search-bar {
+  form {
+    float: right;
+      margin: 0;
+      position: relative;
+      width: 200px;
+  }
+}
 #nav-wrapper #block-dkan-sitewide-dkan-sitewide-search-bar {
   @include searchbox;
   width:172px;
@@ -38,6 +46,7 @@ h2.block-title {
       margin:18px 0 0;
     }
 }
+
 #views-exposed-form-user-profile-search-entity-view-1,
 #views-exposed-form-groups-search-entity-view-1,
 #views-exposed-form-dataset-page {

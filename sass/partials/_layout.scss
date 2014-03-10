@@ -3,8 +3,9 @@ body {
 	font-size:.8em;
 	line-height:1.35em;
 }
-.container {
-	width:auto;
+.node-type-resource .container {
+	width:100%;
+	max-width:980px;
 }
 
 .navbar .logo {
