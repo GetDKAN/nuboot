@@ -112,6 +112,7 @@
   }
 }
 
-.node-dataset-form {
+.node-dataset-form,
+.node-resource-form {
   @include popblock;
 }
