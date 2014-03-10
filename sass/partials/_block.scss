@@ -1,10 +1,10 @@
 .region-content .block {
-	@include popblock;
+  @include popblock;
 }
 h2.block-title {
-	background-color: hero;
-	@include background-image(linear-gradient(#F5F5F5, #F0F0F0));
-	@include border-radius(3px 3px 0 0);
+  background-color: hero;
+  @include background-image(linear-gradient(#F5F5F5, #F0F0F0));
+  @include border-radius(3px 3px 0 0);
     border-bottom: 1px solid $border;
     color: #0062A0;
     font-size: 14px;
@@ -13,99 +13,106 @@ h2.block-title {
 }
 .region-sidebar-first,
 .region-sidebar-second {
-	.block {
-		background-color: #FFFFFF;
-	    border-radius: 3px;
-	    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-	    margin-bottom: 20px;
-	    .block-content {
-	    	padding:20px 15px;
-	    }
-	}
+  .block {
+    background-color: #FFFFFF;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+      .block-content {
+        padding:20px 15px;
+      }
+  }
 }
 
 // SEARCH
 #nav-wrapper #block-dkan-sitewide-dkan-sitewide-search-bar {
- 	@include searchbox;
- 	width:172px;
- 	form {
- 		width:172px;
- 	}
+  @include searchbox;
+  width:172px;
+  form {
+    width:172px;
+  }
     input.form-control {
-    	width:170px;
-    }
-}
-#views-exposed-form-groups-search-entity-view-1,
-#views-exposed-form-dataset-page {
- 	@include searchbox;
- 	width:372px;
-    input.form-control {
-    	width:370px;
+      width:170px;
     }
     .views-exposed-form .form-submit {
-    	top: -15px;
+      margin:18px 0 0;
+    }
+}
+#views-exposed-form-user-profile-search-entity-view-1,
+#views-exposed-form-groups-search-entity-view-1,
+#views-exposed-form-dataset-page {
+  @include searchbox;
+  width:372px;
+    input.form-control {
+      width:370px;
+    }
+    .views-exposed-form .form-submit {
+      top: -16px !important;
     }
 }
 
-// CKAN
+// Social Links
 #block-dkan-sitewide-dkan-sitewide-social {
-	.block-content {
-		padding: 0;
-	}
-	.social-links {
-	 	margin: 0;
-	 	list-style: none;
-	 	padding-bottom: 0;
-	 	li {
-	 		font-size: 12px;
-			line-height: 1.1666666666666667em;
-			padding: 0;
-			border-bottom: 1px dotted #CCC;
-			position:relative;
-			a {
-				//padding-left:36px;
-			}
-	 	}
-	}
+  .block-content {
+    padding: 0;
+  }
+  .social-links {
+    margin: 0;
+    list-style: none;
+    padding-bottom: 0;
+    li {
+      font-size: 12px;
+      line-height: 1.1666666666666667em;
+      padding: 0;
+      border-bottom: 1px dotted #CCC;
+      position:relative;
+      a:hover {
+        background:#FFFEEE;
+        color:$brand-primary;
+      }
+    }
+  }
 }
+
 // OTHER ACCESS
 #block-dkan-sitewide-dkan-sitewide-other-access {
-	a.btn {
-		background-image: auto;
-		border:1px solid $smoke;
-		padding:8px 10px 8px 36px;
-		position:relative;
-		i {
-			background-position: 0 0;
-			position:absolute;
-			top:8px;
-			left:5px;
-			visibility:visible;
-			&.ckan-icon-rdfxml {
-				background-image: url(../images/rdf.png);
-			}
-			&.ckan-icon-json {
-				background-image: url(../images/json.png);
-			}
-		}
-		&:hover {
-			background-color:$gray-lighter;
-		}
-	}
-	.btn-group {
-		margin:.6em 0;
-		.btn:first-child {
-			background-image: url(../images/json.png);
-			background-repeat:no-repeat;
-			background-position: 10px 10px;
-		}
-		.btn:last-child {
-			background-image: url(../images/rdf.png);
-			background-repeat:no-repeat;
-			background-position: 10px 10px;
-		}
-	}
+  a.btn {
+    background-image: auto;
+    border:1px solid $smoke;
+    padding:8px 10px 8px 36px;
+    position:relative;
+    i {
+      background-position: 0 0;
+      position:absolute;
+      top:8px;
+      left:5px;
+      visibility:visible;
+      &.ckan-icon-rdfxml {
+        background-image: url(../images/rdf.png);
+      }
+      &.ckan-icon-json {
+        background-image: url(../images/json.png);
+      }
+    }
+    &:hover {
+      background-color:$gray-lighter;
+    }
+  }
+  .btn-group {
+    margin:.6em 0;
+    .btn:first-child {
+      background-image: url(../images/json.png);
+      background-repeat:no-repeat;
+      background-position: 10px 10px;
+    }
+    .btn:last-child {
+      background-image: url(../images/rdf.png);
+      background-repeat:no-repeat;
+      background-position: 10px 10px;
+    }
+  }
 }
+
 // DKAN FORMS
 #block-dkan-forms-dkan-forms-dataset-help h2.block-title::before{
   content: "\f05a";
@@ -124,35 +131,35 @@ h2.block-title {
 // FACET API
 .region-sidebar-first .block-facetapi,
 .block-facetapi {
-	.block-content {
-		padding:0;
-	}
-	ul {
-		margin:0 0 0.5em;
-		padding:0;
-		@include border-bottom-radius(4px);
-	}
-	ul li.leaf,
-	ul li.collapsed,
-	ul li.expanded {
-		border-bottom:1px dotted $smoke;
-		list-style-type:none;
-		list-style-image:none;
-		margin:0;
-		padding:0;
-	    li {
-	    	position:relative;
-	    a {
-	        padding-right:48px;
-	    }
+  .block-content {
+    padding:0;
+  }
+  ul {
+    margin:0 0 0.5em;
+    padding:0;
+    @include border-bottom-radius(4px);
+  }
+  ul li.leaf,
+  ul li.collapsed,
+  ul li.expanded {
+    border-bottom:1px dotted $smoke;
+    list-style-type:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+      li {
+        position:relative;
+      a {
+          padding-right:48px;
+      }
     }
     li:before {
-		content:"\f178";
-		font-family:$icon-fa;
-		color:$brand-primary;
-		position:absolute;
-		top:4px;
-		right:30px;
+    content:"\f178";
+    font-family:$icon-fa;
+    color:$brand-primary;
+    position:absolute;
+    top:4px;
+    right:30px;
     }
     a {
       color:$gray-dark;
@@ -162,7 +169,7 @@ h2.block-title {
       &:hover {
         color:darken($brand-primary, 10%);
         //background: rgba(black, 0.03);
-        background: tint($brand-primary,60%);
+        background: tint($brand-primary,90%);
         text-decoration:none;
       }
       &:hover:after {
@@ -186,7 +193,7 @@ h2.block-title {
       content: '';
       position: absolute;
       border-style: solid;
-      border-width: 14px 0 14px 14px;
+      border-width: 14px 0 13px 13px;
       border-color: transparent $smoke;
       display: block;
       width: 0;
@@ -224,14 +231,14 @@ h2.block-title {
 
 // Groups
 #block-views-group-block-block {
-	overflow:hidden;
-	.block-content {
-		padding:0;
-		.views-field-title,
-		.views-field-body {
-			margin:10px 15px;
-		}
-	}
+  overflow:hidden;
+  .block-content {
+    padding:0;
+    .views-field-title,
+    .views-field-body {
+      margin:10px 15px;
+    }
+  }
 }
 
 #block-dkan-forms-dkan-forms-dataset-help h2.block-title::before{

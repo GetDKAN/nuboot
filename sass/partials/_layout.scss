@@ -3,6 +3,11 @@ body {
 	font-size:.8em;
 	line-height:1.35em;
 }
+.container {
+	max-width:940px;
+	width:100%;
+}
+
 .navbar .logo {
 	margin:0;
 	padding:10px 15px 10px 0;
@@ -17,13 +22,31 @@ body {
     border-bottom: none;
 }
 #jumbotron {
-	background: url("../images/hero.png") no-repeat 50% 30% tint($brand-primary, 0.72) !important;
+	background:
+	    //color
+	    linear-gradient(
+	      rgba($brand-primary, 0.45),
+	      rgba($brand-primary, 0.45)
+	    ),
+	    //image
+	    url(../images/hero.jpg);
+	background-position:50% 50%;
 	background-size:cover !important;
-	border-bottom:1px solid darken($brand-primary,50%);
+	border-bottom:1px solid $brand-primary;
 	height:200px;
 	padding:50px 0;
 	h2.block-title {
 		display:none;
+	}
+	.block-content {
+		color:$white;
+		font-size: 1.25em;
+    	line-height: 1.33em;
+    	margin:0 40px;
+		@include text-shadow(rgba(black, 0.8) 0 0 3px, rgba($brand-primary, 0.6) 1px 1px 0);
+	}
+	a {
+		color:$white;
 	}
 }
 #top-content {
@@ -38,7 +61,7 @@ body {
 		}
 	}
 	[class*="col-"]{
-		background-color: hero;
+		background-color: $smoke;
 		border-left:4px solid $body-bg;
 		border-right:4px solid $body-bg;
 	    margin-bottom: -99999px;
@@ -46,6 +69,61 @@ body {
 	}
 
 	.row {
-	    overflow: hidden; 
+	    overflow: hidden;
+	}
+}
+
+.front .main-container .region-content .block,
+.page-groups .main-container .region-content .block {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    margin-bottom: 0;
+    padding: 0;
+    //front page
+	.col-lg-6 {
+		float:left;
+		margin:0;
+		width:50%;
+		span {
+			display:block;
+			height:170px;
+			overflow:hidden;
+			.media-content {
+				padding:10px 10px 10px 150px;
+			}
+			.media-image img {
+				@include popblock;
+				float:left;
+				margin:0;
+				padding:0;
+			}
+			h3.media-heading {
+				font-size:1.3em;
+			}
+		}
+	}
+	//groups page
+	.node-group {
+		height:220px;
+		padding-left:240px;
+		position:relative;
+		margin-bottom:1.5em;
+		h2 a {
+			display:block;
+			font-size:1.5em;
+			padding:25px 0 10px;
+		}
+		.field-type-image {
+			position:absolute;
+			top:0;
+			left:0;
+			img {
+				@include popblock;
+				margin:0;
+				padding:0;
+			}
+		}
+		.view-og-count {
+			margin:8px 0;
+		}
 	}
 }

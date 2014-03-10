@@ -5,6 +5,13 @@
  */
 
 /**
+ * Solution till http://drupal.org/node/967166 is fixed.
+ */
+function nuboot_css_alter(&$css) {
+  unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);
+}
+
+/**
  * Implements template_preprocess_html.
  */
 function nuboot_preprocess_html(&$variables) {
