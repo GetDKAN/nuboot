@@ -111,3 +111,7 @@
     @include border-radius(15px);
   }
 }
+
+.node-dataset-form {
+  @include popblock;
+}

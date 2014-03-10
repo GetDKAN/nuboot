@@ -163,6 +163,9 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* line 98, ../sass/partials/_node.scss */
 .field-group-table-description .icon-info-sign:before { background: #999999; color: white; content: "\f129"; font-family: "FontAwesome"; font-size: 1.7em; height: 30px; left: 0; margin: 0 10px 0 0; padding: 6px 11px; position: absolute; top: 0; width: 30px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; }
 
+/* line 115, ../sass/partials/_node.scss */
+.node-dataset-form { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; }
+
 /* line 1, ../sass/partials/_block.scss */
 .region-content .block { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; }
 
