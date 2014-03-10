@@ -69,60 +69,60 @@ table tr:hover, table.table tr:hover { background: #FFFEEE; }
 body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: .8em; line-height: 1.35em; }
 
 /* line 6, ../sass/partials/_layout.scss */
-.container { max-width: 940px; width: 100%; }
+.container { width: auto; }
 
-/* line 11, ../sass/partials/_layout.scss */
+/* line 10, ../sass/partials/_layout.scss */
 .navbar .logo { margin: 0; padding: 10px 15px 10px 0; }
-/* line 14, ../sass/partials/_layout.scss */
+/* line 13, ../sass/partials/_layout.scss */
 .navbar .logo img { height: 50px; }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 17, ../sass/partials/_layout.scss */
 #page-wrapper { padding: 20px 0; }
 
-/* line 21, ../sass/partials/_layout.scss */
+/* line 20, ../sass/partials/_layout.scss */
 .page-header { border-bottom: none; }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 23, ../sass/partials/_layout.scss */
 #jumbotron { background: linear-gradient(rgba(0, 98, 160, 0.45), rgba(0, 98, 160, 0.45)), url(../images/hero.jpg); background-position: 50% 50%; background-size: cover !important; border-bottom: 1px solid #0062a0; height: 200px; padding: 50px 0; }
-/* line 38, ../sass/partials/_layout.scss */
+/* line 37, ../sass/partials/_layout.scss */
 #jumbotron h2.block-title { display: none; }
-/* line 41, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 #jumbotron .block-content { color: white; font-size: 1.25em; line-height: 1.33em; margin: 0 40px; text-shadow: rgba(0, 0, 0, 0.8) 0 0 3px, rgba(0, 98, 160, 0.6) 1px 1px 0; }
-/* line 48, ../sass/partials/_layout.scss */
+/* line 47, ../sass/partials/_layout.scss */
 #jumbotron a { color: white; }
 
-/* line 52, ../sass/partials/_layout.scss */
+/* line 51, ../sass/partials/_layout.scss */
 #top-content { margin: 20px; }
-/* line 54, ../sass/partials/_layout.scss */
+/* line 53, ../sass/partials/_layout.scss */
 #top-content .block { padding: 10px; text-align: center; }
-/* line 57, ../sass/partials/_layout.scss */
+/* line 56, ../sass/partials/_layout.scss */
 #top-content .block h2.block-title { border: none; color: #333333; font-size: 1.6em; }
-/* line 63, ../sass/partials/_layout.scss */
+/* line 62, ../sass/partials/_layout.scss */
 #top-content [class*="col-"] { background-color: #cccccc; border-left: 4px solid #0062a0; border-right: 4px solid #0062a0; margin-bottom: -99999px; padding-bottom: 99999px; }
-/* line 71, ../sass/partials/_layout.scss */
+/* line 70, ../sass/partials/_layout.scss */
 #top-content .row { overflow: hidden; }
 
-/* line 76, ../sass/partials/_layout.scss */
+/* line 75, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block, .page-groups .main-container .region-content .block { box-shadow: 0 0 0 transparent; margin-bottom: 0; padding: 0; }
-/* line 82, ../sass/partials/_layout.scss */
+/* line 81, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .col-lg-6, .page-groups .main-container .region-content .block .col-lg-6 { float: left; margin: 0; width: 50%; }
-/* line 86, ../sass/partials/_layout.scss */
+/* line 85, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .col-lg-6 span, .page-groups .main-container .region-content .block .col-lg-6 span { display: block; height: 170px; overflow: hidden; }
-/* line 90, ../sass/partials/_layout.scss */
+/* line 89, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .col-lg-6 span .media-content, .page-groups .main-container .region-content .block .col-lg-6 span .media-content { padding: 10px 10px 10px 150px; }
-/* line 93, ../sass/partials/_layout.scss */
+/* line 92, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .col-lg-6 span .media-image img, .page-groups .main-container .region-content .block .col-lg-6 span .media-image img { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; float: left; margin: 0; padding: 0; }
-/* line 99, ../sass/partials/_layout.scss */
+/* line 98, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .col-lg-6 span h3.media-heading, .page-groups .main-container .region-content .block .col-lg-6 span h3.media-heading { font-size: 1.3em; }
-/* line 105, ../sass/partials/_layout.scss */
+/* line 104, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .node-group, .page-groups .main-container .region-content .block .node-group { height: 220px; padding-left: 240px; position: relative; margin-bottom: 1.5em; }
-/* line 110, ../sass/partials/_layout.scss */
+/* line 109, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .node-group h2 a, .page-groups .main-container .region-content .block .node-group h2 a { display: block; font-size: 1.5em; padding: 25px 0 10px; }
-/* line 115, ../sass/partials/_layout.scss */
+/* line 114, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .node-group .field-type-image, .page-groups .main-container .region-content .block .node-group .field-type-image { position: absolute; top: 0; left: 0; }
-/* line 119, ../sass/partials/_layout.scss */
+/* line 118, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .node-group .field-type-image img, .page-groups .main-container .region-content .block .node-group .field-type-image img { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; margin: 0; padding: 0; }
-/* line 125, ../sass/partials/_layout.scss */
+/* line 124, ../sass/partials/_layout.scss */
 .front .main-container .region-content .block .node-group .view-og-count, .page-groups .main-container .region-content .block .node-group .view-og-count { margin: 8px 0; }
 
 /* line 1, ../sass/partials/_node.scss */
