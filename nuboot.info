@@ -38,6 +38,19 @@ stylesheets[all][] = css/screen.css
 stylesheets[all][] = css/responsive.css
 ;stylesheets[all][] = css/font-awesome.min.css
 
+;;;;;;;;;;;;;;;;;;;;;
+;; Default Theme Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_slogan] = 0
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
