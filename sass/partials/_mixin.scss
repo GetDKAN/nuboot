@@ -13,15 +13,18 @@
   form {
     margin:0;
   }
-    input.form-text {
-      padding-right:30px;
-    }
-    .views-exposed-form .views-widget-filter-search_api_views_fulltext {
-      float:none;
-      position:relative;
+  input.form-text {
+    padding-right:30px;
+  }
+  .views-exposed-form .views-widget-filter-search_api_views_fulltext {
+    float:none;
+    position:relative;
   }
   .views-exposed-form {
     position:relative;
+    label {
+      display: none;
+    }
     .views-exposed-widget {
       padding:0;
     }

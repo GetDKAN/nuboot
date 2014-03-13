@@ -1,6 +1,14 @@
 .region-content .block {
   @include popblock;
 }
+.page-node-add-dataset .region-content .block {
+  @include box-shadow(none);
+  margin-bottom: 0;
+  padding:0;
+}
+.front .region-content .block {
+  display:none;
+}
 h2.block-title {
   background-color: hero;
   @include background-image(linear-gradient(#F5F5F5, #F0F0F0));
@@ -44,6 +52,8 @@ h2.block-title {
     }
     .views-exposed-form .form-submit {
       margin:18px 0 0;
+      color:#fff;
+      text-shadow: none;
     }
 }
 
@@ -57,6 +67,8 @@ h2.block-title {
     }
     .views-exposed-form .form-submit {
       top: -16px !important;
+      color:#fff;
+      text-shadow: none;
     }
 }
 

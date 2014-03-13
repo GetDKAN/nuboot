@@ -33,16 +33,20 @@
 	#jumbotron {
 		height:auto;
 	}
-	.front .main-container .region-content .block,
+	.view-front-page-group-grid,
 	.page-groups .main-container .region-content .block {
+		.span6,
 		.col-lg-6 {
 			float:none;
 			margin:0;
 			width:100%;
+			span {
+				height: auto;
+			}
 		}
 		.node-group {
 			height:auto;
-			padding:220px 0 0 0;
+			padding:170px 0 0 0;
 			position:relative;
 			margin-bottom:2em;
 			text-align:center;

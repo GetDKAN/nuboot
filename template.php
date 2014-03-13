@@ -25,6 +25,8 @@ function nuboot_preprocess_html(&$variables) {
 function nuboot_preprocess_page(&$vars) {
   if (drupal_is_front_page()) {
     drupal_add_js('js/front.js');
+    $vars['title'] = '';
+    unset($vars['page']['content']['system_main']['default_message']);
   }
   // Remove title on dataset edit and creation pages.
   if (!empty($vars['node']) && in_array($vars['node']->type, array('dataset', 'resource')) || arg(1) == 'add') {

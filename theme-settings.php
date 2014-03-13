@@ -8,7 +8,23 @@
  * Implements hook_form_system_theme_settings_alter().
  */
 function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
-  // Container fieldset.
+  // Colors fieldset.
+  $form['colors'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Colors'),
+    '#group' => 'general',
+  );
+  $form['colors']['color_primary'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Primary Color',
+    '#default_value' => '#0062A0',
+  );
+  $form['colors']['color_secondary'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Secondary Color',
+    '#default_value' => '#D3AE7E',
+  );
+  // Hero fieldset.
   $form['hero'] = array(
     '#type' => 'fieldset',
     '#title' => t('Hero'),
