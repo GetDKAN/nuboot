@@ -4,6 +4,12 @@
  * Theme specific functions.
  */
 
+function nuboot_form_system_theme_settings_alter(&$form, &$form_state){
+  //if($form_id == "system_theme_settings"){
+    $form['bootstrap']['bootstrap_breadcrumb_title']['#value'] = 0;
+  //}
+} 
+
 /**
  * Solution till http://drupal.org/node/967166 is fixed.
  */

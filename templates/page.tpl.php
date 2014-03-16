@@ -56,7 +56,7 @@
   </header>
 </div><!-- EOF:#nav-wrapper -->
 
-<?php if ($page['jumbotron']) : ?>
+<?php if ($is_front) : ?>
 <!-- #jumbotron -->
 <div id="jumbotron" class="clearfix">
     <div class="container">
@@ -66,6 +66,14 @@
             <div class="row">
                 <div class="col-md-12">
                 <?php print render($page['jumbotron']); ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                  <?php print render($page['preface_first']); ?>
+                </div>
+                <div class="col-md-6">
+                  <?php print render($page['preface_second']); ?>
                 </div>
             </div>
         </div>
@@ -86,14 +94,6 @@
               <div class="row">
                   <div class="col-md-12">
                   <?php print render($page['highlighted']); ?>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6">
-                  <?php print render($page['preface_first']); ?>
-                  </div>
-                  <div class="col-md-6">
-                  <?php print render($page['preface_second']); ?>
                   </div>
               </div>
           </div>

@@ -11,6 +11,7 @@ base theme = bootstrap
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Header'
 regions[jumbotron]      = 'Jumbotron Hero'
+regions[preface] 		= 'Preface'
 regions[highlighted]    = 'Highlighted'
 regions[preface_first] 	= 'Preface First'
 regions[preface_second] = 'Preface Second'
