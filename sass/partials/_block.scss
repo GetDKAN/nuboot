@@ -2,7 +2,8 @@
   @include popblock;
 }
 #block-views-front-page-group-grid-block,
-.page-node-add-dataset .region-content .block {
+.page-node-add-dataset .region-content .block,
+.page-node-add-resource .region-content .block {
   @include box-shadow(none);
   margin-bottom: 0;
   padding:0;
