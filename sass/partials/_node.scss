@@ -116,3 +116,9 @@
 .node-resource-form {
   @include popblock;
 }
+.horizontal-tabs ul.horizontal-tabs-list li a, 
+.horizontal-tabs ul.horizontal-tabs-list li.selected a {
+  display: block;
+  font-size: 1.35em;
+  padding: 0.5em 0.6em;
+}

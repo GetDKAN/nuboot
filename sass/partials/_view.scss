@@ -41,11 +41,10 @@
 		span {
 			@include popblock;
 			display:block;
-			height: 110px;
 			overflow:hidden;
 			padding:10px;
 			margin:15px;
-			min-height: 150px;
+			min-height: 130px;
 			.media-content {
 				padding:0 10px 10px 150px;
 			}
@@ -71,10 +70,5 @@
 		float:left;
 		margin:0;
 		width:50%;
-		.node {
-			@include popblock;
-			padding:10px;
-			margin:15px;
-		}
 	}
 }
