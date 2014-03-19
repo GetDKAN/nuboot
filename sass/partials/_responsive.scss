@@ -9,16 +9,21 @@
 			float:none;
 			margin:0;
 		}
+		.navbar-nav {
+			margin:0;
+		}
 		.navbar-nav > li > a {
 			text-align:center;
-			width:100%;
 		}
-		ul.secondary {
+		.navbar-nav.secondary li {
 			float: none;
 			font-size:1em;
 			margin:0;
 			text-align:center;
-			width:100%;
+			a {
+    			font-size: 1em;
+    			padding:12px 6px;
+			}
 		}
 		#block-dkan-sitewide-dkan-sitewide-search-bar {
 			width:100%;
