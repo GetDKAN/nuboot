@@ -4,14 +4,15 @@
  * Theme specific functions.
  */
 
-function nuboot_form_system_theme_settings_alter(&$form, &$form_state){
-  //if($form_id == "system_theme_settings"){
-    $form['bootstrap']['bootstrap_breadcrumb_title']['#value'] = 0;
-  //}
-} 
+/**
+ * Set default theme settings.
+ */
+function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
+  $form['bootstrap']['bootstrap_breadcrumb_title']['#value'] = 0;
+}
 
 /**
- * Solution till http://drupal.org/node/967166 is fixed.
+ * Remove dkan button styles so we can use our own.
  */
 function nuboot_css_alter(&$css) {
   unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);

@@ -42,7 +42,8 @@
             <?php
             $block = block_load('dkan_sitewide', 'dkan_sitewide_search_bar');
             if($block):
-              print render(_block_get_renderable_array(_block_render_blocks(array($block))));
+              $search = _block_get_renderable_array(_block_render_blocks(array($block)));
+              print render($search);
             endif;
             ?>
             <!-- EOF:views exposed search -->

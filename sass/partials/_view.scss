@@ -34,7 +34,7 @@
     margin-bottom: 0;
     padding: 0;
     .span6,
-    .col-lg-4 {
+    .col-lg-6 {
 		float:left;
 		margin:0;
 		width:50%;
@@ -46,7 +46,7 @@
 			margin:15px;
 			min-height: 130px;
 			.media-content {
-				padding:0 10px 10px 150px;
+				padding:0 10px 10px 120px;
 			}
 			.media-image {
 				float:left;
@@ -58,7 +58,7 @@
 			}
 			h3.media-heading {
 				font-size:1.3em;
-				margin:0;
+				margin:.5em 0;
 				padding:0;
 			}
 		}
