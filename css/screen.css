@@ -327,9 +327,6 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 /* line 26, ../sass/partials/_form.scss */
 #edit-field-link-remote-file-und-0-filefield-remotefile-select--2 { -webkit-border-radius: 0 4px 4px 0; -moz-border-radius: 0 4px 4px 0; -ms-border-radius: 0 4px 4px 0; -o-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0; border-left: none; }
 
-/* line 1, ../sass/partials/_navigation.scss */
-.front #nav-wrapper { border-bottom: 1px solid #079fff; }
-
 /* line 4, ../sass/partials/_navigation.scss */
 #nav-wrapper { border-bottom: 1px solid #cccccc; position: relative; z-index: 1; }
 /* line 8, ../sass/partials/_navigation.scss */
@@ -377,10 +374,11 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 /* line 93, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #00436d; }
 
-/* line 100, ../sass/partials/_navigation.scss */
-.btn-primary, a.btn-primary { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #0062a0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0091ed), color-stop(100%, #0062a0)); background-image: -webkit-linear-gradient(#0091ed, #0062a0); background-image: -moz-linear-gradient(#0091ed, #0062a0); background-image: -o-linear-gradient(#0091ed, #0062a0); background-image: linear-gradient(#0091ed, #0062a0); border: 1px solid #00436d; border-color: #0062a0 #00436d #00436d #0062a0; }
-/* line 107, ../sass/partials/_navigation.scss */
-.btn-primary:hover, a.btn-primary:hover { background: #d3ae7e; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c08a45), color-stop(100%, #d3ae7e)); background-image: -webkit-linear-gradient(#c08a45, #d3ae7e); background-image: -moz-linear-gradient(#c08a45, #d3ae7e); background-image: -o-linear-gradient(#c08a45, #d3ae7e); background-image: linear-gradient(#c08a45, #d3ae7e); border: 1px solid #c69658; border-color: #d3ae7e #c69658 #c69658 #d3ae7e; }
+/* line 114, ../sass/partials/_navigation.scss */
+.data-explorer .btn { border: 1px solid #cccccc; }
+
+/* line 118, ../sass/partials/_navigation.scss */
+.btn:active, .btn.active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
 .front .view-popular-tags { margin-top: 20px; }
@@ -501,6 +499,28 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 
 /* line 137, ../sass/partials/_dkan.scss */
 .format-label[data-format=HTML], .format-label[data-format=html], .format-label[data-format*=html] { width: 32px; height: 35px; background-position: -320px -62px; }
+
+/* line 2, ../sass/partials/_admin.scss */
+.page-admin label { color: #333; }
+/* line 6, ../sass/partials/_admin.scss */
+.page-admin .colorizer-form label { display: block; float: none; }
+/* line 10, ../sass/partials/_admin.scss */
+.page-admin .colorizer-form .form-select { width: auto; }
+/* line 13, ../sass/partials/_admin.scss */
+.page-admin .colorizer-form #palette .item-selected { background: none; }
+/* line 17, ../sass/partials/_admin.scss */
+.page-admin table, .page-admin thead, .page-admin tbody, .page-admin tr, .page-admin th, .page-admin td { border: none; }
+
+/* line 23, ../sass/partials/_admin.scss */
+#features-export-info #features-export-info, #features-export-wrapper #features-export-wrapper { width: auto; }
+/* line 25, ../sass/partials/_admin.scss */
+#features-export-info #features-export-info .panel, #features-export-wrapper #features-export-wrapper .panel { -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -ms-border-radius: 4px 4px 0 0; -o-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; }
+/* line 28, ../sass/partials/_admin.scss */
+#features-export-info #features-export-info fieldset.features-export-component, #features-export-wrapper #features-export-wrapper fieldset.features-export-component { margin: 0.75em 0 -1px; }
+/* line 34, ../sass/partials/_admin.scss */
+#features-export-info #features-export-info .radio input[type="radio"], #features-export-info #features-export-info .radio-inline input[type="radio"], #features-export-info #features-export-info .checkbox input[type="checkbox"], #features-export-info #features-export-info .checkbox-inline input[type="checkbox"], #features-export-wrapper #features-export-wrapper .radio input[type="radio"], #features-export-wrapper #features-export-wrapper .radio-inline input[type="radio"], #features-export-wrapper #features-export-wrapper .checkbox input[type="checkbox"], #features-export-wrapper #features-export-wrapper .checkbox-inline input[type="checkbox"] { margin-left: 0; }
+/* line 37, ../sass/partials/_admin.scss */
+#features-export-info #features-export-info .radio label, #features-export-info #features-export-info .checkbox label, #features-export-wrapper #features-export-wrapper .radio label, #features-export-wrapper #features-export-wrapper .checkbox label { margin-left: 5px; }
 
 @media only screen and (max-width: 767px) { /* line 3, ../sass/partials/_responsive.scss */
   #nav-wrapper .navbar-default .lead { position: absolute; top: 40px; left: 68px; }

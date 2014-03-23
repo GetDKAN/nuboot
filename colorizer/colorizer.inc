@@ -1,8 +1,4 @@
 <?php
-/**
- * @file
- * TO-DO Colorizer Integration
- */
 
 $info = array(
   // Available colors and color labels used in theme.
@@ -25,33 +21,16 @@ $info = array(
   'schemes' => array(
     'default' => array(
       'title' => t('DKAN (default)'),
+      'base' => '#0062a0',
       'colors' => array(
-        'top' => '#0062A0',
-        'bottom' => '#111111',
-        'toolbarbtn' => '#333333',
-        'toolbarborder' => '#333333',
+        'top' => '#0062a0',
+        'bottom' => '#d3ae7e',
+        'toolbarbtn' => '#ffffff',
+        'toolbarborder' => '#cccccc',
         'bg' => '#ffffff',
-        'sidebar' => '#f6f6f2',
-        'sidebarborders' => '#f9f9f9',
-        'footer' => '#292929',
-        'titleslogan' => '#0062A0',
-        'text' => '#3b3b3b',
-        'link' => '#0062A0',
-        'linkactive' => '#23aeff',
-        'linkhover' => '#018fe2',
-      ),
-    ),
-    'bootstrap' => array(
-      'title' => t('Bootstrap'),
-      'colors' => array(
-        'top' => '#222222',
-        'bottom' => '#111111',
-        'toolbarbtn' => '#333333',
-        'toolbarborder' => '#333333',
-        'bg' => '#ffffff',
-        'sidebar' => '#f6f6f2',
-        'sidebarborders' => '#f9f9f9',
-        'footer' => '#292929',
+        'sidebar' => '#3b3b3b',
+        'sidebarborders' => '#0062a0',
+        'footer' => '#ffffff',
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
         'link' => '#0071B3',
@@ -81,12 +60,12 @@ $info = array(
       'base' => '#d6121f',
       'colors' => array(
         'top' => '#cd2d2d',
-        'bottom' => '#cf3535',
-        'toolbarbtn' => '#b12525',
-        'toolbarborder' => '#b12525',
+        'bottom' => '#951f1f',
+        'toolbarbtn' => '#ffffff',
+        'toolbarborder' => '#cccccc',
         'bg' => '#ffffff',
-        'sidebar' => '#f1f4f0',
-        'sidebarborders' => '#ededed',
+        'sidebar' => '#eeeeee',
+        'sidebarborders' => '#d6121f',
         'footer' => '#1f1d1c',
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
@@ -99,7 +78,7 @@ $info = array(
       'colors' => array(
         'top' => '#d0d0d0',
         'bottom' => '#c2c4c5',
-        'toolbarbtn' => '#dedede',
+        'toolbarbtn' => '#ffffff',
         'toolbarborder' => '#dedede',
         'bg' => '#ffffff',
         'sidebar' => '#ffffff',
@@ -116,7 +95,7 @@ $info = array(
       'colors' => array(
         'top' => '#4c1c58',
         'bottom' => '#593662',
-        'toolbarbtn' => '#401050',
+        'toolbarbtn' => '#ffffff',
         'toolbarborder' => '#401050',
         'bg' => '#fffdf7',
         'sidebar' => '#edede7',
@@ -131,10 +110,10 @@ $info = array(
       'title' => t('Forest'),
       'base' => '#0a9900',
       'colors' => array(
-        'top' => '#219f19',
+        'top' => '#1d6919',
         'bottom' => '#2db823',
-        'toolbarbtn' => '#188e10',
-        'toolbarborder' => '#188e10',
+        'toolbarbtn' => '#ffffff',
+        'toolbarborder' => '#cccccc',
         'bg' => '#ffffff',
         'sidebar' => '#f1f4f0',
         'sidebarborders' => '#ededed',

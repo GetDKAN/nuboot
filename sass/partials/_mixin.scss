@@ -69,3 +69,11 @@
   color: transparent;            // Hide any residual text in Safari 4 and any mobile devices that may need it
   background-color: transparent; // Hide the default background color on elements like <button>
 }
+//transition
+@mixin transition {
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}

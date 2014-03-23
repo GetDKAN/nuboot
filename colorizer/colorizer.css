@@ -1,37 +1,30 @@
 body,
 body.overlay {
-  color: @text;
+	background-color: @bg;
+	color: @text;
 }
-.comment .comment-arrow {
-  border-color: @bg;
+h1,h2,h3,h4,
+h2.block-title {
+	color: @top;
 }
-#page,
-#main-wrapper,
-#main-menu-links li a.active,
-#main-menu-links li.active-trail a {
-  background: @bg;
+/*#jumbotron {
+	background: #4096ee; /* Old browsers * /
+	/ * IE9 SVG, needs conditional override of 'filter' to 'none' * /
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQwOTZlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MDk2ZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  @top 0%, @top 100%); / * FF3.6+ * /
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4096ee), color-stop(100%,@top)), url(../../../../images/hero.jpg); /* Chrome,Safari4+ * /
+	background: -webkit-linear-gradient(top,  @top 0%,@top 100%), url(../../../../profiles/dkan/themes/contrib/nuboot/images/hero.jpg); /* Chrome10+,Safari5.1+ * /
+	background: -o-linear-gradient(top,  @top 0%,@top 100%), url(../../../../profiles/dkan/themes/contrib/nuboot/images/hero.jpg); /* Opera 11.10+ * /
+	background: -ms-linear-gradient(top,  @top 0%,@top 100%), url(../../../../profiles/dkan/themes/contrib/nuboot/images/hero.jpg); /* IE10+ * /
+	background: linear-gradient(to bottom,  @top 0%,@top 100%), url(../../../../profiles/dkan/themes/contrib/nuboot/images/hero.jpg); /* W3C * /
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@top', endColorstr='@top',GradientType=0 ), url(../../../../profiles/dkan/themes/contrib/nuboot/images/hero.jpg); / * IE6-8 * /
 }
-.tabs ul.primary li a.active {
-  background-color: @bg;
-}
-.tabs ul.primary li.active a {
-  background-color: @bg;
-  border-bottom: 1px solid @bg;
-}
+*/
+
 .form-actions {
   background-color: @bg;
 }
-#header {
-background-color: @bottom;
-background-image: -moz-linear-gradient(top, @top, @bottom);
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@top), to(@bottom));
-background-image: -webkit-linear-gradient(top, @top, @bottom);
-background-image: -o-linear-gradient(top, @top, @bottom);
-background-image: linear-gradient(to bottom, @top, @bottom);
-border: none;
-box-shadow: none;
-color: @titleslogan;
-}
+
 a {
   color: @link;
 }
@@ -42,15 +35,7 @@ a:focus {
 a:active {
   color: @linkactive;
 }
-.sidebar .block {
-  background-color: @sidebar;
-  border-color: @sidebarborders;
-}
-#page-wrapper,
-#footer-wrapper,
-body #footer {
-  background-color: @footer;
-}
+
 .region-header,
 .region-header a,
 .region-header li a.active,
@@ -60,3 +45,54 @@ body #footer {
   color: @titleslogan;
 }
 
+#nav-wrapper .navbar-default .navbar-brand { color: @top; }
+#nav-wrapper .navbar-default .navbar-nav li > a { color: @top; }
+
+.nav-pills li a,
+.tabs--primary li a {
+	border:1px solid @toolbarborder;
+	background: @toolbarbtn;
+	color:  @top;
+}
+
+.tabs--primary li a:hover {
+	border:1px solid @bottom;
+	background: @bottom;
+	color: #ffffff;
+}
+
+.nav-pills li a.active,
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus,
+.tabs--primary li a.active {
+	border:1px solid @top;
+	background: @top;
+	color:#ffffff;
+}
+
+.resource-list .btn-primary,
+.view-og-count .btn-primary {
+	background-color: @top;
+	border:1px solid @top;
+	color:#ffffff;
+}
+.resource-list  .btn-primary:hover,
+.view-og-count .btn-primary:hover {
+	background:@bottom;
+	border:1px solid @bottom;
+	color:#ffffff;
+}
+
+.region-sidebar-first .block-facetapi ul li:before,
+.block-facetapi .block-facetapi ul li:before {
+    color:@top;
+}
+
+.footer,
+body #footer {
+	background-color: @footer;
+	color: @sidebar;
+}
+.footer a {
+	color: @sidebarborders;
+}
