@@ -48,13 +48,18 @@
     	text-decoration:none;
 	}
 }
-.resource-list {
+ul.resource-list {
   margin:1em 0;
   li {
     margin:.5em 0;
     min-height:40px;
+    padding:0 125px 0 40px;
+    position:relative;
     .btn {
       margin-top:0;
+      position:absolute;
+      top:0;
+      right:10px;
     }
   }
 }
@@ -115,7 +120,7 @@
 
 .node-dataset-form,
 .node-resource-form {
-  @include popblock;
+  //@include popblock;
 }
 .horizontal-tabs ul.horizontal-tabs-list li a, 
 .horizontal-tabs ul.horizontal-tabs-list li.selected a {

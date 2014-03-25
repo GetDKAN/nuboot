@@ -83,9 +83,9 @@ a:active {
 	color:#ffffff;
 }
 
-.region-sidebar-first .block-facetapi ul li:before,
-.block-facetapi .block-facetapi ul li:before {
-    color:@top;
+.region-sidebar-first .block-facetapi ul li.leaf a:hover,
+.block-facetapi ul li.leaf a:hover {
+	color:@top;
 }
 
 .footer,

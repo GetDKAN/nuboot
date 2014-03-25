@@ -7,6 +7,29 @@ select,
 .slick-header-column.ui-state-default  {
   height:auto;
 }
+.form-type-managed-file.form-group button.btn {
+  @include border-radius(0 4px 4px 0);
+  margin-left:-1px;
+}
+
+.form-managed-file.input-group {
+  .form-control {
+    display: inline-block;
+    width:80%;
+    margin-bottom: 1em;
+  }
+  .input-group-btn {
+    display: inline-block;
+    vertical-align: top;
+  }
+  fieldset {
+    clear:both;
+  }
+}
+fieldset #edit-path-alias {
+  position:relative;
+}
+
 #action-info {
   margin:15px 15px 0;
 }

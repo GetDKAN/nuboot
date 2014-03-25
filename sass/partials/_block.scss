@@ -2,8 +2,7 @@
   @include popblock;
 }
 #block-views-front-page-group-grid-block,
-.page-node-add-dataset .region-content .block,
-.page-node-add-resource .region-content .block {
+.node-type-dataset .region-content .block {
   @include box-shadow(none);
   margin-bottom: 0;
   padding:0;
@@ -96,7 +95,7 @@ h2.block-title {
       position:relative;
       a:hover {
         background:#FFFEEE;
-        color:$brand-primary;
+        //color:$brand-primary;
       }
     }
   }
@@ -167,9 +166,7 @@ h2.block-title {
     padding:0;
     @include border-bottom-radius(4px);
   }
-  ul li.leaf,
-  ul li.collapsed,
-  ul li.expanded {
+  ul li.leaf {
     border-bottom:1px dotted $smoke;
     list-style-type:none;
     list-style-image:none;
@@ -196,13 +193,13 @@ h2.block-title {
       position:relative;
       &:hover {
         color:darken($brand-primary, 10%);
-        //background: rgba(black, 0.03);
-        background: tint($brand-primary,90%);
+        background: rgba(black, 0.03);
+        //background: tint($brand-primary,90%);
         text-decoration:none;
       }
       &:hover:after {
         content:"\f055";
-        color:$brand-primary;
+        color:$brand-success;
         font-family:$icon-fa;
         position:absolute;
         top:4px;
