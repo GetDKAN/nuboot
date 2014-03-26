@@ -18,7 +18,9 @@
 		border:none;
 	}
 }
-
+#context-blockform td.blocks .label {
+	color:#333;
+}
 #features-export-info #features-export-info,
 #features-export-wrapper #features-export-wrapper {
 	width:auto;
@@ -47,5 +49,40 @@
 	    left: 0;
 	    position: absolute;
 	    top: 0;
+	}
+}
+
+.system-status-report tr {
+	border-bottom: 1px solid $shade;
+	&.ok {
+		background:rgba($brand-success,.3);
+		.status-icon:before {
+			content:"\f00c";
+			color:$brand-success;
+			font-family: $icon-fa;
+			float:left;
+		}
+	}
+	&.info {
+		background:rgba($brand-info,.3);
+		.status-icon:before {
+			content:"\f05a";
+			color:$brand-info;
+			font-family: $icon-fa;
+			float:left;
+		}
+	}
+	&.warning {
+		background:rgba($brand-warning,.3);
+	}
+}
+
+.views-admin {
+	.form-actions .icon {
+		background-image:none;
+	}
+	.btn {
+		font-size: 12px;
+		padding:1px 6px;
 	}
 }

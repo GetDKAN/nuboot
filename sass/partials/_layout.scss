@@ -22,20 +22,34 @@ body {
     border-bottom: none;
 }
 #jumbotron {
-	background:
-	    //color
-	    linear-gradient(
-	      rgba($brand-primary, 0.45),
-	      rgba($brand-primary, 0.45)
-	    ),
-	    //image
-	    url(../images/hero.jpg);
+	// background:
+	//     //color
+	//     linear-gradient(
+	//       rgba($brand-primary, 0.45),
+	//       rgba($brand-primary, 0.45)
+	//     ),
+	//     //image
+	//     url(../images/hero.jpg);
 	background-position:50% 50%;
 	background-size:cover !important;
-	border-bottom:1px solid $brand-primary;
-	padding:50px 0;
+	overflow:hidden;
+	position: relative;
+	z-index: 1;
+	.tint {
+		position:absolute;
+		height: 900px;
+		width:100%;
+		z-index: -1;
+	}
 	h2.block-title {
 		display:none;
+	}
+	#jumbotron-inside {
+		padding: 40px 0;
+	}
+	.container {
+		positoin: relative;
+		z-index: 5;
 	}
 	.block-content {
 		color:$white;
@@ -70,4 +84,7 @@ body {
 	.row {
 	    overflow: hidden;
 	}
+}
+.footer-wrapper {
+	padding:20px;
 }

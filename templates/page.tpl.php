@@ -60,27 +60,27 @@
 <?php if ($is_front) : ?>
 <!-- #jumbotron -->
 <div id="jumbotron" class="clearfix">
-    <div class="container">
+  <div class="tint"></div>
+  <div class="container">
 
-        <!-- #jumbotron-inside -->
-        <div id="jumbotron-inside" class="clearfix">
-            <div class="row">
-                <div class="col-md-12">
-                <?php print render($page['jumbotron']); ?>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                  <?php print render($page['preface_first']); ?>
-                </div>
-                <div class="col-md-6">
-                  <?php print render($page['preface_second']); ?>
-                </div>
-            </div>
-        </div>
-        <!-- EOF: #jumbotron-inside -->
-
-    </div>
+      <!-- #jumbotron-inside -->
+      <div id="jumbotron-inside" class="clearfix">
+          <div class="row">
+              <div class="col-md-12">
+              <?php print render($page['jumbotron']); ?>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                <?php print render($page['preface_first']); ?>
+              </div>
+              <div class="col-md-6">
+                <?php print render($page['preface_second']); ?>
+              </div>
+          </div>
+      </div>
+      <!-- EOF: #jumbotron-inside -->
+  </div>
 </div>
 <!-- EOF:#jumbotron -->
 <?php endif; ?>
@@ -183,7 +183,7 @@
   <?php endif; ?>
 </div><!-- /#page-wrapper -->
 
-<footer class="footer">
+<footer class="footer-wrapper">
   <div class="container">
     <!-- #footer-inside -->
     <div id="footer-inside" class="clearfix">

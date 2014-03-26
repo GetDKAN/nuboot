@@ -99,60 +99,60 @@ function nuboot_menu_local_task($variables) {
   $link = $variables['element']['#link'];
   $link_text = $link['title'];
   $icon_type = '';
+  if (isset($link['path'])) {
+    switch ($link['path']) {
+      case 'node/%/edit':
+        $icon_type = 'edit';
+        break;
 
-  switch ($link['path']) {
-    case 'node/%/edit':
-      $icon_type = 'edit';
-      break;
+      case 'node/%/view':
+        $icon_type = 'eye';
+        break;
 
-    case 'node/%/view':
-      $icon_type = 'eye';
-      break;
+      case 'node/%/resource':
+        $icon_type = 'plus';
+        break;
 
-    case 'node/%/resource':
-      $icon_type = 'plus';
-      break;
+      case 'node/%/datastore':
+        $icon_type = 'cogs';
+        break;
 
-    case 'node/%/datastore':
-      $icon_type = 'cogs';
-      break;
+      case 'node/%/datastore/import':
+        $icon_type = 'refresh';
+        break;
 
-    case 'node/%/datastore/import':
-      $icon_type = 'refresh';
-      break;
+      case 'node/%/datastore/drop':
+        $icon_type = 'trash-o';
+        break;
 
-    case 'node/%/datastore/drop':
-      $icon_type = 'trash-o';
-      break;
+      case 'node/%/datastore/unlock':
+        $icon_type = 'unlock';
+        break;
 
-    case 'node/%/datastore/unlock':
-      $icon_type = 'unlock';
-      break;
+      case 'node/%/download':
+        $icon_type = 'download';
+        break;
 
-    case 'node/%/download':
-      $icon_type = 'download';
-      break;
+      case 'node/%/dataset':
+        $icon_type = 'caret-left';
+        break;
 
-    case 'node/%/dataset':
-      $icon_type = 'caret-left';
-      break;
+      case 'node/%/api':
+        $icon_type = 'flask';
+        break;
 
-    case 'node/%/api':
-      $icon_type = 'flask';
-      break;
+      case 'node/%/group':
+        $icon_type = 'users';
+        break;
 
-    case 'node/%/group':
-      $icon_type = 'users';
-      break;
+      case 'node/%/members':
+        $icon_type = 'user';
+        break;
 
-    case 'node/%/members':
-      $icon_type = 'user';
-      break;
-
-    default:
-      $icon_type = '';
-      break;
-
+      default:
+        $icon_type = '';
+        break;
+    }
   }
   $icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
   $link_text = $icon . $link_text;

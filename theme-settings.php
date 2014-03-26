@@ -24,13 +24,13 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => 'Path to front page hero region background image',
     '#default_value' => $hero_path,
-    '#disabled' => TRUE,
+    //'#disabled' => TRUE,
   );
   // Upload field.
   $form['hero']['hero_upload'] = array(
     '#type' => 'file',
-    '#title' => 'Upload hero region background image',
-    '#description' => 'Upload a new image for the hero background.',
+    '#title' => 'Upload a photo for the hero region background image',
+    '#description' => 'Upload a new image for the hero region background.',
     '#upload_validators' => array(
       'file_validate_extensions' => array('png jpg jpeg'),
     ),
@@ -44,10 +44,14 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
  */
 function nuboot_settings_submit($form, &$form_state) {
   $settings = array();
+  // If the user entered a path relative to the system files directory for
+  // for the hero unit, store a public:// URI so the theme system can handle it.
+  if (!empty($values['hero_path'])) {
+    $values['hero_path'] = _system_theme_settings_validate_path($values['hero_path']);
+  }
   // Get the previous value.
   $previous = 'public://' . $form['hero']['hero_path']['#default_value'];
-  $file = file_save_upload('hero_upload');
-  if ($file) {
+  if ($file = file_save_upload('hero_upload')) {
     $parts = pathinfo($file->filename);
     $destination = 'public://' . $parts['basename'];
     $file->status = FILE_STATUS_PERMANENT;

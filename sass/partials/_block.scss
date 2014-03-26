@@ -281,6 +281,7 @@ h2.block-title {
 }
 
 #block-dkan-sitewide-demo-front-dkan-demo-front {
+  @include box-shadow(0 0 8px #333);
   background-color: rgba($brand-primary, 0.5);
   padding-top:15px;
   .media-overlay img {
