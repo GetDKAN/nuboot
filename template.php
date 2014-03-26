@@ -5,13 +5,6 @@
  */
 
 /**
- * Set default theme settings.
- */
-function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
-  $form['bootstrap']['bootstrap_breadcrumb_title']['#value'] = 0;
-}
-
-/**
  * Remove dkan button styles so we can use our own.
  */
 function nuboot_css_alter(&$css) {

@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Colorizer options.
+ */
 
 $info = array(
   // Available colors and color labels used in theme.

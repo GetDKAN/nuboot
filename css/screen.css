@@ -147,9 +147,9 @@ ul.resource-list li .btn { margin-top: 0; position: absolute; top: 0; right: 10p
 /* line 99, ../sass/partials/_node.scss */
 .field-group-table-description { color: #555555; display: block; padding: 8px 10px 8px 40px; position: relative; }
 /* line 104, ../sass/partials/_node.scss */
-.field-group-table-description .icon-info-sign:before { background: #999999; color: white; content: "\f129"; font-family: "FontAwesome"; font-size: 1.7em; height: 30px; left: 0; margin: 10px 15px 0 0; padding: 6px 11px; position: absolute; top: 0; width: 30px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; }
+.field-group-table-description .icon-info-sign:before { color: #999999; content: "\f05a"; font-family: "FontAwesome"; font-size: 2.5em; height: 30px; left: 0; margin: 10px 15px 0 0; padding: 6px 0; position: absolute; top: 0; width: 30px; }
 
-/* line 126, ../sass/partials/_node.scss */
+/* line 124, ../sass/partials/_node.scss */
 .horizontal-tabs ul.horizontal-tabs-list li a, .horizontal-tabs ul.horizontal-tabs-list li.selected a { display: block; font-size: 1.35em; padding: 0.5em 0.6em; }
 
 /* line 1, ../sass/partials/_block.scss */
@@ -384,10 +384,15 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 /* line 93, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #00436d; }
 
-/* line 114, ../sass/partials/_navigation.scss */
+/* line 115, ../sass/partials/_navigation.scss */
+.node-type-group .horizontal-tabs li.horizontal-tab-button-0 a { padding-left: 25px; position: relative; }
+/* line 118, ../sass/partials/_navigation.scss */
+.node-type-group .horizontal-tabs li.horizontal-tab-button-0 a:before { content: "\f080"; font-family: "FontAwesome"; position: absolute; top: 0; left: 0; }
+
+/* line 127, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 118, ../sass/partials/_navigation.scss */
+/* line 131, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
