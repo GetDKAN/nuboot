@@ -58,8 +58,13 @@
 </div><!-- EOF:#nav-wrapper -->
 
 <?php if ($is_front) : ?>
+  <?php 
+    // Get the file path to the hero image.
+    $uri = theme_get_setting('hero_path');
+    $path = file_create_url($uri);
+  ?>
 <!-- #jumbotron -->
-<div id="jumbotron" class="clearfix">
+<div id="jumbotron" class="clearfix" <?php print 'style="background-image:url(' . $path . ');"' ?>>
   <div class="tint"></div>
   <div class="container">
 

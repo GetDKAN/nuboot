@@ -11,7 +11,7 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
   // Hero fieldset.
   $form['hero'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Hero'),
+    '#title' => t('Hero Unit'),
     '#group' => 'general',
   );
   // Default path for image.
@@ -22,14 +22,14 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
   // Helpful text showing the file name, non-editable.
   $form['hero']['hero_path'] = array(
     '#type' => 'textfield',
-    '#title' => 'Path to front page hero region background image',
+    '#title' => 'Path to front page hero unit background image',
     '#default_value' => $hero_path,
-    //'#disabled' => TRUE,
+    '#disabled' => TRUE,
   );
   // Upload field.
   $form['hero']['hero_upload'] = array(
     '#type' => 'file',
-    '#title' => 'Upload a photo for the hero region background image',
+    '#title' => 'Upload a photo for the hero unit background image',
     '#description' => 'Upload a new image for the hero region background.',
     '#upload_validators' => array(
       'file_validate_extensions' => array('png jpg jpeg'),

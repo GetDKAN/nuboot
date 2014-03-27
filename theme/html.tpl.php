@@ -3,9 +3,6 @@
  * @file
  * Nuboot's html template.
  */
-$uri = theme_get_setting('hero_path');
-$path = file_create_url($uri);
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
@@ -16,12 +13,11 @@ $path = file_create_url($uri);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print "<style> #jumbotron { background-image: url(" . $path . "); } </style>"; ?>
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/css/ie.css" media="screen" rel="stylesheet" type="text/css" />
   <![endif]-->
   <?php print $scripts; ?>
 </head>
