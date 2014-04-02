@@ -51,7 +51,7 @@ settings[toggle_comment_user_verification] = 1
 settings[toggle_favicon] = 1
 settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
-settings[hero_path] = 'images/hero.jpg'
+settings[hero_path] = 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg'
 settings[brand_primary] = '#ff0000'
 
 ; Buttons
