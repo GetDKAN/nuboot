@@ -16,6 +16,12 @@ h2.block-title {
 #block-dkan-sitewide-demo-front-dkan-demo-front {
   background-color: @tint;
 }
+#block-dkan-sitewide-demo-front-dkan-add-front a:hover,
+#block-dkan-sitewide-demo-front-dkan-demo-front a:hover {
+	background-color: @linkactive;
+	color:#ffffff;
+	text-decoration: none;
+}
 
 .form-actions {
   background-color: @bg;
@@ -84,10 +90,13 @@ a:active {
 	color:@top;
 }
 
-.footer-wrapper {
+.region-footer {
 	background-color: @footer;
 	color: @sidebar;
 }
-.footer-wrapper a {
+.region-footer .block {
+	color: @sidebar;
+}
+.region-footer a {
 	color: @sidebarborders;
 }

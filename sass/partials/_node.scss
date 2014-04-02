@@ -3,68 +3,62 @@
 }
 .field-type-taxonomy-term-reference .field-item {
 	a {
-	    padding:2px 10px 3px;
-	    font-size:12px;
-	    @include border-radius(0 5px 5px 0);
-	    @include background-image(linear-gradient(#fbfdfc, #f5f5f5));
-	    //float:left;
-	    margin:5px 5px 5px 20px;
-	    position:relative;
-	    color:$gray-dark;
-	    border:1px solid $smoke;
-	    border-left:0;
-	    z-index:2;
-	    &:after {
-	        content:"";
-	        width:18px;
-	        height:18px;
-	        @include background-image(linear-gradient(left top , #fbfdfc 0%,#f5f5f5 100%));
-	        @include rotate(45deg);
-	        @include border-radius(2px);
-	        display:block;
-	        position:absolute;
-	        top:2px;
-	        left:-9px;
-	        z-index:-1;
-	        border:1px solid $smoke;
-	        border-top:none;
-	        border-right:none;
-	    }
-	    &:before{
-			content:"";
-			width:2px;
-			height:2px;
-			background:$smoke;
-			position:absolute;
-			top:11px;
-			left:-5px;
-			@include border-radius(0);
-	    }
+    @include border-radius(0 5px 5px 0);
+    @include background-image(linear-gradient(#fbfdfc, #f5f5f5));
+    border:1px solid $smoke;
+    border-left:0;
+    color:$gray-dark;
+    font-size:12px;
+    line-height: 27px;
+    margin:5px 5px 5px 20px;
+    padding:3px 10px 4px;
+    position:relative;
+    z-index:2;
+    &:after {
+      content:"";
+      width:18px;
+      height:18px;
+      @include background-image(linear-gradient(left top , #fbfdfc 0%,#f5f5f5 100%));
+      @include rotate(45deg);
+      @include border-radius(2px);
+      display:block;
+      position:absolute;
+      top:2px;
+      left:-9px;
+      z-index:-1;
+      border:1px solid $smoke;
+      border-top:none;
+      border-right:none;
+    }
+    &:before{
+		content:"";
+		width:2px;
+		height:2px;
+		background:$smoke;
+		position:absolute;
+		top:11px;
+		left:-5px;
+		@include border-radius(0);
+    }
 	}
 	a:hover:after,
 	a:hover {
-    	background: $gray-lighter;
-    	color:#000;
-    	text-decoration:none;
+  	background: $gray-lighter;
+  	color:#000;
+  	text-decoration:none;
 	}
 }
-ul.resource-list {
-  margin:1em 0;
+//mobile - override dkan css
+#data-and-resources ul.resource-list {
   li {
-    margin:.5em 0;
-    min-height:40px;
-    padding:0 125px 0 40px;
-    position:relative;
-    .btn {
-      margin-top:0;
-      position:absolute;
-      top:0;
-      right:10px;
-    }
+    padding:0 0 0 40px;
   }
-}
-.resource-list .btn {
-  margin-right:0;
+  a.btn {
+    margin:0 0 25px;
+    position:relative;
+    top:auto;
+    right:auto;
+  }
 }
 
 .node-dataset label {
@@ -75,16 +69,17 @@ ul.resource-list {
 }
 
 .data-and-resources .label {
-  display: inline;
-  padding: 1px 4px 2px;
   @include border-radius(3px);
+  color: white;
+  display: inline;
   font-size: 10.998px;
   font-weight: bold;
   line-height: 14px;
-  color: white;
+  padding: 1px 4px 2px;
+  margin: 0 0 0 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: baseline;
   white-space: nowrap;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .field-name-body {
@@ -114,6 +109,10 @@ ul.resource-list {
     top:0;
     width:30px;
   }
+}
+
+.group-tab-about .field-name-field-image {
+  margin-bottom: 1em;
 }
 
 .node-dataset-form,

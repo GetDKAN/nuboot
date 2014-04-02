@@ -18,6 +18,7 @@
 	}
 	.views-row {
 		border-bottom:1px dotted $smoke;
+		padding:15px 0;
 	}
 }
 
@@ -35,9 +36,7 @@
     padding: 0;
     .span6,
     .col-lg-6 {
-		float:left;
-		margin:0;
-		width:50%;
+		@include make-sm-column(6);
 		span {
 			@include popblock;
 			display:block;
@@ -67,8 +66,9 @@
 
 .view-groups-page {
 	.views-column {
-		float:left;
-		margin:0;
-		width:50%;
+		@include make-sm-column(6);
 	}
+}
+.view-dataset .views-row {
+	padding:15px 0;
 }
