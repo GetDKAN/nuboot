@@ -10,14 +10,15 @@ base theme = bootstrap
 
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Header'
-;regions[jumbotron]      = 'Jumbotron'
+regions[jumbotron]      = 'Jumbotron Hero'
+regions[preface] 		= 'Preface'
 regions[highlighted]    = 'Highlighted'
 regions[preface_first] 	= 'Preface First'
 regions[preface_second] = 'Preface Second'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary Sidebar'
-regions[sidebar_second] = 'Secondary Sidebar'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
 regions[postscript_first] 	= 'Postscript First'
 regions[postscript_second] 	= 'Postscript Second'
 regions[bottom_content] = Bottom Content
@@ -39,7 +40,7 @@ stylesheets[all][] = css/responsive.css
 ;stylesheets[all][] = css/font-awesome.min.css
 
 ;;;;;;;;;;;;;;;;;;;;;
-;; Theme Settings
+;; Default Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
 settings[toggle_logo] = 1
@@ -51,28 +52,8 @@ settings[toggle_comment_user_verification] = 1
 settings[toggle_favicon] = 1
 settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
-settings[hero_path] = 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg'
 settings[brand_primary] = '#ff0000'
-
-; Buttons
-; --------------
-settings[bootstrap_button_size] = ''
-settings[bootstrap_button_colorize] = 1
-settings[bootstrap_button_iconize] = 1
-
-; Grid
-; --------------
-settings[bootstrap_grid_columns] = 12
-settings[bootstrap_grid_class_prefix] = 'col-sm'
-settings[bootstrap_region_grid-sidebar_first] = 3
-settings[bootstrap_region_grid-sidebar_second] = 3
-settings[bootstrap_region_grid_dynamic-content][sidebar_first] = 'sidebar_first'
-settings[bootstrap_region_grid_dynamic-content][sidebar_second] = 'sidebar_second'
-
-; Images
-; --------------
-settings[bootstrap_image_shape] = ''
-settings[bootstrap_image_responsive] = 1
+settings[hero_path] = 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg'
 
 ; Breadcrumbs
 ; --------------
@@ -96,47 +77,43 @@ settings[bootstrap_region_well-sidebar_first] = ''
 settings[bootstrap_region_well-sidebar_second] = ''
 settings[bootstrap_region_well-footer] = ''
 
-; Anchors
-; --------------
-settings[bootstrap_anchors_fix] = 1
-settings[bootstrap_anchors_smooth_scrolling] = 1
+; For information on choosing the desired method, please read the Drupal
+; Bootstrap sub-theme "how-to" documentation:
+; https://drupal.org/node/1978010
 
-; Popovers
-; --------------
-settings[bootstrap_popover_enabled] = 1
-settings[bootstrap_popover_animation] = 1
-settings[bootstrap_popover_html] = 0
-settings[bootstrap_popover_placement] = 'right'
-settings[bootstrap_popover_selector] = ''
-settings[bootstrap_popover_trigger]['hover'] = 0
-settings[bootstrap_popover_trigger]['focus'] = 0
-settings[bootstrap_popover_trigger]['click'] = 'click'
-settings[bootstrap_popover_trigger_autoclose] = 1
-settings[bootstrap_popover_title] = ''
-settings[bootstrap_popover_content] = ''
-settings[bootstrap_popover_delay] = 0
-settings[bootstrap_popover_container] = 'body'
+; ;----------------------------------
+; ; METHOD 1: Bootstrap Source Files
+; ;----------------------------------
+;
+; ;;;;;;;;;;;;;;;;;;;;;
+; ;; Scripts
+; ;;;;;;;;;;;;;;;;;;;;;
+;
+; scripts[] = 'bootstrap/js/affix.js'
+; scripts[] = 'bootstrap/js/alert.js'
+; scripts[] = 'bootstrap/js/button.js'
+; scripts[] = 'bootstrap/js/carousel.js'
+; scripts[] = 'bootstrap/js/collapse.js'
+; scripts[] = 'bootstrap/js/dropdown.js'
+; scripts[] = 'bootstrap/js/modal.js'
+; scripts[] = 'bootstrap/js/tooltip.js'
+; scripts[] = 'bootstrap/js/popover.js'
+; scripts[] = 'bootstrap/js/scrollspy.js'
+; scripts[] = 'bootstrap/js/tab.js'
+; scripts[] = 'bootstrap/js/transition.js'
+scripts[] = js/sitewide.js
 
-; Tooltips
-; --------------
-settings[bootstrap_tooltip_enabled] = 1
-settings[bootstrap_tooltip_descriptions] = 1
-settings[bootstrap_tooltip_descriptions_length] = 200
-settings[bootstrap_tooltip_animation] = 1
-settings[bootstrap_tooltip_html] = 0
-settings[bootstrap_tooltip_placement] = 'auto left'
-settings[bootstrap_tooltip_selector] = ''
-settings[bootstrap_tooltip_trigger]['hover'] = 'hover'
-settings[bootstrap_tooltip_trigger]['focus'] = 'focus'
-settings[bootstrap_tooltip_trigger]['click'] = 0
-settings[bootstrap_tooltip_delay] = 0
-settings[bootstrap_tooltip_container] = 'body'
+; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+settings[cdn_bootstrap] = 0
 
-; Advanced
-; --------------
-settings[bootstrap_cdn] = '3.1.1'
-settings[bootstrap_bootswatch] = ''
+
+; ;-------------------------
+; ; METHOD 2: Bootstrap CDN
+; ;-------------------------
+;
+; Method 2 uses BootstrapCDN, the only thing you might need to provide here
+; is overrides to Bootstrap theme settings. Copy them here from the base theme
+; to override.
 
 ; Panels Custom Layouts
-; --------------
 ; plugins[panels][layouts] = layouts

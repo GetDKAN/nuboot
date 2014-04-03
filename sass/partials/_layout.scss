@@ -21,7 +21,7 @@ body {
 .page-header {
     border-bottom: none;
 }
-.region-jumbotron {
+#jumbotron {
 	// background:
 	//     //color
 	//     linear-gradient(
@@ -44,9 +44,8 @@ body {
 	h2.block-title {
 		display:none;
 	}
-	.jumbotron-inside {
-		padding-top:40px;
-		padding-bottom:40px;
+	#jumbotron-inside {
+		padding: 40px 0;
 	}
 	.container {
 		positoin: relative;
@@ -60,17 +59,9 @@ body {
 		@include text-shadow(rgba(black, 0.8) 0 0 3px, rgba($brand-primary, 0.6) 1px 1px 0);
 	}
 	a {
-		text-decoration: underline;
+		color:$white;
 	}
 }
-
-.region-preface-first {
-	@include make-sm-column(6);
-}
-.region-preface-second {
-	@include make-sm-column(6);
-}
-
 #top-content {
 	margin:20px;
 	.block {
@@ -94,9 +85,6 @@ body {
 	    overflow: hidden;
 	}
 }
-.region-footer {
-    border-top: medium none;
-    margin-top: 0;
-    padding-bottom: 36px;
-    padding-top: 35px;
+.footer-wrapper {
+	padding:20px;
 }
