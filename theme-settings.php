@@ -19,6 +19,7 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
   if (file_uri_scheme($hero_path) == 'public') {
     $hero_path = file_uri_target($hero_path);
   }
+
   // Helpful text showing the file name, non-editable.
   $form['hero']['hero_path'] = array(
     '#type' => 'textfield',
@@ -50,7 +51,13 @@ function nuboot_settings_submit($form, &$form_state) {
     $values['hero_path'] = _system_theme_settings_validate_path($values['hero_path']);
   }
   // Get the previous value.
-  $previous = 'public://' . $form['hero']['hero_path']['#default_value'];
+  $previous = $form['hero']['hero_path']['#default_value'];
+  if ($previous !== 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg') {
+    $previous = 'public://' . $previous;
+  }
+  else {
+    $previous = FALSE;
+  }
   if ($file = file_save_upload('hero_upload')) {
     $parts = pathinfo($file->filename);
     $destination = 'public://' . $parts['basename'];
@@ -58,7 +65,7 @@ function nuboot_settings_submit($form, &$form_state) {
     if (file_copy($file, $destination, FILE_EXISTS_REPLACE)) {
       $_POST['hero_path'] = $form_state['values']['hero_path'] = $destination;
       // If new file has a different name than the old one, delete the old.
-      if ($destination != $previous) {
+      if ($previous && $destination != $previous) {
         drupal_unlink($previous);
       }
     }
