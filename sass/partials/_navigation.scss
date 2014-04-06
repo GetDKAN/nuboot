@@ -102,6 +102,10 @@
 		}
 	}
 }
+.btn-primary {
+  background:$brand-primary;
+  border-color:$brand-primary;
+}
 
 .data-explorer .btn {
 	border:1px solid $smoke;

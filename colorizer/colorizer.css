@@ -67,16 +67,14 @@ a:active {
 }
 
 .view-group-block .views-field-nid a,
-.resource-list .btn-primary,
-.view-og-count .btn-primary {
+.btn-primary {
 	background-color: @top;
 	border:1px solid @top;
 	color:#ffffff;
 }
 
 .view-group-block .views-field-nid a:hover,
-.resource-list  .btn-primary:hover,
-.view-og-count .btn-primary:hover {
+.btn-primary:hover {
 	background:@bottom;
 	border:1px solid @bottom;
 	color:#ffffff;
