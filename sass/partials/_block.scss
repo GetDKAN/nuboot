@@ -11,25 +11,24 @@
   display:none;
 }
 h2.block-title {
-  background-color: hero;
   @include background-image(linear-gradient(#F5F5F5, #F0F0F0));
   @include border-radius(3px 3px 0 0);
-    border-bottom: 1px solid $border;
-    color: #0062A0;
-    font-size: 14px;
-    line-height: 1.3;
-    padding: 7px 15px;
+  border-bottom: 1px solid $border;
+  color: $brand-primary;
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 7px 15px;
 }
 .region-sidebar-first,
 .region-sidebar-second {
   .block {
     background-color: #FFFFFF;
-      border-radius: 3px;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
-      .block-content {
-        padding:20px 15px;
-      }
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    .block-content {
+      padding:20px 15px;
+    }
   }
 }
 
@@ -89,9 +88,9 @@ h2.block-title {
 .block-dkan-sitewide-dkan-sitewide-search-bar {
   form {
     float: right;
-      margin: 0;
-      position: relative;
-      width: 200px;
+    margin: 0;
+    position: relative;
+    width: 200px;
   }
 }
 #nav-wrapper #block-dkan-sitewide-dkan-sitewide-search-bar {
