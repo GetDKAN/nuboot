@@ -34,10 +34,6 @@
               <?php print render($primary_nav); ?>
             <?php endif; ?>
 
-            <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
-            <?php endif; ?>
-
             <!-- views exposed search -->
             <?php
             $block = block_load('dkan_sitewide', 'dkan_sitewide_search_bar');
@@ -46,10 +42,14 @@
               print render($search);
             endif;
             ?>
-            <!-- EOF:views exposed search -->
-            <?php if (!empty($page['navigation'])): ?>
-              <?php print render($page['navigation']); ?>
-            <?php endif; ?>
+            <!-- dkan user menu -->
+            <?php
+            $block = block_load('dkan_sitewide', 'dkan_sitewide_user_menu');
+            if($block):
+              $search = _block_get_renderable_array(_block_render_blocks(array($block)));
+              print render($search);
+            endif;
+            ?>
           </nav>
         </div>
       <?php endif; ?>
@@ -63,31 +63,25 @@
     $uri = theme_get_setting('hero_path');
     $path = file_create_url($uri);
   ?>
-<!-- #jumbotron -->
-<div id="jumbotron" class="clearfix" <?php print 'style="background-image:url(' . $path . ');"' ?>>
-  <div class="tint"></div>
-  <div class="container">
-
-      <!-- #jumbotron-inside -->
-      <div id="jumbotron-inside" class="clearfix">
-          <div class="row">
-              <div class="col-md-12">
-              <?php print render($page['jumbotron']); ?>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6">
-                <?php print render($page['preface_first']); ?>
-              </div>
-              <div class="col-md-6">
-                <?php print render($page['preface_second']); ?>
-              </div>
-          </div>
-      </div>
-      <!-- EOF: #jumbotron-inside -->
+  <!-- #featured -->
+  <div id="featured" class="clearfix" <?php print 'style="background-image:url(' . $path . ');"' ?>>
+    <div class="tint"></div>
+    <div class="container">
+        <!-- #featured-inside -->
+        <div class="featured-inside" class="clearfix">
+            <div class="row">
+                <div class="col-md-6">
+                  <?php print render($page['preface_first']); ?>
+                </div>
+                <div class="col-md-6">
+                  <?php print render($page['preface_second']); ?>
+                </div>
+            </div>
+        </div>
+        <!-- EOF: #featured-inside -->
+    </div>
   </div>
-</div>
-<!-- EOF:#jumbotron -->
+  <!-- EOF:#featured -->
 <?php endif; ?>
 
 <?php if ($page['highlighted']):?>

@@ -18,6 +18,7 @@
 	}
 	.views-row {
 		border-bottom:1px dotted $smoke;
+		padding:1em 0;
 	}
 }
 
@@ -64,11 +65,25 @@
 		}
 	}
 }
-
+.view-dataset {
+	.views-row {
+		margin:1.5em 0;
+	}
+}
 .view-groups-page {
 	.views-column {
 		float:left;
 		margin:0;
 		width:50%;
 	}
+}
+.view-group-block .views-field-title {
+	font-size:1.2em;
+	font-weight:bold;
+}
+.btn-membership a {
+    display: block;
+    margin:1em 0 0 0;
+    padding:5px 8px;
+    text-align: center;
 }

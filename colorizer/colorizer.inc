@@ -25,21 +25,21 @@ $info = array(
   'schemes' => array(
     'default' => array(
       'title' => t('DKAN (default)'),
-      'base' => '#0062a0',
+      'base' => '#005772',
       'colors' => array(
-        'top' => '#0062a0',
+        'top' => '#005772',
         'bottom' => '#d3ae7e',
         'toolbarbtn' => '#ffffff',
         'toolbarborder' => '#cccccc',
         'bg' => '#ffffff',
         'sidebar' => '#3b3b3b',
-        'sidebarborders' => '#0062a0',
+        'sidebarborders' => '#005772',
         'footer' => '#ffffff',
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
-        'link' => '#0071B3',
-        'linkactive' => '#23aeff',
-        'linkhover' => '#018fe2',
+        'link' => '#005772',
+        'linkactive' => '#003140',
+        'linkhover' => '#00809E',
       ),
     ),
     'bluelagoon' => array(

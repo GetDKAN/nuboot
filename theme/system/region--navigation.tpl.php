@@ -25,7 +25,6 @@
  * @ingroup themeable
  */
 ?>
-<?php if ($content): ?>
 <div id="nav-wrapper">
   <header<?php print $attributes; ?>>
     <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
@@ -53,4 +52,3 @@
     <?php if ($content_attributes): ?></div><?php endif; ?>
   </header>
 </div>
-<?php endif; ?>

@@ -66,12 +66,15 @@ a:active {
 	color:#ffffff;
 }
 
+.btn-membership a,
 .resource-list .btn-primary,
 .view-og-count .btn-primary {
 	background-color: @top;
 	border:1px solid @top;
 	color:#ffffff;
 }
+
+.btn-membership a:hover,
 .resource-list  .btn-primary:hover,
 .view-og-count .btn-primary:hover {
 	background:@bottom;
