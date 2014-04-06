@@ -3,7 +3,8 @@ h1 {
     line-height: 36px;
     margin-bottom: 15px;
 }
-h1,h2,h3,h4 {
+h1,h2,h3,h4,
+h2.block-title {
     color:$brand-primary;
     font-weight:bold;
 }
@@ -75,4 +76,27 @@ table.table {
     tr:hover {
         background:#FFFEEE;
     }
+}
+
+dl {
+  margin:0;
+  padding:0;
+  clear:both;
+  overflow:hidden;
+}
+dt {
+  margin:0;
+  padding:8px 5px;
+  float:left;
+  width:28%;
+}
+dd {
+  margin:0;
+  padding:8px 5px;
+  float:right;
+  width:72%;
+}
+dt:nth-of-type(2n),
+dd:nth-of-type(2n) {
+  background:$shade;
 }
