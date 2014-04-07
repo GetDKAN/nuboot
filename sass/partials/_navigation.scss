@@ -113,8 +113,13 @@
 .btn-primary {
   background:$brand-primary;
   border-color:$brand-primary;
+  :hover {
+  	background:$brand-secondary;
+  }
 }
-
+ul.action-links {
+	margin:1em 0;
+}
 .data-explorer .btn {
 	border:1px solid $smoke;
 }

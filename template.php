@@ -149,6 +149,10 @@ function nuboot_menu_local_task($variables) {
         $icon_type = 'user';
         break;
 
+      case 'node/%/revisions':
+        $icon_type = 'folder-open-o';
+        break;
+
       default:
         $icon_type = '';
         break;

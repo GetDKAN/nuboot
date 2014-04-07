@@ -1,13 +1,13 @@
 /**
  * @file
- * JS for numega site.
+ * JS for DKAN site.
  */
 (function ($) {
 
   /**
    * Shows and hides a description for Drupal form elements.
    */
-  $.fn.numegaFormsHide = function () {
+  $.fn.dkanFormsHide = function () {
     this.each(function () {
       $(this).addClass('compact-form-wrapper');
       var desc = $(this).find('.description').addClass('compact-form-description');
@@ -41,7 +41,7 @@
   /**
    * Shows and hides a description for Autocomplete Deluxe form elements.
    */
-  $.fn.numegaFormsAutoDeluxeHide = function () {
+  $.fn.dkanFormsAutoDeluxeHide = function () {
     this.each(function () {
       $(this).addClass('compact-form-wrapper');
       var desc = $(this).find('.description').addClass('compact-form-description');
@@ -61,13 +61,13 @@
     });
   }
 
-  Drupal.behaviors.numegaSite = {
+  Drupal.behaviors.dkanSite = {
     attach: function (context, settings) {
       // Autohide selected elements.
-      var elements = "#views-exposed-form-dataset-page,#block-numega-sitewide-numega-sitewide-search-bar,#views-exposed-form-groups-search-entity-view-1,#views-exposed-form-user-profile-search-entity-view-1";
-      $(elements, context).numegaFormsHide();
+      var elements = "#views-exposed-form-dataset-page,#block-dkan-sitewide-dkan-sitewide-search-bar,#views-exposed-form-groups-search-entity-view-1,#views-exposed-form-user-profile-search-entity-view-1";
+      $(elements, context).dkanFormsHide();
       var autoDeluxeElements = ".field-name-field-tags";
-      $(autoDeluxeElements, context).numegaFormsAutoDeluxeHide();
+      $(autoDeluxeElements, context).dkanFormsAutoDeluxeHide();
 
     }
   }

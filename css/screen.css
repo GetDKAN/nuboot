@@ -437,11 +437,16 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 
 /* line 113, ../sass/partials/_navigation.scss */
 .btn-primary { background: #005772; border-color: #005772; }
+/* line 116, ../sass/partials/_navigation.scss */
+.btn-primary :hover { background: #d3ae7e; }
 
-/* line 118, ../sass/partials/_navigation.scss */
+/* line 120, ../sass/partials/_navigation.scss */
+ul.action-links { margin: 1em 0; }
+
+/* line 123, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 122, ../sass/partials/_navigation.scss */
+/* line 127, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */

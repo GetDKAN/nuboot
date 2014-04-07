@@ -33,9 +33,8 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 ;stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/screen.css
-stylesheets[all][] = css/responsive.css
-;stylesheets[all][] = css/font-awesome.min.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Default Theme Settings
@@ -88,6 +87,7 @@ settings[bootstrap_region_well-footer] = ''
 ; ;;;;;;;;;;;;;;;;;;;;;
 ;
 ;scripts[] = 'bootstrap/js/bootstrap.min.js'
+scripts[] = js/sitewide.js
 scripts[] = js/sitewide.js
 
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
