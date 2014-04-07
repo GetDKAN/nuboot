@@ -347,7 +347,7 @@ h2.block-title { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, co
 /* line 334, ../sass/partials/_block.scss */
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay img { margin-top: 10px; }
 /* line 337, ../sass/partials/_block.scss */
-#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0 15px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
+#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
 
 /* line 1, ../sass/partials/_form.scss */
 #field-tags-wrapper #field-tags-wrapper { display: none; }
@@ -399,54 +399,52 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 #nav-wrapper .navbar-default .navbar-brand { color: #005772; font-size: 26px; margin: 0; padding: 18px 15px 0 0; }
 /* line 35, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .logo { padding: 10px 10px 0 0; }
-/* line 37, ../sass/partials/_navigation.scss */
-#nav-wrapper .navbar-default .logo img { height: 60px; }
-/* line 41, ../sass/partials/_navigation.scss */
+/* line 38, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .lead { font-size: 21px; margin: 0; position: absolute; top: 42px; left: 50px; whitespace: no-wrap; }
-/* line 49, ../sass/partials/_navigation.scss */
+/* line 46, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav { margin: 0 14px; }
-/* line 51, ../sass/partials/_navigation.scss */
+/* line 48, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav li > a { color: #005772; font-size: 12px; padding: 15px 6px; }
-/* line 56, ../sass/partials/_navigation.scss */
+/* line 53, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav li > a:hover, #nav-wrapper .navbar-default .navbar-nav li > a:focus { text-decoration: underline; }
-/* line 60, ../sass/partials/_navigation.scss */
+/* line 57, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav .active a { background: transparent; }
-/* line 64, ../sass/partials/_navigation.scss */
+/* line 61, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav.secondary li { float: none; }
-/* line 66, ../sass/partials/_navigation.scss */
+/* line 63, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav.secondary li a { font-size: .7em; line-height: 1.5em; padding: 4px; }
 
-/* line 75, ../sass/partials/_navigation.scss */
+/* line 72, ../sass/partials/_navigation.scss */
 .tabs--primary { margin: 10px 0; }
-/* line 77, ../sass/partials/_navigation.scss */
+/* line 74, ../sass/partials/_navigation.scss */
 .tabs--primary li { margin: 1px; }
-/* line 80, ../sass/partials/_navigation.scss */
+/* line 77, ../sass/partials/_navigation.scss */
 .tabs--primary li a { background: white; border: 1px solid #cccccc; padding: 5px 15px; }
-/* line 84, ../sass/partials/_navigation.scss */
+/* line 81, ../sass/partials/_navigation.scss */
 .tabs--primary li a:hover { border: 1px solid #d3ae7e; background: #d3ae7e; color: #005772; }
-/* line 89, ../sass/partials/_navigation.scss */
+/* line 86, ../sass/partials/_navigation.scss */
 .tabs--primary li a.active { border: 1px solid #005772; background: #005772; color: white; }
 
-/* line 98, ../sass/partials/_navigation.scss */
+/* line 95, ../sass/partials/_navigation.scss */
 .nav-tabs li a { color: #005772; }
-/* line 100, ../sass/partials/_navigation.scss */
+/* line 97, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #00303f; }
 
-/* line 108, ../sass/partials/_navigation.scss */
+/* line 105, ../sass/partials/_navigation.scss */
 .nav-pills li a.active, .nav-pills li.active a:hover, .nav-pills li.active a:focus, .tabs--primary li a.active { border: 1px solid #005772; background: #005772; color: #ffffff; }
 
-/* line 113, ../sass/partials/_navigation.scss */
+/* line 110, ../sass/partials/_navigation.scss */
 .btn-primary { background: #005772; border-color: #005772; }
-/* line 116, ../sass/partials/_navigation.scss */
+/* line 113, ../sass/partials/_navigation.scss */
 .btn-primary :hover { background: #d3ae7e; }
 
-/* line 120, ../sass/partials/_navigation.scss */
+/* line 117, ../sass/partials/_navigation.scss */
 ul.action-links { margin: 1em 0; }
 
-/* line 123, ../sass/partials/_navigation.scss */
+/* line 120, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 127, ../sass/partials/_navigation.scss */
+/* line 124, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
