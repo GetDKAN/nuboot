@@ -102,6 +102,14 @@
 		}
 	}
 }
+.nav-pills li a.active,
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus,
+.tabs--primary li a.active {
+  border:1px solid $brand-primary;
+  background: $brand-primary;
+  color:#ffffff;
+}
 .btn-primary {
   background:$brand-primary;
   border-color:$brand-primary;
