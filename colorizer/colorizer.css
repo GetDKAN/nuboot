@@ -12,7 +12,7 @@ h2.block-title {
 	color: @top;
 }
 
-.tint,
+#featured .tint,
 #block-dkan-sitewide-demo-front-dkan-demo-front {
   background-color: @tint;
 }
