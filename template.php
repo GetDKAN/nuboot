@@ -153,6 +153,10 @@ function nuboot_menu_local_task($variables) {
         $icon_type = 'folder-open-o';
         break;
 
+      case 'node/%/datastore/delete-items':
+        $icon_type = 'eraser';
+        break;
+
       default:
         $icon_type = '';
         break;

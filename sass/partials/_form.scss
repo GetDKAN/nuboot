@@ -54,3 +54,7 @@ a.tabledrag-handle .handle {
 	@include border-radius(0 4px 4px 0);
 	border-left:none;
 }
+
+.header .recline-pager .pagination input {
+  line-height: 1em;
+}
