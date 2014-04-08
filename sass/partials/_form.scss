@@ -13,7 +13,7 @@ select,
 }
 .form-type-managed-file.form-group button.btn {
   @include border-radius(0 4px 4px 0);
-  margin-left:-1px;
+  vertical-align: top;
 }
 
 .form-managed-file.input-group {

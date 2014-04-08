@@ -49,9 +49,13 @@
 	}
 }
 
-//mobile - override dkan css
-ul.resource-list a.label {
-  margin-left:3px;
+.form-group ul.resource-list {
+  li {
+    margin:4px 0;
+  }
+  a.label {
+    margin-left:3px;
+  }
 }
 #data-and-resources ul.resource-list {
   li {
@@ -115,9 +119,13 @@ ul.resource-list a.label {
   }
 }
 
-.node-dataset-form,
-.node-resource-form {
-  //@include popblock;
+.node-type-dataset,
+.node-type-resource,
+.page-node-add-dataset,
+.page-node-add-resource {
+   .region-content .block {
+      @include popblock;
+   }
 }
 .horizontal-tabs ul.horizontal-tabs-list li a, 
 .horizontal-tabs ul.horizontal-tabs-list li.selected a {

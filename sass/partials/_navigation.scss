@@ -110,9 +110,13 @@
 .btn-primary {
   background:$brand-primary;
   border-color:$brand-primary;
-  :hover {
-  	background:$brand-secondary;
-  }
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active {
+	background:$brand-secondary;
+	border-color:$brand-secondary;
 }
 ul.action-links {
 	margin:1em 0;

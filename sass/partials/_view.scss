@@ -10,16 +10,14 @@
 		}
 	}
 }
-
-.view-groups-search {
-	h2 {
-		font-weight:bold;
-		margin:1em 0;
-	}
-	.views-row {
-		border-bottom:1px dotted $smoke;
-		padding:1em 0;
-	}
+.view-content h2 {
+  font-size: 1.25em;
+  font-weight:bold;
+  margin:.5em 0 .25em;
+}
+.view-groups-search .views-row {
+	border-bottom:1px dotted $smoke;
+	padding:1em 0;
 }
 
 .views-field-field-image img {
