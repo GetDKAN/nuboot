@@ -2,7 +2,6 @@
 /**
  * @file
  * region--preface-first.tpl.php
- *
  */
 ?>
 <?php if ($content): ?>

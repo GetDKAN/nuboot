@@ -61,12 +61,11 @@
   <?php 
     // Get the file path to the hero image.
     $uri = theme_get_setting('hero_path');
-    if(!empty($uri)) {
+    if(!empty($uri)):
       $uri = $uri;
-    }
-    else {
+    else :
       $uri = 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg';
-    }
+    endif;
     $path = file_create_url($uri);
   ?>
   <!-- #featured -->

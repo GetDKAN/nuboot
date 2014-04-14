@@ -1,4 +1,7 @@
 @media(min-width:768px){
+  .container > .navbar-header {
+    margin-left:0;
+  }
   #nav-wrapper .navbar-default .logo {
     padding:10px 10px 0 0;
   }
