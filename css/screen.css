@@ -386,7 +386,7 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 #edit-field-link-remote-file-und-0-filefield-remotefile-select--2 { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border-left: none; }
 
 /* line 58, ../sass/partials/_form.scss */
-.header .recline-pager .pagination input { line-height: 1em; }
+.header .recline-pager .pagination input { line-height: 1em; height: auto; width: 40px; }
 
 /* line 1, ../sass/partials/_navigation.scss */
 .container > .navbar-header, .container > .navbar-collapse { margin-left: 10px; margin-right: 10px; }
