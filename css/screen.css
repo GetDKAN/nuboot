@@ -429,7 +429,7 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 /* line 77, ../sass/partials/_navigation.scss */
 .tabs--primary li a { background: white; border: 1px solid #cccccc; padding: 5px 15px; }
 /* line 81, ../sass/partials/_navigation.scss */
-.tabs--primary li a:hover { border: 1px solid #d3ae7e; background: #d3ae7e; color: #0a77bd; }
+.tabs--primary li a:hover { border: 1px solid #d3ae7e; background: #d3ae7e; color: white; }
 /* line 86, ../sass/partials/_navigation.scss */
 .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: white; }
 
