@@ -1,5 +1,5 @@
 .region-content .block {
-  @include popblock;
+  //@include popblock;
 }
 #block-views-front-page-group-grid-block {
   @include box-shadow(none);
@@ -312,7 +312,7 @@ h2.block-title {
   }
 }
 
-#block-dkan-forms-dkan-forms-dataset-help h2.block-title::before{
+#block-dkan-forms-dkan-forms-dataset-help h2.block-title:before{
   content: "\f05a";
   font-family: $icon-fa;
   font-weight: normal;
@@ -327,7 +327,7 @@ h2.block-title {
 }
 
 #block-dkan-sitewide-demo-front-dkan-demo-front {
-  @include box-shadow(0 0 8px #333);
+  @include box-shadow(0 0 8px rgba(0, 0, 0, 0.3));
   background-color: rgba($brand-primary, 0.5);
   padding-top:15px;
   .media-overlay img {

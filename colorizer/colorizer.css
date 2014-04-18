@@ -79,6 +79,12 @@ a:active {
 	border:1px solid @bottom;
 	color:#ffffff;
 }
+#edit-submit:hover,
+#edit-submit:focus, 
+#edit-submit:active {
+	background: @linkactive;
+	border-color: @linkactive;
+}
 
 .region-sidebar-first .block-facetapi ul li.leaf a:hover,
 .block-facetapi ul li.leaf a:hover {

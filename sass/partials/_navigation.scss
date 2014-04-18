@@ -118,6 +118,12 @@
 	background:$brand-secondary;
 	border-color:$brand-secondary;
 }
+#edit-submit:hover,
+#edit-submit:focus,
+#edit-submit:active {
+	background: darken($brand-primary,20%);
+	border-color: darken($brand-primary,20%);
+}
 ul.action-links {
 	margin:1em 0;
 }

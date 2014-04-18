@@ -119,14 +119,26 @@
   }
 }
 
-.node-type-dataset,
-.node-type-resource,
-.page-node-add-dataset,
-.page-node-add-resource {
-   .region-content .block {
-      @include popblock;
-   }
-}
+// .node-type-dataset,
+// .node-type-resource,
+// .page-node-add-dataset,
+// .page-node-add-resource 
+//.page-node {
+  .region-content .block {
+    @include popblock;
+  }
+  fieldset.panel {
+    @include box-shadow(none);
+    border:none;
+    margin:0;
+    legend {
+      display: none;
+    }
+    .panel-body {
+      padding:0;
+    }
+  }
+//}
 .horizontal-tabs ul.horizontal-tabs-list li a, 
 .horizontal-tabs ul.horizontal-tabs-list li.selected a {
   display: block;
