@@ -68,6 +68,10 @@
 		}
 	}
 }
+//override bootstrap
+.navbar .nav > li > a {
+	text-shadow:none;
+}
 
 .tabs--primary {
 	margin: 10px 0;

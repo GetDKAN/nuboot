@@ -170,17 +170,20 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* line 107, ../sass/partials/_node.scss */
 .field-group-table-description .icon-info-sign:before { color: #999999; content: "\f05a"; font-family: "FontAwesome"; font-size: 2.5em; height: 30px; left: 0; margin: 10px 15px 0 0; padding: 6px 0; position: absolute; top: 0; width: 30px; }
 
-/* line 127, ../sass/partials/_node.scss */
+/* line 126, ../sass/partials/_node.scss */
+.node-type-dataset fieldset.panel, .node-type-resource fieldset.panel, .page-node-add-dataset fieldset.panel, .page-node-add-resource fieldset.panel { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; }
+/* line 130, ../sass/partials/_node.scss */
+.node-type-dataset fieldset.panel legend, .node-type-resource fieldset.panel legend, .page-node-add-dataset fieldset.panel legend, .page-node-add-resource fieldset.panel legend { display: none; }
+/* line 133, ../sass/partials/_node.scss */
+.node-type-dataset fieldset.panel .panel-body, .node-type-resource fieldset.panel .panel-body, .page-node-add-dataset fieldset.panel .panel-body, .page-node-add-resource fieldset.panel .panel-body { padding: 0; }
+
+/* line 139, ../sass/partials/_node.scss */
 .region-content .block { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; }
 
-/* line 130, ../sass/partials/_node.scss */
-fieldset.panel { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; }
-/* line 134, ../sass/partials/_node.scss */
-fieldset.panel legend { display: none; }
-/* line 137, ../sass/partials/_node.scss */
-fieldset.panel .panel-body { padding: 0; }
-
 /* line 142, ../sass/partials/_node.scss */
+.node-type-group .region-content .block { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; padding: 0; }
+
+/* line 148, ../sass/partials/_node.scss */
 .horizontal-tabs ul.horizontal-tabs-list li a, .horizontal-tabs ul.horizontal-tabs-list li.selected a { display: block; font-size: 1.35em; padding: 0.5em 0.6em; }
 
 /* line 4, ../sass/partials/_block.scss */
@@ -427,40 +430,43 @@ a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 #nav-wrapper .navbar-default .navbar-nav.secondary li a { font-size: .7em; line-height: 1.5em; padding: 4px; }
 
 /* line 72, ../sass/partials/_navigation.scss */
+.navbar .nav > li > a { text-shadow: none; }
+
+/* line 76, ../sass/partials/_navigation.scss */
 .tabs--primary { margin: 10px 0; }
-/* line 74, ../sass/partials/_navigation.scss */
+/* line 78, ../sass/partials/_navigation.scss */
 .tabs--primary li { margin: 1px; }
-/* line 77, ../sass/partials/_navigation.scss */
-.tabs--primary li a { background: white; border: 1px solid #cccccc; padding: 5px 15px; }
 /* line 81, ../sass/partials/_navigation.scss */
+.tabs--primary li a { background: white; border: 1px solid #cccccc; padding: 5px 15px; }
+/* line 85, ../sass/partials/_navigation.scss */
 .tabs--primary li a:hover { border: 1px solid #d3ae7e; background: #d3ae7e; color: white; }
-/* line 86, ../sass/partials/_navigation.scss */
+/* line 90, ../sass/partials/_navigation.scss */
 .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: white; }
 
-/* line 95, ../sass/partials/_navigation.scss */
+/* line 99, ../sass/partials/_navigation.scss */
 .nav-tabs li a { color: #0a77bd; }
-/* line 97, ../sass/partials/_navigation.scss */
+/* line 101, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #07598d; }
 
-/* line 102, ../sass/partials/_navigation.scss */
+/* line 106, ../sass/partials/_navigation.scss */
 .nav-pills li a.active, .nav-pills li.active a:hover, .nav-pills li.active a:focus, .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: #ffffff; }
 
-/* line 110, ../sass/partials/_navigation.scss */
+/* line 114, ../sass/partials/_navigation.scss */
 .btn-primary { background: #0a77bd; border-color: #0a77bd; }
 
-/* line 114, ../sass/partials/_navigation.scss */
+/* line 118, ../sass/partials/_navigation.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active { background: #d3ae7e; border-color: #d3ae7e; }
 
-/* line 121, ../sass/partials/_navigation.scss */
+/* line 125, ../sass/partials/_navigation.scss */
 #edit-submit:hover, #edit-submit:focus, #edit-submit:active { background: #053a5c; border-color: #053a5c; }
 
-/* line 127, ../sass/partials/_navigation.scss */
+/* line 131, ../sass/partials/_navigation.scss */
 ul.action-links { margin: 1em 0; }
 
-/* line 130, ../sass/partials/_navigation.scss */
+/* line 134, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 133, ../sass/partials/_navigation.scss */
+/* line 137, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
