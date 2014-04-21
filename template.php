@@ -24,7 +24,6 @@ function nuboot_preprocess_html(&$variables) {
  */
 function nuboot_preprocess_page(&$vars) {
   if (drupal_is_front_page()) {
-    drupal_add_js('js/front.js');
     $vars['title'] = '';
     unset($vars['page']['content']['system_main']['default_message']);
   }
