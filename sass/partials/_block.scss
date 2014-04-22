@@ -1,6 +1,3 @@
-.region-content .block {
-  //@include popblock;
-}
 #block-views-front-page-group-grid-block {
   @include box-shadow(none);
   margin-bottom: 0;
@@ -308,6 +305,16 @@ h2.block-title {
     .views-field-title,
     .views-field-body {
       margin:10px 15px;
+    }
+    .group-subscribe-message {
+      background: $brand-primary;
+      color: #fff;
+      padding:5px;
+      text-align: center;
+      a {
+        color: #fff;
+        display: block;
+      }
     }
   }
 }
