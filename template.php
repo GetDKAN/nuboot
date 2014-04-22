@@ -12,6 +12,13 @@ function nuboot_css_alter(&$css) {
 }
 
 /**
+ * Implements hook_preprocess().
+ */
+function nuboot_preprocess(&$variabless, $hook) {
+  variable_set('admin_theme', 'nuboot');
+}
+
+/**
  * Implements template_preprocess_html.
  */
 function nuboot_preprocess_html(&$variables) {
@@ -304,4 +311,19 @@ function nuboot_sitewide_social_block() {
   );
 
   return $output;
+}
+
+/**
+* Implements hook_form_alter().
+*/
+function nuboot_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'colorizer_admin_settings':
+      $form['colorizer_global']['colorizer_cssfile']['#default_value'] = 'colorizer/colorizer.css';
+      $form['colorizer_global']['colorizer_incfile']['#default_value'] = 'colorizer/colorizer.inc';
+      break;
+    case 'system_themes_admin_form':
+      $form['admin_theme']['admin_theme']['#default_value'] = 'nuboot';
+      break;
+  }
 }
