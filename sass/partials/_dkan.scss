@@ -1,3 +1,6 @@
+.data-view-sidebar .form-stacked div {
+  margin:4px 0;
+}
 #dkan-stages {
   @include border-top-left-radius(3px);
   @include border-top-right-radius(3px);

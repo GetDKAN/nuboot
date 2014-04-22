@@ -10,7 +10,7 @@ h2.block-title {
   @include background-image(linear-gradient(#F5F5F5, #F0F0F0));
   @include border-radius(3px 3px 0 0);
   border-bottom: 1px solid $border;
-  color: $brand-primary;
+  color: $gray-dark;
   font-size: 14px;
   line-height: 1.3;
   padding: 7px 15px;
