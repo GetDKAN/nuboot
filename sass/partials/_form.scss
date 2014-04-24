@@ -14,6 +14,33 @@ select,
     vertical-align: top;
   }
 }
+.field-type-text-with-summary{
+  .form-group {
+    margin-bottom:5px;
+  }
+  .panel-body {
+    padding: 0;
+  }
+}
+#field-tags-wrapper .path-form {
+  .panel-body {
+    padding: 15px 0;
+  }
+  .add-on {
+    height: 34px;
+    line-height: 32px;
+  }
+  .form-item-path-alias {
+    float: left;
+    .form-control {
+      @include border-radius(0 4px 4px 0);
+    }
+  }
+}
+.field-name-field-license .form-item-field-license-und-select {
+  display:block !important;
+  margin-bottom: 5px;
+}
 
 div.image-widget-data {
   float:none;
@@ -28,9 +55,6 @@ div.image-widget-data {
   }
 }
 
-fieldset.field-group-htab .panel-body {
-  padding:6px;
-}
 .field-type-file span.file {
   display:inline-block;
   padding:6px;
@@ -121,8 +145,57 @@ div.autocomplete-deluxe-throbber {
     legend {
       display: none;
     }
+    .panel-body {
+      padding: 0;
+    }
+  }
+  fieldset.field-group-htab .panel-body {
+    padding:6px;
   }
   .field-name-body label {
     margin-top:1em;
+  }
+}
+
+.page-node-edit.node-type-dataset,
+.page-node-edit.node-type-resource {
+  // .region-content .block {
+  //   @include box-shadow(none);
+  //   border:none;
+  //   padding:0;
+  // }
+  fieldset.panel {
+    // border: 1px solid $border;
+    margin: 0 0 1em 0;
+    legend {
+      border: 1px solid $border;
+      display: block;
+    }
+    fieldset.panel {
+      //border:none;
+      legend {
+        border: 1px solid $border;
+      }
+      .panel-body {
+        padding: 0;
+      }
+    }
+  }
+}
+
+table.field-multiple-table th label {
+  padding-left:6px;
+}
+
+#leaflet-widget_field-spatial-toggle {
+  @include border-radius(5px);
+  background:$brand-primary;
+  color:#fff;
+  display: inline-block;
+  padding:4px 12px;
+  margin:5px 0;
+  &:hover, 
+  &:focus {
+    background:$brand-secondary;
   }
 }

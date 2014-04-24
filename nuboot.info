@@ -49,7 +49,7 @@ settings[toggle_comment_user_verification] = 1
 settings[toggle_favicon] = 1
 settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
-settings[brand_primary] = '#ff0000'
+settings[logo_path] = 'profiles/dkan/themes/contrib/nuboot/logo.svg'
 settings[hero_path] = 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg'
 
 ; Breadcrumbs
@@ -88,7 +88,7 @@ settings[bootstrap_region_well-footer] = ''
 ;
 ;scripts[] = 'bootstrap/js/bootstrap.min.js'
 scripts[] = js/sitewide.js
-scripts[] = js/sitewide.js
+scripts[] = js/svgeezy.min.js
 
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[cdn_bootstrap] = 0

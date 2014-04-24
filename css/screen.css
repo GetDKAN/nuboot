@@ -85,42 +85,40 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /* line 11, ../sass/partials/_layout.scss */
 .navbar .logo { margin: 0; padding: 10px 15px 10px 0; }
-/* line 14, ../sass/partials/_layout.scss */
-.navbar .logo img { height: 50px; }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 15, ../sass/partials/_layout.scss */
 #page-wrapper { padding: 20px 0; }
 
-/* line 21, ../sass/partials/_layout.scss */
+/* line 18, ../sass/partials/_layout.scss */
 .page-header { border-bottom: none; }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 21, ../sass/partials/_layout.scss */
 #featured { background-position: 50% 50%; background-size: cover !important; overflow: hidden; position: relative; z-index: 1; }
-/* line 30, ../sass/partials/_layout.scss */
+/* line 27, ../sass/partials/_layout.scss */
 #featured .tint { background-color: rgba(10, 119, 189, 0.45); position: absolute; height: 900px; width: 100%; z-index: -1; }
-/* line 37, ../sass/partials/_layout.scss */
+/* line 34, ../sass/partials/_layout.scss */
 #featured h2.block-title { display: none; }
-/* line 40, ../sass/partials/_layout.scss */
+/* line 37, ../sass/partials/_layout.scss */
 #featured .featured-inside { padding: 30px 0; }
-/* line 43, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 #featured .container { positoin: relative; z-index: 5; }
-/* line 47, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 #featured .block-content { color: white; font-size: 1.25em; line-height: 1.33em; margin: 0 40px; text-shadow: rgba(0, 0, 0, 0.8) 0 0 3px, rgba(10, 119, 189, 0.6) 1px 1px 0; }
-/* line 54, ../sass/partials/_layout.scss */
+/* line 51, ../sass/partials/_layout.scss */
 #featured a { color: white; }
 
-/* line 58, ../sass/partials/_layout.scss */
+/* line 55, ../sass/partials/_layout.scss */
 #top-content { margin: 20px; }
-/* line 60, ../sass/partials/_layout.scss */
+/* line 57, ../sass/partials/_layout.scss */
 #top-content .block { padding: 10px; text-align: center; }
-/* line 63, ../sass/partials/_layout.scss */
+/* line 60, ../sass/partials/_layout.scss */
 #top-content .block h2.block-title { border: none; color: #333333; font-size: 1.6em; }
-/* line 69, ../sass/partials/_layout.scss */
+/* line 66, ../sass/partials/_layout.scss */
 #top-content [class*="col-"] { background-color: #cccccc; border-left: 4px solid #0a77bd; border-right: 4px solid #0a77bd; margin-bottom: -99999px; padding-bottom: 99999px; }
-/* line 77, ../sass/partials/_layout.scss */
+/* line 74, ../sass/partials/_layout.scss */
 #top-content .row { overflow: hidden; }
 
-/* line 81, ../sass/partials/_layout.scss */
+/* line 78, ../sass/partials/_layout.scss */
 .footer-wrapper { padding: 20px; }
 
 /* line 5, ../sass/partials/_page.scss */
@@ -374,67 +372,102 @@ input, textarea, select, .input-prepend .add-on, .input-append .add-on, .unedita
 .form-type-managed-file.form-group button.btn { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; vertical-align: top; }
 
 /* line 18, ../sass/partials/_form.scss */
-div.image-widget-data { float: none; }
-/* line 20, ../sass/partials/_form.scss */
-div.image-widget-data input.form-file { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; border-right: none; display: inline-block; width: auto; }
+.field-type-text-with-summary .form-group { margin-bottom: 5px; }
+/* line 21, ../sass/partials/_form.scss */
+.field-type-text-with-summary .panel-body { padding: 0; }
+
 /* line 26, ../sass/partials/_form.scss */
+#field-tags-wrapper .path-form .panel-body { padding: 15px 0; }
+/* line 29, ../sass/partials/_form.scss */
+#field-tags-wrapper .path-form .add-on { height: 34px; line-height: 32px; }
+/* line 33, ../sass/partials/_form.scss */
+#field-tags-wrapper .path-form .form-item-path-alias { float: left; }
+/* line 35, ../sass/partials/_form.scss */
+#field-tags-wrapper .path-form .form-item-path-alias .form-control { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; }
+
+/* line 40, ../sass/partials/_form.scss */
+.field-name-field-license .form-item-field-license-und-select { display: block !important; margin-bottom: 5px; }
+
+/* line 45, ../sass/partials/_form.scss */
+div.image-widget-data { float: none; }
+/* line 47, ../sass/partials/_form.scss */
+div.image-widget-data input.form-file { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; border-right: none; display: inline-block; width: auto; }
+/* line 53, ../sass/partials/_form.scss */
 div.image-widget-data .form-item { clear: both; }
 
-/* line 31, ../sass/partials/_form.scss */
-fieldset.field-group-htab .panel-body { padding: 6px; }
-
-/* line 34, ../sass/partials/_form.scss */
+/* line 58, ../sass/partials/_form.scss */
 .field-type-file span.file { display: inline-block; padding: 6px; }
 
-/* line 39, ../sass/partials/_form.scss */
+/* line 63, ../sass/partials/_form.scss */
 .form-managed-file.input-group .form-control { display: inline-block; width: 80%; }
-/* line 43, ../sass/partials/_form.scss */
+/* line 67, ../sass/partials/_form.scss */
 .form-managed-file.input-group .input-group-btn { display: inline-block; vertical-align: top; }
-/* line 47, ../sass/partials/_form.scss */
+/* line 71, ../sass/partials/_form.scss */
 .form-managed-file.input-group fieldset { clear: both; }
 
-/* line 51, ../sass/partials/_form.scss */
+/* line 75, ../sass/partials/_form.scss */
 fieldset #edit-path-alias { position: relative; }
 
-/* line 55, ../sass/partials/_form.scss */
+/* line 79, ../sass/partials/_form.scss */
 #action-info { margin: 15px 15px 0; }
 
-/* line 59, ../sass/partials/_form.scss */
+/* line 83, ../sass/partials/_form.scss */
 a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 
-/* line 64, ../sass/partials/_form.scss */
+/* line 88, ../sass/partials/_form.scss */
 .double-field-elements.container-inline input { width: 40%; float: left; margin-right: 10px; }
 
-/* line 71, ../sass/partials/_form.scss */
+/* line 95, ../sass/partials/_form.scss */
 #edit-field-link-remote-file-und-0-filefield-remotefile-select--2 { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border-left: none; }
 
-/* line 76, ../sass/partials/_form.scss */
+/* line 100, ../sass/partials/_form.scss */
 .header .recline-pager .pagination input { line-height: 1em; height: auto; width: 40px; }
 
-/* line 82, ../sass/partials/_form.scss */
+/* line 106, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-container input.form-control { display: inline-block; }
 
-/* line 85, ../sass/partials/_form.scss */
+/* line 109, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-multiple { padding: 3px 5px; }
 
-/* line 88, ../sass/partials/_form.scss */
+/* line 112, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-throbber { display: inline-block; float: right; height: 25px; }
 
-/* line 94, ../sass/partials/_form.scss */
+/* line 118, ../sass/partials/_form.scss */
 #url-edit-label { float: none; }
 
-/* line 97, ../sass/partials/_form.scss */
+/* line 121, ../sass/partials/_form.scss */
 #url-edit-prefix { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; border: 1px solid #cccccc; border-right: none; font-size: 14px; padding: 7px 0 7px 6px; }
 
-/* line 104, ../sass/partials/_form.scss */
+/* line 128, ../sass/partials/_form.scss */
 #url-slug { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border: 1px solid #cccccc; border-left: none; font-size: 14px; padding: 7px 6px 7px 0; margin-left: -1px; }
 
-/* line 117, ../sass/partials/_form.scss */
+/* line 141, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.panel, .node-type-resource fieldset.panel, .page-node-add-dataset fieldset.panel, .page-node-add-resource fieldset.panel { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; }
-/* line 121, ../sass/partials/_form.scss */
+/* line 145, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.panel legend, .node-type-resource fieldset.panel legend, .page-node-add-dataset fieldset.panel legend, .page-node-add-resource fieldset.panel legend { display: none; }
-/* line 125, ../sass/partials/_form.scss */
+/* line 148, ../sass/partials/_form.scss */
+.node-type-dataset fieldset.panel .panel-body, .node-type-resource fieldset.panel .panel-body, .page-node-add-dataset fieldset.panel .panel-body, .page-node-add-resource fieldset.panel .panel-body { padding: 0; }
+/* line 152, ../sass/partials/_form.scss */
+.node-type-dataset fieldset.field-group-htab .panel-body, .node-type-resource fieldset.field-group-htab .panel-body, .page-node-add-dataset fieldset.field-group-htab .panel-body, .page-node-add-resource fieldset.field-group-htab .panel-body { padding: 6px; }
+/* line 155, ../sass/partials/_form.scss */
 .node-type-dataset .field-name-body label, .node-type-resource .field-name-body label, .page-node-add-dataset .field-name-body label, .page-node-add-resource .field-name-body label { margin-top: 1em; }
+
+/* line 167, ../sass/partials/_form.scss */
+.page-node-edit.node-type-dataset fieldset.panel, .page-node-edit.node-type-resource fieldset.panel { margin: 0 0 1em 0; }
+/* line 170, ../sass/partials/_form.scss */
+.page-node-edit.node-type-dataset fieldset.panel legend, .page-node-edit.node-type-resource fieldset.panel legend { border: 1px solid rgba(0, 0, 0, 0.15); display: block; }
+/* line 176, ../sass/partials/_form.scss */
+.page-node-edit.node-type-dataset fieldset.panel fieldset.panel legend, .page-node-edit.node-type-resource fieldset.panel fieldset.panel legend { border: 1px solid rgba(0, 0, 0, 0.15); }
+/* line 179, ../sass/partials/_form.scss */
+.page-node-edit.node-type-dataset fieldset.panel fieldset.panel .panel-body, .page-node-edit.node-type-resource fieldset.panel fieldset.panel .panel-body { padding: 0; }
+
+/* line 186, ../sass/partials/_form.scss */
+table.field-multiple-table th label { padding-left: 6px; }
+
+/* line 190, ../sass/partials/_form.scss */
+#leaflet-widget_field-spatial-toggle { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #0a77bd; color: #fff; display: inline-block; padding: 4px 12px; margin: 5px 0; }
+/* line 197, ../sass/partials/_form.scss */
+#leaflet-widget_field-spatial-toggle:hover, #leaflet-widget_field-spatial-toggle:focus { background: #d3ae7e; }
 
 /* line 1, ../sass/partials/_navigation.scss */
 .container > .navbar-header, .container > .navbar-collapse { margin-left: 10px; margin-right: 10px; }
@@ -489,25 +522,25 @@ div.autocomplete-deluxe-throbber { display: inline-block; float: right; height: 
 /* line 101, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #07598d; }
 
-/* line 106, ../sass/partials/_navigation.scss */
+/* line 107, ../sass/partials/_navigation.scss */
 .nav-pills li a.active, .nav-pills li.active a:hover, .nav-pills li.active a:focus, .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: #ffffff; }
 
-/* line 114, ../sass/partials/_navigation.scss */
+/* line 115, ../sass/partials/_navigation.scss */
 .btn-primary { background: #0a77bd; border-color: #0a77bd; }
 
-/* line 118, ../sass/partials/_navigation.scss */
+/* line 119, ../sass/partials/_navigation.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active { background: #d3ae7e; border-color: #d3ae7e; }
 
-/* line 125, ../sass/partials/_navigation.scss */
+/* line 126, ../sass/partials/_navigation.scss */
 #edit-submit:hover, #edit-submit:focus, #edit-submit:active { background: #053a5c; border-color: #053a5c; color: #fff; }
 
-/* line 132, ../sass/partials/_navigation.scss */
+/* line 133, ../sass/partials/_navigation.scss */
 ul.action-links { margin: 1em 0; }
 
-/* line 135, ../sass/partials/_navigation.scss */
+/* line 136, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 138, ../sass/partials/_navigation.scss */
+/* line 139, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
