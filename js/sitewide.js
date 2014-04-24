@@ -32,9 +32,6 @@
           desc.hide();
         }
       });
-      if (input.val() != '') {
-        desc.css('display', 'none');
-      }
     });
   }
 
