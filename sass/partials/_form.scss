@@ -23,6 +23,7 @@ select,
   }
 }
 #field-tags-wrapper .path-form {
+  clear:both;
   .panel-body {
     padding: 15px 0;
   }
@@ -161,21 +162,33 @@ div.autocomplete-deluxe-throbber {
   //   padding:0;
   // }
   fieldset.panel {
-    // border: 1px solid $border;
     margin: 0 0 1em 0;
     legend {
       border: 1px solid $border;
       display: block;
     }
     fieldset.panel {
-      //border:none;
       legend {
         border: 1px solid $border;
+        margin-bottom: .5em;
       }
       .panel-body {
         padding: 0;
       }
     }
+  }
+}
+#node_dataset_form_group_primary legend {
+  display: none;
+}
+#edit-field-spatial,
+#edit-field-temporal-coverage {
+  position:relative;
+  padding-top:40px;
+  fieldset legend {
+      left: 0;
+      position: absolute;
+      top: 0;
   }
 }
 

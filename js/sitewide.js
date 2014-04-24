@@ -32,6 +32,9 @@
           desc.hide();
         }
       });
+      if (input.val() != '') {
+        desc.css('display', 'none');
+      }
     });
   }
 
@@ -68,7 +71,7 @@
 
       // Toggle button for text-format.
       $('.filter-help.form-group p').append(' | ' + '<a href="#" class="text-help-toggle">' + Drupal.t('Toggle text format') + '</a>');
-      $('.form-type-select').hide();
+      //$('.form-type-select').hide();
       $('.filter-guidelines-processed').hide();
       $('.text-help-toggle').click(function(e) {
         e.preventDefault();
