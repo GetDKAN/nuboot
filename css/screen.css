@@ -464,9 +464,12 @@ div.autocomplete-deluxe-throbber { display: inline-block; float: right; height: 
 /* line 186, ../sass/partials/_form.scss */
 table.field-multiple-table th label { padding-left: 6px; }
 
-/* line 190, ../sass/partials/_form.scss */
+/* line 189, ../sass/partials/_form.scss */
+.vertical-tabs { margin-top: 2em; }
+
+/* line 192, ../sass/partials/_form.scss */
 #leaflet-widget_field-spatial-toggle { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #0a77bd; color: #fff; display: inline-block; padding: 4px 12px; margin: 5px 0; }
-/* line 197, ../sass/partials/_form.scss */
+/* line 199, ../sass/partials/_form.scss */
 #leaflet-widget_field-spatial-toggle:hover, #leaflet-widget_field-spatial-toggle:focus { background: #d3ae7e; }
 
 /* line 1, ../sass/partials/_navigation.scss */

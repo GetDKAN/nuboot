@@ -186,7 +186,9 @@ div.autocomplete-deluxe-throbber {
 table.field-multiple-table th label {
   padding-left:6px;
 }
-
+.vertical-tabs {
+  margin-top: 2em;
+}
 #leaflet-widget_field-spatial-toggle {
   @include border-radius(5px);
   background:$brand-primary;
