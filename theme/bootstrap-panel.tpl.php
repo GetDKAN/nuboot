@@ -11,7 +11,7 @@
   <?php if ($title): ?>
     <?php if ($collapsible): ?>
     <legend class="panel-heading">
-      <a href="#" class="panel-title fieldset-legend" data-toggle="collapse" data-target="<?php print $target; ?>"><?php print $title; ?></a>
+      <a href="#" class="panel-title fieldset-legend" data-toggle="collapse" ><?php print $title; ?></a>
     </legend>
     <?php else: ?>
     <legend class="panel-heading">
