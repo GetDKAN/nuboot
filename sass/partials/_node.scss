@@ -57,6 +57,89 @@
   }
 }
 
+/** UI Tabs **/
+.node-resource-form .horizontal-tabs {
+  border:none;
+  ul.horizontal-tabs-list {
+    background-color: transparent;
+    border: 0;
+    padding-top: 10px;
+    li,
+    li.selected {
+      border: 0;
+      background-color: transparent;
+      min-width: 10em;
+      a:hover {
+          background:transparent;
+        }
+      #active-horizontal-tab {
+        background: url(../images/sprite-ckan-icons.png) no-repeat -193px 1px;
+        display: block;
+        text-indent: -9999px;
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 28px;
+        clip: auto;
+
+      }
+      &.horizontal-tab-button-1 .summary,
+      &.horizontal-tab-button-2 .summary {
+        background: url(../images/sprite-ckan-icons.png) no-repeat -160px 0;
+      }
+      .summary{
+        background: url(../images/sprite-ckan-icons.png) no-repeat -144px 0;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:5px;
+        left:10px;
+      }
+      a {
+        font-size: 1.35em;
+        position: relative;
+        padding: 5px 35px 5px 30px;
+      }
+    }
+  }
+  .horizontal-tabs-panes {
+    @include border-radius(4px);
+    border:1px solid $border;
+    padding: 8px;
+    fieldset.htab_link_upload,
+    fieldset.htab_link_api,
+    fieldset.htab_link_file {
+      legend.panel-heading {
+        display: none;
+      }
+      .field-widget-recline-widget legend.panel-heading {
+        border:none;
+        border-bottom: 1px solid $border;
+        display: block;
+        background:transparent;
+        color: $gray;
+        padding: 15px 0 5px;
+        margin-top:10px;
+      }
+    }
+    .form-type-checkbox label,
+    .form-type-select label {
+      display: block;
+      padding-top:2px;
+    }
+    .form-item-field-upload-und-0-embed {
+      clear: both;
+    }
+  }
+}
+.page-node-add-resource {
+  .field-group-htabs.group-data div.horizontal-tabs {
+    border: 0;
+  }
+  .form-item {
+    margin: 0;
+  }
+}
+
 .form-group ul.resource-list {
   li {
     margin:4px 0;
@@ -143,9 +226,9 @@
   padding:0;
 }
 
-.horizontal-tabs ul.horizontal-tabs-list li a, 
-.horizontal-tabs ul.horizontal-tabs-list li.selected a {
-  display: block;
-  font-size: 1.35em;
-  padding: 0.5em 0.6em;
-}
+// .horizontal-tabs ul.horizontal-tabs-list li a, 
+// .horizontal-tabs ul.horizontal-tabs-list li.selected a {
+//   display: block;
+//   font-size: 1.35em;
+//   padding: 0.5em 0.6em;
+// }

@@ -8,7 +8,6 @@ select,
   height:auto;
 }
 .form-type-managed-file.form-group {
-  margin: 5px;
   button.btn {
     @include border-radius(0 4px 4px 0);
     vertical-align: top;
@@ -51,10 +50,13 @@ div.image-widget-data {
     clear:both;
   }
 }
-
+.file-widget span.file,
 .field-type-file span.file {
   display:inline-block;
   padding:6px;
+  border:1px solid $border;
+  border-right: none;
+  @include border-radius(4px 0 0 4px);
 }
 .form-managed-file.input-group {
   .form-control {

@@ -38,43 +38,46 @@ a { color: #0a77bd; }
 /* line 16, ../sass/partials/_global.scss */
 a:hover { color: #d3ae7e; }
 
-/* line 21, ../sass/partials/_global.scss */
+/* line 20, ../sass/partials/_global.scss */
+p, p:last-child { margin: 0 0 1.25em 0; }
+
+/* line 25, ../sass/partials/_global.scss */
 .breadcrumb { background: none; border: none; font-size: 20px; list-style: none; margin: 10px 0; padding: 0; position: relative; }
-/* line 29, ../sass/partials/_global.scss */
+/* line 33, ../sass/partials/_global.scss */
 .breadcrumb li { float: none; }
-/* line 32, ../sass/partials/_global.scss */
-.breadcrumb li a span { display: none; }
 /* line 36, ../sass/partials/_global.scss */
+.breadcrumb li a span { display: none; }
+/* line 40, ../sass/partials/_global.scss */
 .breadcrumb li.home-link a { font-size: 1.3em; }
 
-/* line 42, ../sass/partials/_global.scss */
+/* line 46, ../sass/partials/_global.scss */
 .alert { position: relative; }
-/* line 44, ../sass/partials/_global.scss */
+/* line 48, ../sass/partials/_global.scss */
 .alert .close { line-height: 18px; position: absolute; right: 10px; top: 5px; }
 
-/* line 52, ../sass/partials/_global.scss */
+/* line 56, ../sass/partials/_global.scss */
 table, table.table { border-collapse: collapse; margin: 1em 0; width: 100%; }
-/* line 57, ../sass/partials/_global.scss */
+/* line 61, ../sass/partials/_global.scss */
 table thead > tr > th, table.table thead > tr > th { background-color: hero; background-image: -moz-linear-gradient(#f5f5f5, #f0f0f0); background-image: -webkit-linear-gradient(#f5f5f5, #f0f0f0); background-image: linear-gradient(#f5f5f5, #f0f0f0); border: 1px solid rgba(0, 0, 0, 0.15) !important; padding: 4px 8px; }
-/* line 63, ../sass/partials/_global.scss */
+/* line 67, ../sass/partials/_global.scss */
 table thead th:first-child, table.table thead th:first-child { @inlclude border-top-left-radius(4px); }
-/* line 66, ../sass/partials/_global.scss */
-table thead th:last-child, table thead th:last-child, table.table thead th:last-child, table.table thead th:last-child { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
 /* line 70, ../sass/partials/_global.scss */
+table thead th:last-child, table thead th:last-child, table.table thead th:last-child, table.table thead th:last-child { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+/* line 74, ../sass/partials/_global.scss */
 table tbody th, table td, table.table tbody th, table.table td { border: 1px solid rgba(0, 0, 0, 0.15); padding: 4px 8px; vertical-align: top; }
-/* line 76, ../sass/partials/_global.scss */
+/* line 80, ../sass/partials/_global.scss */
 table tr:hover, table.table tr:hover { background: #FFFEEE; }
 
-/* line 81, ../sass/partials/_global.scss */
+/* line 85, ../sass/partials/_global.scss */
 dl { margin: 0; padding: 0; clear: both; overflow: hidden; }
 
-/* line 87, ../sass/partials/_global.scss */
+/* line 91, ../sass/partials/_global.scss */
 dt { margin: 0; padding: 8px 5px; float: left; width: 28%; }
 
-/* line 93, ../sass/partials/_global.scss */
+/* line 97, ../sass/partials/_global.scss */
 dd { margin: 0; padding: 8px 5px; float: right; width: 72%; }
 
-/* line 99, ../sass/partials/_global.scss */
+/* line 103, ../sass/partials/_global.scss */
 dt:nth-of-type(2n), dd:nth-of-type(2n) { background: #f3f3f3; }
 
 /* line 1, ../sass/partials/_layout.scss */
@@ -146,43 +149,73 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* line 51, ../sass/partials/_node.scss */
 .field-type-taxonomy-term-reference .field-item a:hover:after, .field-type-taxonomy-term-reference .field-item a:hover { background: #fff; color: #000; text-decoration: none; }
 
+/** UI Tabs **/
 /* line 61, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs { border: none; }
+/* line 63, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list { background-color: transparent; border: 0; padding-top: 10px; }
+/* line 67, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected { border: 0; background-color: transparent; min-width: 10em; }
+/* line 72, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li a:hover, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected a:hover { background: transparent; }
+/* line 75, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li #active-horizontal-tab, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected #active-horizontal-tab { background: url(../images/sprite-ckan-icons.png) no-repeat -193px 1px; display: block; text-indent: -9999px; width: 16px; height: 16px; margin: 0 0 0 28px; clip: auto; }
+/* line 85, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.horizontal-tab-button-1 .summary, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.horizontal-tab-button-2 .summary, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected.horizontal-tab-button-1 .summary, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected.horizontal-tab-button-2 .summary { background: url(../images/sprite-ckan-icons.png) no-repeat -160px 0; }
+/* line 89, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li .summary, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected .summary { background: url(../images/sprite-ckan-icons.png) no-repeat -144px 0; width: 16px; height: 16px; position: absolute; top: 5px; left: 10px; }
+/* line 97, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs ul.horizontal-tabs-list li a, .node-resource-form .horizontal-tabs ul.horizontal-tabs-list li.selected a { font-size: 1.35em; position: relative; padding: 5px 35px 5px 30px; }
+/* line 104, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs .horizontal-tabs-panes { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.15); padding: 8px; }
+/* line 111, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_upload legend.panel-heading, .node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_api legend.panel-heading, .node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_file legend.panel-heading { display: none; }
+/* line 114, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_upload .field-widget-recline-widget legend.panel-heading, .node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_api .field-widget-recline-widget legend.panel-heading, .node-resource-form .horizontal-tabs .horizontal-tabs-panes fieldset.htab_link_file .field-widget-recline-widget legend.panel-heading { border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.15); display: block; background: transparent; color: #555555; padding: 15px 0 5px; margin-top: 10px; }
+/* line 124, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs .horizontal-tabs-panes .form-type-checkbox label, .node-resource-form .horizontal-tabs .horizontal-tabs-panes .form-type-select label { display: block; padding-top: 2px; }
+/* line 129, ../sass/partials/_node.scss */
+.node-resource-form .horizontal-tabs .horizontal-tabs-panes .form-item-field-upload-und-0-embed { clear: both; }
+
+/* line 135, ../sass/partials/_node.scss */
+.page-node-add-resource .field-group-htabs.group-data div.horizontal-tabs { border: 0; }
+/* line 138, ../sass/partials/_node.scss */
+.page-node-add-resource .form-item { margin: 0; }
+
+/* line 144, ../sass/partials/_node.scss */
 .form-group ul.resource-list li { margin: 4px 0; }
-/* line 64, ../sass/partials/_node.scss */
+/* line 147, ../sass/partials/_node.scss */
 .form-group ul.resource-list a.label { margin-left: 3px; }
 
-/* line 69, ../sass/partials/_node.scss */
+/* line 152, ../sass/partials/_node.scss */
 #data-and-resources ul.resource-list li { padding: 0 0 0 40px; }
-/* line 72, ../sass/partials/_node.scss */
+/* line 155, ../sass/partials/_node.scss */
 #data-and-resources ul.resource-list a.btn { display: block; margin: 0 0 25px 15px; position: relative; top: auto; right: auto; }
 
-/* line 81, ../sass/partials/_node.scss */
+/* line 164, ../sass/partials/_node.scss */
 .node-dataset label { font-size: 18px; font-weight: bold; line-height: 27px; margin: 10px 0; }
 
-/* line 88, ../sass/partials/_node.scss */
+/* line 171, ../sass/partials/_node.scss */
 .data-and-resources .label { display: inline; padding: 1px 4px 2px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font-size: 10.998px; font-weight: bold; line-height: 14px; color: white; vertical-align: baseline; white-space: nowrap; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
-/* line 102, ../sass/partials/_node.scss */
+/* line 185, ../sass/partials/_node.scss */
 .field-name-body ul { list-style-type: disc; margin: 10px 20px; }
-/* line 105, ../sass/partials/_node.scss */
+/* line 188, ../sass/partials/_node.scss */
 .field-name-body ul li { margin: 6px 10px; }
 
-/* line 110, ../sass/partials/_node.scss */
+/* line 193, ../sass/partials/_node.scss */
 .field-group-table-description { color: #555555; display: block; padding: 8px 10px 8px 40px; position: relative; }
-/* line 115, ../sass/partials/_node.scss */
+/* line 198, ../sass/partials/_node.scss */
 .field-group-table-description .icon-info-sign:before { color: #999999; content: "\f05a"; font-family: "FontAwesome"; font-size: 2.5em; height: 30px; left: 0; margin: 10px 15px 0 0; padding: 6px 0; position: absolute; top: 0; width: 30px; }
 
-/* line 130, ../sass/partials/_node.scss */
+/* line 213, ../sass/partials/_node.scss */
 .region-content .block { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 20px; }
 
-/* line 133, ../sass/partials/_node.scss */
+/* line 216, ../sass/partials/_node.scss */
 .page-admin .region-content .block { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; padding: 0; }
 
-/* line 140, ../sass/partials/_node.scss */
+/* line 223, ../sass/partials/_node.scss */
 .node-type-group .region-content .block { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; padding: 0; }
-
-/* line 146, ../sass/partials/_node.scss */
-.horizontal-tabs ul.horizontal-tabs-list li a, .horizontal-tabs ul.horizontal-tabs-list li.selected a { display: block; font-size: 1.35em; padding: 0.5em 0.6em; }
 
 /* line 1, ../sass/partials/_block.scss */
 #block-views-front-page-group-grid-block { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; margin-bottom: 0; padding: 0; }
@@ -366,117 +399,115 @@ h2.block-title { background-image: -moz-linear-gradient(#f5f5f5, #f0f0f0); backg
 /* line 1, ../sass/partials/_form.scss */
 input, textarea, select, .input-prepend .add-on, .input-append .add-on, .uneditable-input, .slick-header-column.ui-state-default { height: auto; }
 
-/* line 10, ../sass/partials/_form.scss */
-.form-type-managed-file.form-group { margin: 5px; }
-/* line 12, ../sass/partials/_form.scss */
+/* line 11, ../sass/partials/_form.scss */
 .form-type-managed-file.form-group button.btn { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; vertical-align: top; }
 
-/* line 18, ../sass/partials/_form.scss */
+/* line 17, ../sass/partials/_form.scss */
 .field-type-text-with-summary .form-group { margin-bottom: 5px; }
-/* line 21, ../sass/partials/_form.scss */
+/* line 20, ../sass/partials/_form.scss */
 .field-type-text-with-summary .panel-body { padding: 0; }
 
-/* line 25, ../sass/partials/_form.scss */
+/* line 24, ../sass/partials/_form.scss */
 #field-tags-wrapper .path-form { clear: both; }
-/* line 27, ../sass/partials/_form.scss */
+/* line 26, ../sass/partials/_form.scss */
 #field-tags-wrapper .path-form .panel-body { padding: 15px 0; }
-/* line 30, ../sass/partials/_form.scss */
+/* line 29, ../sass/partials/_form.scss */
 #field-tags-wrapper .path-form .add-on { height: 34px; line-height: 32px; }
-/* line 34, ../sass/partials/_form.scss */
+/* line 33, ../sass/partials/_form.scss */
 #field-tags-wrapper .path-form .form-item-path-alias { float: left; }
-/* line 36, ../sass/partials/_form.scss */
+/* line 35, ../sass/partials/_form.scss */
 #field-tags-wrapper .path-form .form-item-path-alias .form-control { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; }
 
-/* line 42, ../sass/partials/_form.scss */
+/* line 41, ../sass/partials/_form.scss */
 div.image-widget-data { float: none; }
-/* line 44, ../sass/partials/_form.scss */
+/* line 43, ../sass/partials/_form.scss */
 div.image-widget-data input.form-file { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; border-right: none; display: inline-block; width: auto; }
-/* line 50, ../sass/partials/_form.scss */
+/* line 49, ../sass/partials/_form.scss */
 div.image-widget-data .form-item { clear: both; }
 
-/* line 55, ../sass/partials/_form.scss */
-.field-type-file span.file { display: inline-block; padding: 6px; }
+/* line 53, ../sass/partials/_form.scss */
+.file-widget span.file, .field-type-file span.file { display: inline-block; padding: 6px; border: 1px solid rgba(0, 0, 0, 0.15); border-right: none; -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; }
 
-/* line 60, ../sass/partials/_form.scss */
+/* line 62, ../sass/partials/_form.scss */
 .form-managed-file.input-group .form-control { display: inline-block; width: 80%; }
-/* line 64, ../sass/partials/_form.scss */
+/* line 66, ../sass/partials/_form.scss */
 .form-managed-file.input-group .input-group-btn { display: inline-block; vertical-align: top; }
-/* line 68, ../sass/partials/_form.scss */
+/* line 70, ../sass/partials/_form.scss */
 .form-managed-file.input-group fieldset { clear: both; }
 
-/* line 72, ../sass/partials/_form.scss */
+/* line 74, ../sass/partials/_form.scss */
 fieldset #edit-path-alias { position: relative; }
 
-/* line 76, ../sass/partials/_form.scss */
+/* line 78, ../sass/partials/_form.scss */
 #action-info { margin: 15px 15px 0; }
 
-/* line 80, ../sass/partials/_form.scss */
+/* line 82, ../sass/partials/_form.scss */
 a.tabledrag-handle .handle { padding: 0.42em 0.6em; }
 
-/* line 85, ../sass/partials/_form.scss */
+/* line 87, ../sass/partials/_form.scss */
 .double-field-elements.container-inline input { width: 40%; float: left; margin-right: 10px; }
 
-/* line 92, ../sass/partials/_form.scss */
+/* line 94, ../sass/partials/_form.scss */
 #edit-field-link-remote-file-und-0-filefield-remotefile-select--2 { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border-left: none; }
 
-/* line 97, ../sass/partials/_form.scss */
+/* line 99, ../sass/partials/_form.scss */
 .header .recline-pager .pagination input { line-height: 1em; height: auto; width: 40px; }
 
-/* line 103, ../sass/partials/_form.scss */
+/* line 105, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-container input.form-control { display: inline-block; }
 
-/* line 106, ../sass/partials/_form.scss */
+/* line 108, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-multiple { padding: 3px 5px; }
 
-/* line 109, ../sass/partials/_form.scss */
+/* line 111, ../sass/partials/_form.scss */
 div.autocomplete-deluxe-throbber { display: inline-block; float: right; height: 25px; }
 
-/* line 115, ../sass/partials/_form.scss */
+/* line 117, ../sass/partials/_form.scss */
 #url-edit-label { float: none; }
 
-/* line 118, ../sass/partials/_form.scss */
+/* line 120, ../sass/partials/_form.scss */
 #url-edit-prefix { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; border: 1px solid #cccccc; border-right: none; font-size: 14px; padding: 7px 0 7px 6px; }
 
-/* line 125, ../sass/partials/_form.scss */
+/* line 127, ../sass/partials/_form.scss */
 #url-slug { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border: 1px solid #cccccc; border-left: none; font-size: 14px; padding: 7px 6px 7px 0; margin-left: -1px; }
 
-/* line 138, ../sass/partials/_form.scss */
+/* line 140, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.panel, .node-type-resource fieldset.panel, .page-node-add-dataset fieldset.panel, .page-node-add-resource fieldset.panel { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; }
-/* line 142, ../sass/partials/_form.scss */
+/* line 144, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.panel legend, .node-type-resource fieldset.panel legend, .page-node-add-dataset fieldset.panel legend, .page-node-add-resource fieldset.panel legend { display: none; }
-/* line 145, ../sass/partials/_form.scss */
+/* line 147, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.panel .panel-body, .node-type-resource fieldset.panel .panel-body, .page-node-add-dataset fieldset.panel .panel-body, .page-node-add-resource fieldset.panel .panel-body { padding: 0; }
-/* line 149, ../sass/partials/_form.scss */
+/* line 151, ../sass/partials/_form.scss */
 .node-type-dataset fieldset.field-group-htab .panel-body, .node-type-resource fieldset.field-group-htab .panel-body, .page-node-add-dataset fieldset.field-group-htab .panel-body, .page-node-add-resource fieldset.field-group-htab .panel-body { padding: 6px; }
-/* line 152, ../sass/partials/_form.scss */
+/* line 154, ../sass/partials/_form.scss */
 .node-type-dataset .field-name-body label, .node-type-resource .field-name-body label, .page-node-add-dataset .field-name-body label, .page-node-add-resource .field-name-body label { margin-top: 1em; }
 
-/* line 164, ../sass/partials/_form.scss */
-.page-node-edit.node-type-dataset fieldset.panel, .page-node-edit.node-type-resource fieldset.panel { margin: 0 0 1em 0; }
 /* line 166, ../sass/partials/_form.scss */
+.page-node-edit.node-type-dataset fieldset.panel, .page-node-edit.node-type-resource fieldset.panel { margin: 0 0 1em 0; }
+/* line 168, ../sass/partials/_form.scss */
 .page-node-edit.node-type-dataset fieldset.panel legend, .page-node-edit.node-type-resource fieldset.panel legend { border: 1px solid rgba(0, 0, 0, 0.15); display: block; }
-/* line 171, ../sass/partials/_form.scss */
+/* line 173, ../sass/partials/_form.scss */
 .page-node-edit.node-type-dataset fieldset.panel fieldset.panel legend, .page-node-edit.node-type-resource fieldset.panel fieldset.panel legend { border: 1px solid rgba(0, 0, 0, 0.15); margin-bottom: .5em; }
-/* line 175, ../sass/partials/_form.scss */
+/* line 177, ../sass/partials/_form.scss */
 .page-node-edit.node-type-dataset fieldset.panel fieldset.panel .panel-body, .page-node-edit.node-type-resource fieldset.panel fieldset.panel .panel-body { padding: 0; }
 
-/* line 181, ../sass/partials/_form.scss */
+/* line 183, ../sass/partials/_form.scss */
 #node_dataset_form_group_primary legend { display: none; }
 
-/* line 184, ../sass/partials/_form.scss */
+/* line 186, ../sass/partials/_form.scss */
 #edit-field-spatial, #edit-field-temporal-coverage { position: relative; padding-top: 40px; }
-/* line 188, ../sass/partials/_form.scss */
+/* line 190, ../sass/partials/_form.scss */
 #edit-field-spatial fieldset legend, #edit-field-temporal-coverage fieldset legend { left: 0; position: absolute; top: 0; }
 
-/* line 195, ../sass/partials/_form.scss */
+/* line 197, ../sass/partials/_form.scss */
 table.field-multiple-table th label { padding-left: 6px; }
 
-/* line 198, ../sass/partials/_form.scss */
+/* line 200, ../sass/partials/_form.scss */
 .vertical-tabs { margin-top: 2em; }
 
-/* line 201, ../sass/partials/_form.scss */
+/* line 203, ../sass/partials/_form.scss */
 #leaflet-widget_field-spatial-toggle { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #0a77bd; color: #fff; display: inline-block; padding: 4px 12px; margin: 5px 0; }
-/* line 208, ../sass/partials/_form.scss */
+/* line 210, ../sass/partials/_form.scss */
 #leaflet-widget_field-spatial-toggle:hover, #leaflet-widget_field-spatial-toggle:focus { background: #d3ae7e; }
 
 /* line 1, ../sass/partials/_navigation.scss */

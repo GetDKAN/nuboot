@@ -17,6 +17,10 @@ a {
         color:$brand-secondary;
     }
 }
+p,
+p:last-child {
+    margin: 0 0 1.25em 0;
+}
 
 .breadcrumb {
     background: none;
