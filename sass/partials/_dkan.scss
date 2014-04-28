@@ -142,3 +142,23 @@
   height: 35px;
   background-position: -320px -62px;
 }
+.format-label {
+  display: inline-block;
+  vertical-align: text-bottom;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/sprite-ckan-icons.png");
+  background-repeat: no-repeat;
+  background-position: 16px 16px;
+  text-indent: -900em;
+  background: url("../images/sprite-resource-icons.png") no-repeat 0 0;
+}
+.download a.format-label {
+  text-indent: 40px;
+  margin-bottom: 20px;
+  padding-top: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+}
