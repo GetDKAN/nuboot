@@ -130,6 +130,38 @@
 	border-color: darken($brand-primary,20%);
 	color: #fff;
 }
+
+a.embed-link {
+	@include border-radius(4px);
+  background:$brand-primary;
+  color: #fff;
+  display: inline-block;
+  padding:5px 15px 5px 30px;
+  position:relative;
+  margin:1em 0;
+  text-decoration: none;
+}
+a.embed-link:hover, 
+a.embed-link:focus, 
+a.embed-link:active {
+	background:$brand-secondary;
+	color:#fff;
+	text-decoration:none;
+}
+a.embed-link:before {
+  content:'\f121';
+  color: #fff;
+  font-family: $icon-fa;
+  font-size: 1.3em;
+  position: absolute;
+  top:5px;
+  left:10px;
+}
+textarea.embed-code {
+	width: 100%;
+	margin-bottom:1em;
+}
+
 ul.action-links {
 	margin:1em 0;
 }
