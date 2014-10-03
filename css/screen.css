@@ -229,7 +229,7 @@ h2.block-title { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, co
 #block-dkan-forms-dkan-forms-dataset-help h2.block-title:before { content: "\f05a"; font-family: "FontAwesome"; font-weight: normal; font-style: normal; display: inline-block; text-decoration: inherit; font-size: 1.2em; line-height: 1; position: relative; top: 1px; margin-right: 0.4em; }
 
 #block-dkan-sitewide-demo-front-dkan-demo-front { -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); background-color: rgba(10, 119, 189, 0.5); padding-top: 15px; }
-#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay img { margin-top: 10px; }
+#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay img { margin-top: 10px; width: 100%; height: auto; }
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0 15px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
 
 input, textarea, select, .input-prepend .add-on, .input-append .add-on, .uneditable-input, .slick-header-column.ui-state-default { height: auto; }
