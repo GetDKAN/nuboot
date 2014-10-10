@@ -100,7 +100,7 @@ h2.block-title {
     input.form-control {
       width:170px;
     }
-    .views-exposed-form .form-submit {
+    #edit-submit {
       margin:22px 0 0;
       color:#fff;
       text-shadow: none;
@@ -110,15 +110,13 @@ h2.block-title {
 #views-exposed-form-user-profile-search-entity-view-1,
 #views-exposed-form-groups-search-entity-view-1,
 #views-exposed-form-dataset-page {
-  @include searchbox;
-  width:372px;
-    input.form-control {
-      width:370px;
-    }
-    .views-exposed-form .form-submit {
+    #edit-submit {
       top: -20px !important;
       color:#fff;
       text-shadow: none;
+    }
+    .views-exposed-form .form-submit {
+      margin: 0;
     }
 }
 #block-dkan-sitewide-demo-front-dkan-search-front #views-exposed-form-dataset-page .views-exposed-form .description { top:7px; }
