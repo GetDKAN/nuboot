@@ -64,7 +64,7 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 #featured h2.block-title { display: none; }
 #featured .featured-inside { padding: 30px 0; }
 #featured .container { positoin: relative; z-index: 5; }
-#featured .block-content { color: white; font-size: 1.25em; line-height: 1.33em; margin: 0 40px; text-shadow: rgba(0, 0, 0, 0.8) 0 0 3px, rgba(10, 119, 189, 0.6) 1px 1px 0; }
+#featured .block-content { overflow: hidden; color: white; font-size: 1.25em; line-height: 1.33em; margin: 0 40px; text-shadow: rgba(0, 0, 0, 0.8) 0 0 3px, rgba(10, 119, 189, 0.6) 1px 1px 0; }
 #featured a { color: white; }
 
 #top-content { margin: 20px; }
