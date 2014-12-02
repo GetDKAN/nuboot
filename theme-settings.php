@@ -1,13 +1,31 @@
 <?php
 /**
  * @file
- * Theme setting callbacks for the nuboot theme.
+ * Theme settings.
  */
 
 /**
- * Implements hook_form_system_theme_settings_alter().
+ * Implements theme_settings().
  */
 function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
+  // Ensure this include file is loaded when the form is rebuilt from the cache.
+  $form_state['build_info']['files']['form'] = drupal_get_path('theme', 'default') . '/theme-settings.php';
+
+  // Add theme settings here.
+  $form['nuboot_theme_settings'] = array(
+    '#title' => t('Theme Settings'),
+    '#type' => 'fieldset',
+  );
+
+  // Copyright.
+  $copyright = theme_get_setting('copyright');
+  $form['nuboot_theme_settings']['copyright'] = array(
+    '#title' => t('Copyright'),
+    '#type' => 'text_format',
+    '#format' => $copyright['format'],
+    '#default_value' => $copyright['value'] ? $copyright['value'] : t('Powered by <a href="http://nucivic.com/dkan">DKAN</a>, a project of <a href="http://nucivic.com">NuCivic</a>'),
+  );
+
   // Hero fieldset.
   $form['hero'] = array(
     '#type' => 'fieldset',
@@ -38,6 +56,9 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
   );
   // Attach custom submit handler to the form.
   $form['#submit'][] = 'nuboot_settings_submit';
+
+  // Return the additional form widgets.
+  return $form;
 }
 
 /**
@@ -52,7 +73,7 @@ function nuboot_settings_submit($form, &$form_state) {
   }
   // Get the previous value.
   $previous = $form['hero']['hero_path']['#default_value'];
-  if ($previous !== 'profiles/dkan/themes/contrib/nuboot/images/hero.jpg') {
+  if ($previous !== 'profiles/dkan/themes/contrib/nuboot/assets/images/hero.jpg') {
     $previous = 'public://' . $previous;
   }
   else {

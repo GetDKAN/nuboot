@@ -1,0 +1,6 @@
+@media all and (max-width:768px) {
+	aside[class|='col'],
+	section[class|='col'] {
+		padding: 0;
+	}
+}

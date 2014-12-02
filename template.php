@@ -1,37 +1,18 @@
 <?php
 /**
  * @file
- * Theme specific functions.
+ * Theme functions
  */
 
-/**
- * Remove dkan button styles so we can use our own.
- */
-function nuboot_css_alter(&$css) {
-  unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);
-}
+require_once dirname(__FILE__) . '/includes/structure.inc';
+require_once dirname(__FILE__) . '/includes/comment.inc';
+require_once dirname(__FILE__) . '/includes/form.inc';
+require_once dirname(__FILE__) . '/includes/menu.inc';
+require_once dirname(__FILE__) . '/includes/node.inc';
+require_once dirname(__FILE__) . '/includes/panel.inc';
+require_once dirname(__FILE__) . '/includes/user.inc';
+require_once dirname(__FILE__) . '/includes/view.inc';
 
-/**
- * Implements template_preprocess_html.
- */
-function nuboot_preprocess_html(&$variables) {
-  drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
-  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
-}
-
-/**
- * Implements template_preprocess_page.
- */
-function nuboot_preprocess_page(&$vars) {
-  if (drupal_is_front_page()) {
-    $vars['title'] = '';
-    unset($vars['page']['content']['system_main']['default_message']);
-  }
-  // Remove title on dataset edit and creation pages.
-  if (!empty($vars['node']) && in_array($vars['node']->type, array('dataset', 'resource')) || arg(1) == 'add') {
-    $vars['title'] = '';
-  }
-}
 
 /**
  * Theme function for iframe link.
@@ -77,122 +58,7 @@ function nuboot_breadcrumb($variables) {
   }
 }
 
-/**
- * Overrides theme_menu_local_tasks().
- */
-function nuboot_menu_local_tasks(&$variables) {
-  $output = '';
 
-  if (!empty($variables['primary'])) {
-    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
-    $variables['primary']['#prefix'] .= '<ul class="tabs--primary nav nav-pills">';
-    $variables['primary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['primary']);
-  }
-
-  if (!empty($variables['secondary'])) {
-    $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
-    $variables['secondary']['#prefix'] .= '<ul class="tabs--secondary pagination pagination-sm">';
-    $variables['secondary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['secondary']);
-  }
-
-  return $output;
-}
-
-/**
- * Overrides theme_menu_local_task().
- */
-function nuboot_menu_local_task($variables) {
-  $link = $variables['element']['#link'];
-  $link_text = $link['title'];
-  $icon_type = '';
-  if (isset($link['path'])) {
-    switch ($link['path']) {
-      case 'node/%/edit':
-        $icon_type = 'edit';
-        break;
-
-      case 'node/%/view':
-        $icon_type = 'eye';
-        break;
-
-      case 'node/%/resource':
-        $icon_type = 'plus';
-        break;
-
-      case 'node/%/datastore':
-        $icon_type = 'cogs';
-        break;
-
-      case 'node/%/datastore/import':
-        $icon_type = 'refresh';
-        break;
-
-      case 'node/%/datastore/drop':
-        $icon_type = 'trash-o';
-        break;
-
-      case 'node/%/datastore/unlock':
-        $icon_type = 'unlock';
-        break;
-
-      case 'node/%/download':
-        $icon_type = 'download';
-        break;
-
-      case 'node/%/dataset':
-        $icon_type = 'caret-left';
-        break;
-
-      case 'node/%/api':
-        $icon_type = 'flask';
-        break;
-
-      case 'node/%/group':
-        $icon_type = 'users';
-        break;
-
-      case 'node/%/members':
-        $icon_type = 'user';
-        break;
-
-      case 'node/%/revisions':
-        $icon_type = 'folder-open-o';
-        break;
-
-      case 'node/%/datastore/delete-items':
-        $icon_type = 'eraser';
-        break;
-
-      default:
-        $icon_type = '';
-        break;
-    }
-  }
-  $icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
-  $link_text = $icon . $link_text;
-  $link['localized_options']['html'] = TRUE;
-
-  if (!empty($variables['element']['#active'])) {
-    // Add text to indicate active tab for non-visual users.
-    $active = '<span class="element-invisible">' . t('(active tab)') . '</span>';
-
-    // If the link does not contain HTML already, check_plain() it now.
-    // After we set 'html'=TRUE the link will not be sanitized by l().
-    if (empty($link['localized_options']['html'])) {
-      $link['title'] = check_plain($link['title']);
-    }
-    $link['localized_options']['html'] = TRUE;
-    $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
-
-    $icon = '<i class="fa fa-lg fa-' . $icon_type . '"></i> ';
-    $link_text = $icon . $link_text;
-    // Ensure the HTML in $link_text is not escaped.
-    $link['localized_options']['html'] = TRUE;
-  }
-  return '<li' . (!empty($variables['element']['#active']) ? ' class="active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
-}
 
 /**
  * Returns HTML for an inactive facet item.
@@ -313,19 +179,6 @@ function nuboot_sitewide_social_block() {
   );
 
   return $output;
-}
-
-/**
- * Implements hook_form_alter().
- */
-function nuboot_form_alter(&$form, &$form_state, $form_id) {
-  switch ($form_id) {
-    case 'colorizer_admin_settings':
-      $form['colorizer_global']['colorizer_cssfile']['#default_value'] = 'colorizer/colorizer.css';
-      $form['colorizer_global']['colorizer_incfile']['#default_value'] = 'colorizer/colorizer.inc';
-      break;
-
-  }
 }
 
 /**

@@ -1,0 +1,62 @@
+.search-form,
+#dkan-sitewide-dataset-search-form {
+  button[type="submit"],
+  input[type="submit"] {
+    background: transparent;
+    border: 0;
+    color: $gray;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    font-family: $icon-fa;
+    margin-left: -40px;
+    vertical-align: top;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right:0;
+    text-shadow: none;
+  }
+}
+
+form#views-exposed-form-dataset-page {
+  margin: 15px 90px 0 0;
+  position: relative;
+  width: 200px;
+}  
+
+#region-branding #block-dkan-sitewide-dkan-sitewide-search-bar label,
+#views-exposed-form-dataset-page label {
+  display: none;
+}
+
+.navbar #block-dkan-sitewide-dkan-sitewide-search-bar {
+  @include searchbox;
+  display: inline-block;
+  width:172px;
+  form {
+    width:172px;
+  }
+    input.form-control {
+      width:170px;
+    }
+    .views-exposed-form .form-submit {
+      margin:22px 0 0;
+      //color:#fff;
+      text-shadow: none;
+    }
+}
+
+#views-exposed-form-user-profile-search-entity-view-1,
+#views-exposed-form-groups-search-entity-view-1,
+#views-exposed-form-dataset-page {
+  @include searchbox;
+    
+    .views-exposed-form input[value="Apply"] {
+      display: none;
+    }
+}
+// .main-row #views-exposed-form-dataset-page {
+//   width: 100%;
+// }
+// #block-dkan-sitewide-demo-front-dkan-search-front #views-exposed-form-dataset-page .views-exposed-form .description { top:7px; }
