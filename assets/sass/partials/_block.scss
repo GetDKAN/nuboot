@@ -1,7 +1,9 @@
 #block-dkan-sitewide-demo-front-dkan-add-front {
   color: $white;
 }
-
+#block-views-popular-tags-block {
+  margin-bottom: .75em;
+}
 #block-views-front-page-group-grid-block {
   @include box-shadow(none);
   margin-bottom: 0;
@@ -330,6 +332,7 @@
     font-size: 13px;
     left: 0;
     line-height: 18px;
+    margin: 0 15px;
     padding: 12px 10px;
     position: absolute;
     right: 0;

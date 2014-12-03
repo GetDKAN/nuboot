@@ -1,5 +1,6 @@
 .search-form,
 #dkan-sitewide-dataset-search-form {
+  position: relative;
   button[type="submit"],
   input[type="submit"] {
     background: transparent;

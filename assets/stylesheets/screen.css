@@ -3444,6 +3444,8 @@ table.group_additional th:nth-of-type(2n), table.group_additional td:nth-of-type
 
 #block-dkan-sitewide-demo-front-dkan-add-front { color: white; }
 
+#block-views-popular-tags-block { margin-bottom: .75em; }
+
 #block-views-front-page-group-grid-block { -webkit-box-shadow: none; box-shadow: none; margin-bottom: 0; padding: 0; }
 
 .front #block-system-main { display: none; }
@@ -3511,8 +3513,9 @@ table.group_additional th:nth-of-type(2n), table.group_additional td:nth-of-type
 #block-dkan-sitewide-demo-front-dkan-demo-front p { color: white; padding: 15px; }
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay { padding: 0; }
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay img { width: 100%; height: auto; }
-#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
+#block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0 15px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
 
+.search-form, #dkan-sitewide-dataset-search-form { position: relative; }
 .search-form button[type="submit"], .search-form input[type="submit"], #dkan-sitewide-dataset-search-form button[type="submit"], #dkan-sitewide-dataset-search-form input[type="submit"] { background: transparent; border: 0; color: #555555; display: inline-block; font-family: FontAwesome; font-size: 1.3em; font-family: "FontAwesome"; margin-left: -40px; vertical-align: top; width: auto; position: absolute; top: 0; right: 0; text-shadow: none; }
 
 form#views-exposed-form-dataset-page { margin: 15px 90px 0 0; position: relative; width: 200px; }
