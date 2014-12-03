@@ -9,17 +9,5 @@ function nuboot_form_alter(&$form, &$form_state, $form_id) {
       $form['colorizer_global']['colorizer_cssfile']['#default_value'] = 'colorizer/colorizer.css';
       $form['colorizer_global']['colorizer_incfile']['#default_value'] = 'colorizer/colorizer.inc';
       break;
-
-    //case 'dkan_sitewide_dataset_search_form':
-    case 'views_exposed_form':
-      $form['input'] = array(
-        '#type' => 'submit',
-        //'#value' => t('Search'),
-        // Use fontawesome icon.
-        '#value' => decode_entities('&#xf002;'),
-      );
-      return $form;
-      break;
-
   }
 }

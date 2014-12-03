@@ -3249,7 +3249,7 @@ table thead > tr > th.checkbox, table.table thead > tr > th.checkbox, .table-bor
 table th.checkbox label, table td.checkbox label { line-height: 0; padding: 4px; vertical-align: top; }
 table th.checkbox input[type="checkbox"], table th.checkbox input, table td.checkbox input[type="checkbox"], table td.checkbox input { float: none !important; margin: 0 !important; position: relative; }
 
-.page-admin .checkbox input[type="checkbox"] { position: relative; }
+.vbo-views-form .checkbox input[type="checkbox"], .page-admin .checkbox input[type="checkbox"] { position: relative; }
 
 dl { margin: 0; padding: 0; clear: both; overflow: hidden; }
 
@@ -3386,7 +3386,7 @@ div.autocomplete-deluxe-container input.autocomplete-deluxe-form-single { float:
 
 .input-prepend .add-on { height: 34px; }
 
-.list-group-item { background-color: transparent; border: none; color: #333333; }
+.list-group-item { background-color: transparent; border: none; color: #333333; padding: 0; }
 
 .node-type-resource .container { width: 100%; max-width: 980px; }
 
