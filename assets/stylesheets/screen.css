@@ -3240,14 +3240,16 @@ table tr:hover, table.table tr:hover { background: #FFFEEE; }
 table.group_additional th:nth-of-type(1n), table.group_additional td:nth-of-type(1n), .field-name-field-additional-info table th:nth-of-type(1n), .field-name-field-additional-info table td:nth-of-type(1n) { width: 30%; }
 table.group_additional th:nth-of-type(2n), table.group_additional td:nth-of-type(2n), .field-name-field-additional-info table th:nth-of-type(2n), .field-name-field-additional-info table td:nth-of-type(2n) { width: 70%; }
 
-table thead > tr > th.checkbox, table.table thead > tr > th.checkbox, .table-bordered > tbody > tr > th.checkbox, .calendar-calendar table.mini > tbody > tr > th.checkbox, .table-bordered > tbody > tr > td.checkbox, .calendar-calendar table.mini > tbody > tr > td.checkbox, .table-striped > tbody > tr:nth-child(odd) > td.checkbox, .table-striped > tbody > tr:nth-child(odd) > th.checkbox { background-color: transparent; border: none; margin: 0; display: table-cell; }
+table thead > tr > th.checkbox, table.table thead > tr > th.checkbox, .table-bordered > tbody > tr > th.checkbox, .calendar-calendar table.mini > tbody > tr > th.checkbox, .table-bordered > tbody > tr > td.checkbox, .calendar-calendar table.mini > tbody > tr > td.checkbox, .table-striped > tbody > tr:nth-child(odd) > td.checkbox, .table-striped > tbody > tr:nth-child(odd) > th.checkbox { background-color: transparent; border: none; margin: 0; display: table-cell; position: relative; }
 
 .table-striped > tbody > tr:nth-child(odd) { background-color: #f9f9f9; }
 
 .table tbody tr:hover td, .table tbody tr:hover th, .table tbody tr:hover td.checkbox, .table tbody tr:hover th.checkbox, .table-striped tbody tr:nth-child(odd):hover td, .table-striped tbody tr:nth-child(odd):hover td.checkbox { background-color: #FFFEEE; }
 
 table th.checkbox label, table td.checkbox label { line-height: 0; padding: 4px; vertical-align: top; }
-table th.checkbox input, table td.checkbox input { float: none !important; margin: 0 !important; position: relative; }
+table th.checkbox input[type="checkbox"], table th.checkbox input, table td.checkbox input[type="checkbox"], table td.checkbox input { float: none !important; margin: 0 !important; position: relative; }
+
+.page-admin .checkbox input[type="checkbox"] { position: relative; }
 
 dl { margin: 0; padding: 0; clear: both; overflow: hidden; }
 
@@ -3384,6 +3386,8 @@ div.autocomplete-deluxe-container input.autocomplete-deluxe-form-single { float:
 
 .input-prepend .add-on { height: 34px; }
 
+.list-group-item { background-color: transparent; border: none; color: #333333; }
+
 .node-type-resource .container { width: 100%; max-width: 980px; }
 
 .field-name-field-tags .field-item { display: inline-block; }
@@ -3515,8 +3519,8 @@ table.group_additional th:nth-of-type(2n), table.group_additional td:nth-of-type
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay img { width: 100%; height: auto; }
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0 15px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
 
-.search-form, #dkan-sitewide-dataset-search-form { position: relative; }
-.search-form button[type="submit"], .search-form input[type="submit"], #dkan-sitewide-dataset-search-form button[type="submit"], #dkan-sitewide-dataset-search-form input[type="submit"] { background: transparent; border: 0; color: #555555; display: inline-block; font-family: FontAwesome; font-size: 1.3em; font-family: "FontAwesome"; margin-left: -40px; vertical-align: top; width: auto; position: absolute; top: 0; right: 0; text-shadow: none; }
+.search-form, #dkan-sitewide-dataset-search-form, #dkan-sitewide-dataset-search-form--2 { position: relative; }
+.search-form button[type="submit"], .search-form input[type="submit"], #dkan-sitewide-dataset-search-form button[type="submit"], #dkan-sitewide-dataset-search-form input[type="submit"], #dkan-sitewide-dataset-search-form--2 button[type="submit"], #dkan-sitewide-dataset-search-form--2 input[type="submit"] { background: transparent; border: 0; color: #555555; display: inline-block; font-family: FontAwesome; font-size: 1.3em; font-family: "FontAwesome"; margin-left: -40px; vertical-align: top; width: auto; position: absolute; top: 0; right: 0; text-shadow: none; }
 
 form#views-exposed-form-dataset-page { margin: 15px 90px 0 0; position: relative; width: 200px; }
 

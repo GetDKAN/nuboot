@@ -131,6 +131,7 @@ table.table thead > tr > th.checkbox,
   border: none;
   margin: 0;
   display: table-cell;
+  position: relative;
 }
 .table-striped > tbody > tr:nth-child(odd) {
   background-color: #f9f9f9;
@@ -150,11 +151,15 @@ table td.checkbox {
     padding: 4px;
     vertical-align: top;
   }
+  input[type="checkbox"],
   input {
     float: none !important;
     margin: 0 !important;
     position: relative;
   }
+}
+.page-admin .checkbox input[type="checkbox"] {
+  position: relative;
 }
 
 dl {
