@@ -5,6 +5,7 @@
   margin-top:20px;
 }
 .view-popular-tags {
+  margin: 15px 0;
   ul.tag-list {
     margin: 0;
     padding: 0;
@@ -73,11 +74,7 @@
     }
   }
 }
-.view-dataset {
-  .views-row {
-    margin:1.5em 0;
-  }
-}
+
 .view-groups-page {
   .views-column {
     float:left;
@@ -97,5 +94,46 @@
     margin:1em 0 0 0;
     padding:5px 8px;
     text-align: center;
+  }
+}
+.view-dataset {
+  form {
+    margin: 0;
+    position: relative;
+  }
+  .views-row {
+    margin:1.5em 0;
+  }
+}
+.views-exposed-form {
+  position:relative;
+  .views-exposed-widget {
+    display: inline;
+    padding: .5em .5em 0 0;
+    .views-widget-filter-search_api_views_fulltext,
+    .views-widget-sort-by,
+    .views-widget-sort-order,
+    .views-submit-button,
+    .form-submit {
+      display: inline;
+      float:none;
+      margin: 0;
+      position:relative;
+    }
+    &.views-submit-button {
+      margin: 0;
+      padding: .5em .5em 0 0;
+    }
+  }
+  label {
+    display: none;
+  }
+  .description {
+    @include text-shadow(none);
+    position:absolute;
+    color: #999999;
+    font-size:12px;
+    left: 7px;
+    top: 10px;
   }
 }

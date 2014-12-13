@@ -1,6 +1,19 @@
 //
 // Styles for individual pages
 // --------------------------------------------------
+.page-header {
+  border-bottom: none;
+}
+.front .page-header {
+  display: none;
+}
+.main {
+  padding:20px 0;
+}
+.front .main {
+  padding: 0;
+}
+
 .page-groups {
   article.node-teaser {
     height: 365px;
@@ -18,12 +31,10 @@
   }
 }
 
-.region-content .block {
-  @include popblock;
+#footer {
+  margin:0 ;
 }
-.page-admin .region-content .block {
-  @include box-shadow(none);
-  border:none;
-  margin:0;
-  padding:0;
+.footer {
+  padding:40px 0;
+  margin: 0;
 }

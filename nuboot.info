@@ -38,6 +38,7 @@ plugins[panels][styles] = panels/styles
 stylesheets[all][]     = assets/stylesheets/screen.css
 stylesheets[print][]   = assets/stylesheets/print.css
 stylesheets[all][]     = assets/stylesheets/font-awesome.min.css
+stylesheets[all][]		 = assets/stylesheets/flaticon.css
 
 ; CSS - Conditional
 stylesheets-conditional[lte IE 9][all][] = assets/stylesheets/ie.css

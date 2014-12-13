@@ -1,41 +1,3 @@
-#block-dkan-sitewide-demo-front-dkan-add-front {
-  color: $white;
-}
-#block-views-popular-tags-block {
-  margin-bottom: .75em;
-}
-#block-views-front-page-group-grid-block {
-  @include box-shadow(none);
-  margin-bottom: 0;
-  padding:0;
-}
-.front #block-system-main {
-  display:none;
-}
-
-.region-sidebar-first,
-.region-sidebar-second {
-  h2 {
-    @include background-image(linear-gradient(#F5F5F5, #F0F0F0));
-    @include border-radius(3px 3px 0 0);
-    border-bottom: 1px solid $border;
-    color: $gray-dark;
-    font-size: 14px;
-    line-height: 1.3;
-    padding: 7px 10px;
-    margin: 0;
-  }
-  .block {
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    .content {
-      padding:20px 15px;
-    }
-  }
-}
-
 #block-dkan-sitewide-dkan-sitewide-user-menu {
   //mobile
   position:relative;
@@ -87,7 +49,9 @@
 }
 
 // Social Links
+.pane-dkan-sitewide-dkan-sitewide-social,
 #block-dkan-sitewide-dkan-sitewide-social {
+  .pane-content,
   .content {
     padding: 0;
   }
@@ -115,6 +79,7 @@
 }
 
 // OTHER ACCESS
+.pane-dkan-sitewide-dkan-sitewide-other-access,
 #block-dkan-sitewide-dkan-sitewide-other-access {
   a.btn {
     background-image: auto;
@@ -169,8 +134,10 @@
 }
 
 // FACET API
+div[class*="pane-facetapi"],
 .region-sidebar-first .block-facetapi,
 .block-facetapi {
+  .pane-content,
   .content {
     padding:0;
   }
@@ -190,6 +157,9 @@
       a {
         padding-right:48px;
       }
+    }
+    &.last {
+      border-bottom:none;
     }
     li:before {
     content:"\f178";
@@ -231,13 +201,13 @@
       content: '';
       position: absolute;
       border-style: solid;
-      border-width: 14px 0 13px 13px;
+      border-width: 14px 0 14px 14px;
       border-color: transparent $smoke;
       display: block;
       width: 0;
       z-index: 1;
-      right: -13px;
-      top: -2px;
+      right: -14px;
+      top: 0;
     }
     a.facetapi-active:after {
       content:"\f00d";
@@ -311,6 +281,7 @@
   }
 }
 
+.pane-dkan-sitewide-demo-front-dkan-demo-front,
 #block-dkan-sitewide-demo-front-dkan-demo-front {
   @include box-shadow(0 0 8px rgba(0, 0, 0, 0.3));
   background-color: rgba($brand-primary, 0.5);
@@ -332,7 +303,7 @@
     font-size: 13px;
     left: 0;
     line-height: 18px;
-    margin: 0 15px;
+    margin: 0;
     padding: 12px 10px;
     position: absolute;
     right: 0;

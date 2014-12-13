@@ -17,6 +17,7 @@
   margin:0 auto;
   padding:0;
 }
+
 .navbar-header {
   position:relative;
   z-index:3;
@@ -24,12 +25,12 @@
 .navbar-default {
   background:transparent;
   border:none;
-  position:relative;
-  z-index:1;
-  margin-top: 14px;
-  float: none;
   display: block;
+  float: none;
+  margin: 15px 0 0 10px;
+  position:relative;
   text-align: center;
+  z-index:1;
   @media(min-width:768px) {
     float:right;
     .navbar-nav {
@@ -45,11 +46,6 @@
     font-size:26px;
     margin:0;
     padding:18px 15px 0 0;
-  }
-  .logo {
-    padding:10px 10px 0 0;
-    position:relative;
-    z-index:3;
   }
   .lead {
     font-size:21px;
@@ -196,7 +192,7 @@ textarea.embed-code {
 }
 
 ul.action-links {
-  margin:1em 0;
+  margin:1em 15px;
 }
 .data-explorer .btn {
   border:1px solid $smoke;

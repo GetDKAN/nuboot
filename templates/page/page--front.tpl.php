@@ -59,7 +59,7 @@
 </header>
 
 <div id="main-wrapper frontend">
-  <div id="main" class="main container">
+  <div id="main" class="main">
 
     <header role="banner" id="page-header">
       <?php if (!empty($site_slogan)): ?>

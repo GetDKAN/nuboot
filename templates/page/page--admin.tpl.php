@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Default theme implementation to display a single Drupal page.
+ * Admin page.
  *
  * @see template_preprocess()
  * @see template_preprocess_page()
@@ -58,40 +58,44 @@
   </div> <!-- /.container -->
 </header>
 
-<div id="main-wrapper frontend">
-  <div id="main" class="main container">
+<div id="main-wrapper">
+  <div id="main" class="main">
+    <div class="container">
+      <header role="banner" id="page-header">
+        <?php if (!empty($site_slogan)): ?>
+          <p class="lead"><?php print $site_slogan; ?></p>
+        <?php endif; ?>
 
-    <header role="banner" id="page-header">
-      <?php if (!empty($site_slogan)): ?>
-        <p class="lead"><?php print $site_slogan; ?></p>
+        <?php print render($page['header']); ?>
+      </header> <!-- /#page-header -->
+
+      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+      <?php print $messages; ?>
+      <?php if (!empty($page['help'])): ?>
+        <?php print render($page['help']); ?>
       <?php endif; ?>
-    </header> <!-- /#page-header -->
-
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-    <?php print $messages; ?>
-    <?php if (!empty($page['help'])): ?>
-      <?php print render($page['help']); ?>
-    <?php endif; ?>
-
+    </div>
 
     <div class="main-row">
+      <div class="container">
 
-      <section> 
-        <a id="main-content"></a>
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title) && (arg(0) == 'admin' || arg(1) == 'add' || arg(1) == 'edit')): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-        <?php if (!empty($tabs)): ?>
-          <?php print render($tabs); ?>
-        <?php endif; ?>
-        <?php if (!empty($action_links)): ?>
-          <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
-        <?php print render($page['content']); ?>
-      </section>
+        <section> 
+          <a id="main-content"></a>
+          <?php print render($title_prefix); ?>
+          <?php if (!empty($title) && (arg(0) == 'admin' || arg(1) == 'add' || arg(1) == 'edit')): ?>
+            <h1 class="page-header"><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
+          <?php if (!empty($tabs)): ?>
+            <?php print render($tabs); ?>
+          <?php endif; ?>
+          <?php if (!empty($action_links)): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+          <?php print render($page['content']); ?>
+        </section>
 
+      </div>
     </div>
 
   </div> <!-- /#main -->

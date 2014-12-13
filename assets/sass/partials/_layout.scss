@@ -9,7 +9,8 @@ section.col-sm-9 {
   padding-right: 0;
 }
 
-#featured {
+#featured,
+.panel-top {
   background-position:50% 50%;
   background-size:cover !important;
   overflow:hidden;
@@ -22,22 +23,23 @@ section.col-sm-9 {
     width:100%;
     z-index: -1;
   }
-  h2 {
+  h2,
+  .pane-dkan-sitewide-demo-front-dkan-demo-front .pane-title,
+  .pane-views-popular-tags-block .pane-title,
+  .pane-dkan-sitewide-demo-front-dkan-add-front .pane-title {
     display:none;
   }
-  .featured-inside {
-    padding: 30px 0;
-  }
   .container {
-    positoin: relative;
+    padding: 30px 0;
+    position: relative;
     z-index: 5;
   }
+  .pane-block,
   .block-content {
     color:$white;
     font-size: 1.25em;
-      line-height: 1.33em;
-      margin:0 40px;
-    @include text-shadow(rgba(black, 0.8) 0 0 3px, rgba($brand-primary, 0.6) 1px 1px 0);
+    line-height: 1.33em;
+    margin:0 10px;
   }
   a {
     color:$white;

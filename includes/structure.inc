@@ -17,14 +17,7 @@ function nuboot_css_alter(&$css) {
   unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
   // Remove dkan button styles so we can use our own.
   unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);
-}
-
-/**
- * Implements template_preprocess_html.
- */
-function nuboot_preprocess_html(&$variables) {
-  drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
-  //drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
+  //unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset.css']);
 }
 
 /**
@@ -43,4 +36,14 @@ function nuboot_preprocess_page(&$variables) {
   if (!empty($vars['node']) && in_array($vars['node']->type, array('dataset', 'resource')) || arg(1) == 'add') {
     $vars['title'] = '';
   }
+  // Add external css files.
+  $external_css = array(
+    '#attached' => array(
+      'css' => array(
+        '//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' => array(
+          'type' => 'external'),
+      ),
+    ),
+  );
+  drupal_render($external_css);
 }
