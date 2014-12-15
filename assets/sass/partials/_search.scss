@@ -2,7 +2,14 @@
 #dkan-sitewide-dataset-search-form,
 #dkan-sitewide-dataset-search-form--2 {
   @include searchbox;
-}  
+  position: relative;
+}
+#dkan-sitewide-dataset-search-form,
+#dkan-sitewide-dataset-search-form--2 {
+  input[type="submit"] { 
+    top: 2px;
+  }
+} 
 
 #region-branding #block-dkan-sitewide-dkan-sitewide-search-bar label,
 #views-exposed-form-dataset-page label {
