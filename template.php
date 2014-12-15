@@ -212,3 +212,13 @@ function nuboot_file_widget($variables) {
   $output .= render($hidden_elements);
   return $output;
 }
+
+
+// function nuboot_form_alter(&$form, &$form_state, $form_id){
+//   // target a single form
+//   if($form_id == "system_theme_settings"){
+//     drupal_set_message('<pre>' . print_r($somevariable, TRUE) . '</pre>');
+//     $form['copyright']['#defult_value'] = 'hey';
+//     $form['copyright']['#format'] = 'html';
+//   }
+// }

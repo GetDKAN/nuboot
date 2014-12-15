@@ -22,7 +22,7 @@ function nuboot_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['nuboot_theme_settings']['copyright'] = array(
     '#title' => t('Copyright'),
     '#type' => 'text_format',
-    '#format' => $copyright['format'],
+    '#format' => 'html',
     '#default_value' => $copyright['value'] ? $copyright['value'] : t('Powered by <a href="http://nucivic.com/dkan">DKAN</a>, a project of <a href="http://nucivic.com">NuCivic</a>'),
   );
 
