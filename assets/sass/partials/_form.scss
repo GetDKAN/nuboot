@@ -126,6 +126,39 @@ fieldset.group-primary {
   color: $text-color;
   padding: 0;
 }
+#dkan-stages {
+  margin-bottom: -25px;
+}
+#field-tags-wrapper {
+  .panel {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  .path-form .add-on {
+    z-index: 1;
+    position: absolute;
+    height: 34px;
+    padding: 9px
+  }
+  #url-edit-label {
+    padding: 5px 0px 15px 0px;
+  }
+  #url-edit-prefix {
+    padding: 5px 0px 15px 10px;
+  }
+  .btn {
+    padding: 2px 5px;
+    font-size: 0.95em;
+    margin: 3px;
+  }
+  #url-slug {
+    margin: 5px 0;
+  }
+}
+
+.filter-wrapper {
+  padding: 10px;
+}
 
 .page-node-add-dataset,
 .page-node-edit-dataset {
@@ -156,5 +189,10 @@ fieldset.group-primary {
     .form-actions {
       padding: 1em;
     }
+  }
+}
+#body-add-more-wrapper {
+  .panel-body {
+    padding: 0;
   }
 }

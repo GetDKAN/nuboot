@@ -3412,6 +3412,17 @@ fieldset.collapsible { padding-top: 0; }
 
 .list-group-item { background-color: transparent; border: none; color: #333333; padding: 0; }
 
+#dkan-stages { margin-bottom: -25px; }
+
+#field-tags-wrapper .panel { padding-top: 0; padding-bottom: 15px; }
+#field-tags-wrapper .path-form .add-on { z-index: 1; position: absolute; height: 34px; padding: 9px; }
+#field-tags-wrapper #url-edit-label { padding: 5px 0px 15px 0px; }
+#field-tags-wrapper #url-edit-prefix { padding: 5px 0px 15px 10px; }
+#field-tags-wrapper .btn { padding: 2px 5px; font-size: 0.95em; margin: 3px; }
+#field-tags-wrapper #url-slug { margin: 5px 0; }
+
+.filter-wrapper { padding: 10px; }
+
 .page-node-add-dataset .radix-layouts-content #dkan-stages .stages, .page-node-edit-dataset .radix-layouts-content #dkan-stages .stages { margin: 0 0 20px; }
 .page-node-add-dataset .radix-layouts-content .pane-content, .page-node-edit-dataset .radix-layouts-content .pane-content { padding: 0; }
 .page-node-add-dataset .radix-layouts-content .pane-content fieldset, .page-node-edit-dataset .radix-layouts-content .pane-content fieldset { border: none; }
@@ -3420,6 +3431,8 @@ fieldset.collapsible { padding-top: 0; }
 .page-node-add-dataset .radix-layouts-content .vertical-tabs .vertical-tabs-panes, .page-node-add-dataset .radix-layouts-content .vertical-tabs fieldset.vertical-tabs-pane, .page-node-edit-dataset .radix-layouts-content .vertical-tabs .vertical-tabs-panes, .page-node-edit-dataset .radix-layouts-content .vertical-tabs fieldset.vertical-tabs-pane { padding: 0; }
 .page-node-add-dataset .radix-layouts-content .vertical-tabs .panel-body, .page-node-edit-dataset .radix-layouts-content .vertical-tabs .panel-body { padding: 5px; }
 .page-node-add-dataset .radix-layouts-content .form-actions, .page-node-edit-dataset .radix-layouts-content .form-actions { padding: 1em; }
+
+#body-add-more-wrapper .panel-body { padding: 0; }
 
 .field-name-field-tags .field-item { display: inline-block; }
 
