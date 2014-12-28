@@ -7,10 +7,6 @@
 }
 
 body[class*='panel-layout'] {
-	.breadcrumb {
-		// Hide page.tpl.php breadcrumb.
-		display:none;
-	}
 	.alert,
   .tabs--primary,
   .page-header {

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Theme and preprocess functions for breadcrumbs, messages, tabs..etc
+ * Theme and preprocess functions for breadcrumbs, messages, tabs..etc.
  */
 
 /**
@@ -11,13 +11,12 @@ function nuboot_css_alter(&$css) {
   $radix_path = drupal_get_path('theme', 'radix');
 
   // Radix now includes compiled stylesheets for demo purposes.
-  // We remove these from our subtheme since they are already included 
+  // We remove these from our subtheme since they are already included
   // in compass_radix.
   unset($css[$radix_path . '/assets/stylesheets/radix-style.css']);
   unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
   // Remove dkan button styles so we can use our own.
   unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);
-  //unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset.css']);
 }
 
 /**
@@ -26,7 +25,7 @@ function nuboot_css_alter(&$css) {
 function nuboot_preprocess_page(&$variables) {
   // Add copyright to theme.
   if ($copyright = theme_get_setting('copyright')) {
-    $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
+    $variables['copyright'] = isset($copyright['value']) ? check_markup($copyright['value'], $copyright['format']) : '';
   }
   if (drupal_is_front_page()) {
     $vars['title'] = '';
