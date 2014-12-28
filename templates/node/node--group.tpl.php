@@ -9,7 +9,7 @@
     $node = node_load($nid);
     // Group image.
     $image = field_get_items('node', $node, 'field_image');
-    if($image):
+    if ($image):
       $group_logo = field_view_value('node', $node, 'field_image', $image[0], array(
         'type' => 'image',
         'settings' => array(
@@ -18,17 +18,17 @@
         ),
       ));
     endif;
-  ?> 
+  ?>
   <article class="node-teaser">
     <div class="field-name-field-image"><?php print render($group_logo); ?></div>
     <h2 class="node-title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
     <div class="content">
       <p>
-        <?php print render(field_view_field('node', $node, 'body', array(
+        <?php $teaser = field_view_field('node', $node, 'body', array(
             'label' => 'hidden',
             'type' => 'text_summary_or_trimmed',
             'settings' => array('trim_length' => 150),
-          )));
+          )); print render($teaser);
         ?>
       </p>
     </div>
