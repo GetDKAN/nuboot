@@ -267,32 +267,16 @@
       }
     }
   }
+  &.node-teaser {
+    padding-bottom: 15px;
+    p {
+      margin: 0;
+    }
+    .form-group {
+      margin-bottom: 5px;
+    }
+    .item-list ul {
+      margin: 0px;
+    }
+  }
 }
-
-// .download a.format-label,
-// .format-label[data-format*=''],
-// .resource-list li .format-label {
-//   text-indent: 0 !important;
-//   font-weight: normal;
-//   position: relative;
-//   top: auto;
-//   left: auto;
-//   background-image: none !important;
-//   background-position: none !important;
-//   background: none !important;
-// }
-// .node-dataset.node-teaser p {
-//   margin: 0;
-// }
-// .node-dataset.node-teaser .form-group {
-//   margin-bottom: 5px;
-// }
-// .node-dataset.node-teaser .item-list ul {
-//   margin: 0px;
-// }
-// .node-dataset.node-teaser {
-//   padding-bottom: 15px;
-// }
-// .breadcrumb {
-//   padding: 0 15px;
-// }

@@ -53,6 +53,9 @@ p:last-child {
     }
   }
 }
+body[class*="panel-layout"] .breadcrumb {
+  padding: 0 15px;
+}
 
 .alert {
   margin: 15px 0;
