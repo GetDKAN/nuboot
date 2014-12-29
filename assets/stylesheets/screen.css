@@ -3434,6 +3434,8 @@ fieldset.collapsible { padding-top: 0; }
 
 #body-add-more-wrapper .panel-body { padding: 0; }
 
+div.horizontal-tabs { border: none; }
+
 .field-name-field-tags .field-item { display: inline-block; }
 
 .field-type-taxonomy-term-reference label { display: block; }
@@ -3565,8 +3567,10 @@ body[class*='panel-layout'] .alert, body[class*='panel-layout'] .tabs--primary, 
 .radix-layouts-sidebar .pane-block .pane-content { margin: 0; padding: 15px; }
 .radix-layouts-sidebar div[class*="pane-facetapi"] .pane-content, .radix-layouts-sidebar .pane-dkan-sitewide-dkan-sitewide-social .pane-content { padding: 0; }
 
+.page-user .radix-layouts-content .pane-content { padding: 15px 0; }
+
 .radix-layouts-content .pane-title { font-size: 30px; line-height: 36px; margin: 0 0 15px 0; padding: 0; }
-.radix-layouts-content .pane-content { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 0px; padding: 15px; margin-bottom: 3em; }
+.radix-layouts-content .pane-content { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: white; margin-bottom: 20px; padding: 0px; padding: 20px; margin-bottom: 3em; }
 .radix-layouts-content .pane-content .pane-content { margin: 0; padding: 15px; }
 .radix-layouts-content .pane-page-breadcrumb { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
 .radix-layouts-content .pane-page-breadcrumb .pane-content { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; margin: 0; padding: 0; }
@@ -3667,5 +3671,15 @@ ul.resource-list .heading { padding: 0; text-decoration: none; }
 ul.resource-list .heading:hover { text-decoration: none; }
 
 .download a.format-label, .format-label[data-format*=''], .resource-list li .format-label { text-indent: 0 !important; font-weight: normal; position: relative; top: auto; left: auto; background-image: none !important; background-position: none !important; background: none !important; }
+
+.node-dataset.node-teaser p { margin: 0; }
+
+.node-dataset.node-teaser .form-group { margin-bottom: 5px; }
+
+.node-dataset.node-teaser .item-list ul { margin: 0px; }
+
+.node-dataset.node-teaser { padding-bottom: 15px; }
+
+.breadcrumb { padding: 0 15px; }
 
 @media all and (max-width: 768px) { aside[class|='col'], section[class|='col'] { padding: 0; } }

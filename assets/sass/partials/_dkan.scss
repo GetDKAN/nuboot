@@ -207,3 +207,18 @@ ul.resource-list .heading {
   background-position: none !important;
   background: none !important;
 }
+.node-dataset.node-teaser p {
+  margin: 0;
+}
+.node-dataset.node-teaser .form-group {
+  margin-bottom: 5px;
+}
+.node-dataset.node-teaser .item-list ul {
+  margin: 0px;
+}
+.node-dataset.node-teaser {
+  padding-bottom: 15px;
+}
+.breadcrumb {
+  padding: 0 15px;
+}
