@@ -336,8 +336,7 @@
   background-color:#70C6E5;
 }
 
-.format-label:before,
-.format-label:before:hover {
+.format-label:before {
   font-family: 'dkan-flaticon';
   speak: none;
   font-size: 60px !important;
@@ -460,6 +459,8 @@
     background-image: none !important;
     background-position: none !important;
     background: none !important;
+    color: black;
+    font-weight: bold;
     height: auto !important;
     min-height: 60px;
     position: relative;
@@ -467,8 +468,7 @@
     text-decoration: none;
     width: auto !important;
     z-index: 0;
-    &:before,
-    &:before:hover {
+    &:before {
       font-family: "dkan-flaticon" !important;
       font-weight: normal !important;
       vertical-align: middle !important;
@@ -498,8 +498,13 @@
       }
     }
     .heading,
+    .heading:hover {
+      color: black;
+      font-weight: bold;
+    }
     p {
       padding: 0 !important;
+      margin: 0;
     }
     .format-label {
       background-image: none !important;

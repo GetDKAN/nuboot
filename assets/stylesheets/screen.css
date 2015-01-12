@@ -3786,7 +3786,7 @@ body[class*='panel-layout'] .alert, body[class*='panel-layout'] .tabs--primary, 
 
 .label[data-format=txt], .label[data-format*=txt] { background-color: #70C6E5; }
 
-.format-label:before, .format-label:before:hover { font-family: 'dkan-flaticon'; speak: none; font-size: 60px !important; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-decoration: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+.format-label:before { font-family: 'dkan-flaticon'; speak: none; font-size: 60px !important; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-decoration: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 .format-label[data-format=api] { color: #ec96be; }
 .format-label[data-format=api]:before { content: "\e608"; color: #ec96be; }
@@ -3830,14 +3830,15 @@ body[class*='panel-layout'] .alert, body[class*='panel-layout'] .tabs--primary, 
 .format-label[data-format=zip] { color: #686868; }
 .format-label[data-format=zip]:before { content: "\e6b3"; color: #686868; }
 
-.node-resource .download .format-label { background-image: none !important; background-position: none !important; background: none !important; height: auto !important; min-height: 60px; position: relative; text-indent: 0 !important; text-decoration: none; width: auto !important; z-index: 0; }
-.node-resource .download .format-label:before, .node-resource .download .format-label:before:hover { font-family: "dkan-flaticon" !important; font-weight: normal !important; vertical-align: middle !important; height: auto !important; width: auto !important; min-width: 65px; text-decoration: none; z-index: 2; }
+.node-resource .download .format-label { background-image: none !important; background-position: none !important; background: none !important; color: black; font-weight: bold; height: auto !important; min-height: 60px; position: relative; text-indent: 0 !important; text-decoration: none; width: auto !important; z-index: 0; }
+.node-resource .download .format-label:before { font-family: "dkan-flaticon" !important; font-weight: normal !important; vertical-align: middle !important; height: auto !important; width: auto !important; min-width: 65px; text-decoration: none; z-index: 2; }
 
 .node-dataset #data-and-resources h2 { margin: 1em 0; }
 .node-dataset #data-and-resources ul.resource-list li { display: block; margin: 1em 0; min-height: 60px; padding: 0 175px 0 65px; position: relative; }
 @media all and (max-width: 768px) { .node-dataset #data-and-resources ul.resource-list li { padding: 0 0 0 65px; }
   .node-dataset #data-and-resources ul.resource-list li a.btn { margin: 0 0 10px 0; } }
-.node-dataset #data-and-resources ul.resource-list li .heading, .node-dataset #data-and-resources ul.resource-list li p { padding: 0 !important; }
+.node-dataset #data-and-resources ul.resource-list li .heading, .node-dataset #data-and-resources ul.resource-list li .heading:hover { color: black; font-weight: bold; }
+.node-dataset #data-and-resources ul.resource-list li p { padding: 0 !important; margin: 0; }
 .node-dataset #data-and-resources ul.resource-list li .format-label { background-image: none !important; background-position: none !important; background: none !important; font-weight: normal !important; font-size: 0 !important; text-indent: 0 !important; text-decoration: none; height: auto !important; width: auto !important; position: absolute; top: -10px; left: 0; z-index: 0; }
 .node-dataset #data-and-resources ul.resource-list li .format-label:before, .node-dataset #data-and-resources ul.resource-list li .format-label:before:hover { display: block; font-family: "dkan-flaticon" !important; font-size: 60px !important; vertical-align: middle; text-decoration: none; text-indent: none; text-decoration: none; position: absolute; top: 4px; left: 0; z-index: 2; }
 .node-dataset.node-teaser { padding-bottom: 15px; }
