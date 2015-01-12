@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'dkan-flaticon';
-	src:url('../fonts/dkan-flaticon.eot');
-	src:url('../fonts/dkan-flaticon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/dkan-flaticon.woff') format('woff'),
-		url('../fonts/dkan-flaticon.ttf') format('truetype'),
-		url('../fonts/dkan-flaticon.svg') format('svg');
+	src:url('../fonts/dkan-flaticon.eot?-w5vqwy');
+	src:url('../fonts/dkan-flaticon.eot?#iefix-w5vqwy') format('embedded-opentype'),
+		url('../fonts/dkan-flaticon.woff?-w5vqwy') format('woff'),
+		url('../fonts/dkan-flaticon.ttf?-w5vqwy') format('truetype'),
+		url('../fonts/dkan-flaticon.svg?-w5vqwy#dkan-flaticon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,27 +21,10 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.004);*/
 }
 
-.format-label:before,
-.format-label:before:hover,
-.icon {
-	font-family: 'dkan-flaticon';
-	speak: none;
-	font-size: 60px !important;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-decoration: none;
-	line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-}
 
 .icon-dm:before {
 	content: "\e600";

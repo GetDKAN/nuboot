@@ -126,9 +126,7 @@ fieldset.group-primary {
   color: $text-color;
   padding: 0;
 }
-#dkan-stages {
-  margin-bottom: -25px;
-}
+
 #field-tags-wrapper {
   .panel {
     padding-top: 0;
@@ -140,20 +138,20 @@ fieldset.group-primary {
     height: 34px;
     padding: 9px
   }
-  #url-edit-label {
-    padding: 5px 0px 15px 0px;
-  }
-  #url-edit-prefix {
-    padding: 5px 0px 15px 10px;
-  }
-  .btn {
-    padding: 2px 5px;
-    font-size: 0.95em;
-    margin: 3px;
-  }
-  #url-slug {
-    margin: 5px 0;
-  }
+  // #url-edit-label {
+  //   padding: 5px 0px 15px 0px;
+  // }
+  // #url-edit-prefix {
+  //   padding: 5px 0px 15px 10px;
+  // }
+  // .btn {
+  //   padding: 2px 5px;
+  //   font-size: 0.95em;
+  //   margin: 3px;
+  // }
+  // #url-slug {
+  //   margin: 5px 0;
+  // }
 }
 
 .filter-wrapper {
