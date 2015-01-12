@@ -184,33 +184,40 @@
   position: absolute;
   top: 0;
 }
-#field-tags-wrapper .path-form .add-on {
-  float: left;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-  display: inline-block;
-  width: auto;
-  min-width: 16px;
-  height: 19px;
-  padding: 1px 6px;
-  font-weight: normal;
-  line-height: 18px;
-  text-align: center;
-  text-shadow: 0 1px 0 white;
-  vertical-align: middle;
-  background-color: #EEE;
-  border: 1px solid #CCC;
-  z-index: 1;
+#field-tags-wrapper .path-form {
+  .add-on {
+    @include border-radius(4px 0 0 4px);
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    display: inline-block;
+    font-weight: normal;
+    float: left;
+    height: 34px;
+    line-height: 32px;
+    min-width: 16px;
+    padding: 1px 6px;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    vertical-align: middle;
+    width: auto;
+    z-index: 1;
+  }
+  .form-item-path-alias {
+    float: left;
+    position: relative;
+    width: 90%;
+    .form-control {
+      @include border-radius(0 4px 4px 0);
+      margin-left: -1px;
+    }
+  }
 }
 #edit-path-alias {
-position: absolute;
-top: 0;
-padding: 4px 6px;
+  position: absolute;
+  top: 0;
+  padding: 4px 6px;
 }
-.form-item-path-alias {
-  position: relative;
-}
+
 #url-slug {
   background-color: #EBE2BE;
   @include border-radius(0 4px 4px 0);

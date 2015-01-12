@@ -1814,6 +1814,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 button.close { padding: 0; cursor: pointer; background: transparent; border: 0; -webkit-appearance: none; }
 
+.modal-open { overflow: hidden; }
+
 .modal { display: none; overflow: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; -webkit-overflow-scrolling: touch; outline: 0; }
 .modal.fade .modal-dialog { -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); -o-transform: translate(0, -25%); transform: translate(0, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out; }
 .modal.in .modal-dialog { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
@@ -3488,9 +3490,6 @@ fieldset.collapsible { padding-top: 0; }
 
 .list-group-item { background-color: transparent; border: none; color: #333333; padding: 0; }
 
-#field-tags-wrapper .panel { padding-top: 0; padding-bottom: 15px; }
-#field-tags-wrapper .path-form .add-on { z-index: 1; position: absolute; height: 34px; padding: 9px; }
-
 .filter-wrapper { padding: 10px; }
 
 .page-node-add-dataset .radix-layouts-content #dkan-stages .stages, .page-node-edit-dataset .radix-layouts-content #dkan-stages .stages { margin: 0 0 20px; }
@@ -3732,11 +3731,11 @@ body[class*='panel-layout'] .alert, body[class*='panel-layout'] .tabs--primary, 
 
 .field-name-field-temporal-coverage legend, .field-widget-leaflet-widget-widget legend { position: absolute; top: 0; }
 
-#field-tags-wrapper .path-form .add-on { float: left; -webkit-border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; display: inline-block; width: auto; min-width: 16px; height: 19px; padding: 1px 6px; font-weight: normal; line-height: 18px; text-align: center; text-shadow: 0 1px 0 white; vertical-align: middle; background-color: #EEE; border: 1px solid #CCC; z-index: 1; }
+#field-tags-wrapper .path-form .add-on { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; background-color: #EEE; border: 1px solid #CCC; display: inline-block; font-weight: normal; float: left; height: 34px; line-height: 32px; min-width: 16px; padding: 1px 6px; text-align: center; text-shadow: 0 1px 0 white; vertical-align: middle; width: auto; z-index: 1; }
+#field-tags-wrapper .path-form .form-item-path-alias { float: left; position: relative; width: 90%; }
+#field-tags-wrapper .path-form .form-item-path-alias .form-control { -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; margin-left: -1px; }
 
 #edit-path-alias { position: absolute; top: 0; padding: 4px 6px; }
-
-.form-item-path-alias { position: relative; }
 
 #url-slug { background-color: #EBE2BE; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; border: 1px solid #cccccc; border-left: none; font-size: 14px; padding: 7px 6px 7px 0; margin-left: -1px; margin-right: 8px; }
 
