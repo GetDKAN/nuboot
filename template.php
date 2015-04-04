@@ -16,7 +16,7 @@ function nuboot_css_alter(&$css) {
  */
 function nuboot_preprocess_html(&$variables) {
   drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
-  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
+  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css', array('type' => 'external'));
 }
 
 /**
