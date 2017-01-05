@@ -1,15 +1,15 @@
 body,
 body.overlay {
-	background-color: @footer;
-	color: @text;
+  background-color: @bg;
+  color: @text;
 }
-#nav-wrapper,
+#header,
 #page-wrapper {
-	background-color: @bg;
+  background-color: @bg;
 }
 h1,h2,h3,h4,
 h2.block-title {
-	
+  
 }
 
 #featured .tint,
@@ -32,72 +32,67 @@ a:active {
   color: @linkactive;
 }
 
-.region-header,
-.region-header a,
-.region-header li a.active,
-#name-and-slogan,
-#name-and-slogan a,
-#secondary-menu-links li a {
+.lead {
   color: @titleslogan;
 }
 
-#nav-wrapper .navbar-default .navbar-brand { color: @top; }
-#nav-wrapper .navbar-default .navbar-nav li > a { color: @top; }
+.navbar-default .navbar-nav li > a { color: @link; }
+.navbar-default .navbar-nav li > a:hover { color: @linkhover; }
 
 .nav-pills li a,
 .tabs--primary li a {
-	border:1px solid @toolbarborder;
-	background: @toolbarbtn;
-	color:  @top;
+  border:1px solid @toolbarborder;
+  background: @toolbarbtn;
+  color:  @top;
 }
 
 .tabs--primary li a:hover {
-	border:1px solid @bottom;
-	background: @bottom;
-	color: #ffffff;
+  border:1px solid @bottom;
+  background: @bottom;
+  color: #ffffff;
 }
 
 .nav-pills li a.active,
 .nav-pills li.active a:hover,
 .nav-pills li.active a:focus,
 .tabs--primary li a.active {
-	border:1px solid @top;
-	background: @top;
-	color:#ffffff;
+  border:1px solid @top;
+  background: @top;
+  color:#ffffff;
 }
 
 #block-views-group-block-block .block-content .group-subscribe-message {
-	background-color: @top;
+  background-color: @top;
 }
 .view-group-block .views-field-nid a,
 .btn-primary {
-	background-color: @top;
-	border:1px solid @top;
-	color:#ffffff;
+  background-color: @top;
+  border:1px solid @top;
+  color:#ffffff;
 }
 
 .view-group-block .views-field-nid a:hover,
 .btn-primary:hover {
-	background:@bottom;
-	border:1px solid @bottom;
-	color:#ffffff;
+  background:@bottom;
+  border:1px solid @bottom;
+  color:#ffffff;
 }
 #edit-submit:hover,
 #edit-submit:focus, 
 #edit-submit:active {
-	background: @linkactive;
-	border-color: @linkactive;
+  background: @linkactive;
+  border-color: @linkactive;
 }
 
 .region-sidebar-first .block-facetapi ul li.leaf a:hover,
 .block-facetapi ul li.leaf a:hover {
-	color:@top;
+  color:@top;
 }
 
-.footer-wrapper {
-	background-color: @footer;
-	color: @sidebar;
+.footer {
+  background-color: @footer;
+  color: @sidebar;
 }
-.footer-wrapper a {
-	color: @sidebarborders;
+.footer a {
+  color: @sidebarborders;
 }
